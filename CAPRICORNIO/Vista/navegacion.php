@@ -20,7 +20,7 @@ echo'
                 <li><a href="../Vista/NavegacionPopular.php">Popular</a></li>
                 <li><a href="../Vista/NavegacionRandom.php">Random</a></li>
              </ul>
-            </nav>
+            </nav> 
             <a href="#" class="btn-1">Usuario</a>
         </div>
         <div class="header-content container">
