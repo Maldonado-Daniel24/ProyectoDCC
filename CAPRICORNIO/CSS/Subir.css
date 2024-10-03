@@ -1,0 +1,47 @@
+*{
+   margin:0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: sans-serif; 
+}
+
+body{
+    background-color: #000000;
+  font-family: "Bebas Neue", sans-serif;
+  color: #FFFFFF
+}
+
+.encabezado{
+    display: flex;
+    margin-top: 1%;
+    margin-left: 1%;
+    
+}
+
+
+.container{
+    margin-left: 5%;
+    
+    
+}
+
+input{
+    width: 800px;
+    height: 30px;
+    border-radius: 5px 5px 5px 5px;
+    border: 0;
+    outline: none;
+    
+}
+
+button{
+    background-color: rgb(230, 31, 31);
+    padding: 10px;
+    position: absolute;
+    border: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+
+}

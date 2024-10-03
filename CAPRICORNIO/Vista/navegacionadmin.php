@@ -19,7 +19,7 @@ echo'
                 <li><a href="#">Nosotros</a></li>
                 <li><a href="#">Peliculas</a></li>
                 <li><a href="#">Contacto</a></li>
-                <li><a href="../Vista/navegacionsubir.php">Contacto</a></li>
+                <li><a href="../Vista/navegacionsubir.php">Subir</a></li>
              </ul>
             </nav>
             <a href="#" class="btn-1">Usuario</a>
@@ -321,7 +321,7 @@ echo'
            <li><a href="#">Nosotros</li>
            <li><a href="#">Películas</li>
            <li><a href="#">Random</li>
-           <li><a href="CAPRICORNIO/Vista/navegacionsubir.php">SubirAbajo</li>
+           <li><a href="../Vista/navegacionsubir.php">Subir</li>
            
 
         </ul>
