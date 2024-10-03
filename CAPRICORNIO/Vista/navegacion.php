@@ -323,7 +323,7 @@ echo'
         </ul>
         
     </footer>
-    <script src="../JS/Script.js"></script>
+    <script src="../JS/Scroll.js"></script>
     <script src="../JS/Script.js"></script>
 <a href="../Vista/CerrarSesion.php">Cerrar Sesion</a>
 </body>
