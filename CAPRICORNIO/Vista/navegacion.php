@@ -310,11 +310,11 @@ echo'
         <div class="load-more" id="load-more-3">Cargar más</div>
 
     </section>
-
+<div class="transicion" id="transicion"></div>
+<div class="spinner" id="spinner"></div>
     <footer class="footer container">
-
+    
         <h3>Capricornio</h3>
-
         <ul>
            <li><a href="#">Inicio</li>
            <li><a href="#">Nosotros</li>
@@ -323,6 +323,7 @@ echo'
         </ul>
         
     </footer>
+    <script src="../JS/Script.js"></script>
     <script src="../JS/Script.js"></script>
 <a href="../Vista/CerrarSesion.php">Cerrar Sesion</a>
 </body>
