@@ -3,19 +3,25 @@ echo'
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="../CSS/Subir.css">
+    <link rel="stylesheet" href="../CSS/AdminSubir.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../Controlador/bd.php">
+
 </head>
 
 
 <body>
+
  <div class="encabezado">
-  <h1 class="logoadmin">Capricornio</h1>
+ 
+  <a href="../Vista/navegacionadmin.php" class="logoadmin">Capricornio</a>
 
   <div class="container">
-  <input type="text" placeholder="Buscar. . .">
-  <button><img src="../IMG/Buscar.png" alt="">
-  </button>
+  <input class="barra_buscar"type="text" placeholder= " Buscar. . .">
+  <button class="btn_buscar"><i class="fa-solid fa-magnifying-glass"></i></button>
   </div>
+  
+  <a class="btn_editor" href="../Vista/editor.php" >Editor</a>  
  </div>
 </body>
 </html>
@@ -23,3 +29,4 @@ echo'
 
 
 ?>
+

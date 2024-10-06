@@ -1,0 +1,82 @@
+body{
+    background-image: url(../IMG/fondoNegro.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    color: black;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+.encabezado{
+    display: flex;
+    margin-top: 1%;
+    margin-left: 1%;
+    
+}
+
+.btn_editor{
+    background-color:#FF2F28;
+    text-decoration: none;
+    border-radius: 5px 5px 5px 5px;
+    width: 60px;
+    height: 35px;
+    padding: 0.6%;
+    color: aliceblue;
+    display: inline-block;
+    margin-left: 8%;
+    
+    
+}
+
+.encabezado{
+    display: flex;
+    margin-top: 1%;
+    margin-left: 1%;
+    
+}
+
+.container{
+    margin-left: 5%;   
+}
+
+.barra_buscar{
+    width: 1050px;
+    height: 30px;
+    border-radius: 5px 0px 0px 5px;
+    border: 0;
+    outline: none;
+    padding: 10px;
+    padding-right: 35px;
+    
+}
+
+.logoadmin{
+    font-size: 35px;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-family: body {
+        background-color: #030303;
+        font-family: "Bebas Neue", sans-serif;
+        color: #FFFFFF;
+    };
+  
+   }
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif; 
+ } 
+ 
+.btn_buscar{
+    background-color: crimson;
+    padding: 8px 11px;
+    position: absolute;
+    border: 0;
+    top: 15px;
+    margin: auto;
+    border-radius: 0px 5px 5px 0px;
+    cursor: pointer ;
+}
+

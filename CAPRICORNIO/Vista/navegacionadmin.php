@@ -8,7 +8,7 @@ echo'
 <body>
     <header class="header">
          <div class ="menu container">
-            <a href="#" class="logo">Capricornio</a>
+            <a href="../Vista/navegacionadmin.php" class="logo">Capricornio</a>
             <input type="checkbox" id="menu" />
             <label for="menu">
              <img src="../IMG/menu.png" class="menu-icono" alt="menu"> 
