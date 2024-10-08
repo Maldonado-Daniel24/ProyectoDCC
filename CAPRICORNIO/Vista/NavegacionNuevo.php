@@ -3,7 +3,7 @@ echo'
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="../CSS/Style.css">
+    <link rel="stylesheet" href="../CSS/NuevoStyle.css">
 </head>
 <body>
     <header class="header">
@@ -24,12 +24,12 @@ echo'
             <a href="#" class="btn-1">Usuario</a>
         </div>
         <div class="header-content container">
-          <div class="header-1">
-            <img src="../IMG/venom.png" alt="">
+          <div class="header-1" id="header-1">
+            <img src="../IMG/joker.png" alt="">
             <a href="#" class="btn-2">Ver ahora</a>
         </div>
         <div class="header-2">
-            <h1>Las mejores <br> películas</h1>
+            <h1>No te pierdas <br>de nada</h1>
             <img src="../IMG/play.png" alt="">
           </div>
         </div>      
@@ -37,7 +37,7 @@ echo'
 
     <section class="movies container">
      
-       <h2>Películas más vistas</h2>
+       <h2>Series del momento</h2>
        <hr>
 
         <div class="box-container-1">
@@ -129,7 +129,7 @@ echo'
 
     <section class="movies container">
      
-       <h2>Películas de Acción</h2>
+       <h2>Películas del Momento</h2>
        <hr>
 
         <div class="box-container-2">
@@ -221,7 +221,7 @@ echo'
 
      <section class="movies container">
      
-       <h2>Películas de Estreno</h2>
+       <h2>Lo Nuevo en Romance</h2>
        <hr>
 
         <div class="box-container-3">

@@ -310,7 +310,10 @@ echo'
         <div class="load-more" id="load-more-3">Cargar más</div>
 
     </section>
-<div class="transicion" id="transicion"></div>
+<div class="main-container" id="box-container-1">
+ <section class="movies container">
+ </section>
+</div>
 <div class="spinner" id="spinner"></div>
     <footer class="footer container">
     

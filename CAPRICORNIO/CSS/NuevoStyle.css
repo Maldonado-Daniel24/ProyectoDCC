@@ -20,7 +20,7 @@ body{
 }
 
 .header {
-  background-image: url(../IMG/bg.jpg);
+  background-image: url(../IMG/bg2.png);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -88,6 +88,7 @@ body{
 
 .header-1 img{
   width: 300px;
+  margin-left: -6%;
 }
 
 .header-2 {
@@ -120,7 +121,7 @@ body{
   padding: 7px 20px;
   background-color: #FF2F28;
   font-size: 20px;
-  margin-top: 30px;
+  margin-top: 10px;
   color: #FFFFFF;
 }
 
