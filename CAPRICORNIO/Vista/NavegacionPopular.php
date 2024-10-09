@@ -3,7 +3,7 @@ echo'
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="../CSS/Style.css">
+    <link rel="stylesheet" href="../CSS/PopularStyle.css">
 </head>
 <body>
     <header class="header">
@@ -323,7 +323,7 @@ echo'
         </ul>
         
     </footer>
-    <script src="../JS/Script.js"></script>
+    <script src="../JS/PopularScript.js"></script>
 <a href="../Vista/CerrarSesion.php">Cerrar Sesion</a>
 </body>
 </html>

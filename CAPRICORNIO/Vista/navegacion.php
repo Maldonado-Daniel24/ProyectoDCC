@@ -37,7 +37,7 @@ echo'
 
     <section class="movies container">
      
-       <h2>Películas más vistas</h2>
+       <h2>Películas del Momento</h2>
        <hr>
 
         <div class="box-container-1">
@@ -129,7 +129,7 @@ echo'
 
     <section class="movies container">
      
-       <h2>Películas de Acción</h2>
+       <h2>Cine de Acción y Aventuras</h2>
        <hr>
 
         <div class="box-container-2">
@@ -221,7 +221,7 @@ echo'
 
      <section class="movies container">
      
-       <h2>Películas de Estreno</h2>
+       <h2>Cine de Terror</h2>
        <hr>
 
         <div class="box-container-3">
@@ -310,11 +310,651 @@ echo'
         <div class="load-more" id="load-more-3">Cargar más</div>
 
     </section>
-<div class="main-container" id="box-container-1">
- <section class="movies container">
- </section>
-</div>
-<div class="spinner" id="spinner"></div>
+
+     <section class="movies container">
+     
+       <h2>Películas de Ciencia Ficción</h2>
+       <hr>
+
+        <div class="box-container-4">
+
+            <div class="box-4">
+                <div class="content">
+                   <img src="../IMG/17.jpg" alt="">
+                   <h3>Película HD</h3>
+                   <p>
+                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                   </p>
+                </div>
+            </div>
+
+            <div class="box-4">
+                <div class="content">
+                   <img src="../IMG/18.jpg" alt="">
+                   <h3>Película HD</h3>
+                   <p>
+                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                   </p>
+                </div>
+            </div>
+
+            <div class="box-4">
+                <div class="content">
+                   <img src="../IMG/19.jpg" alt="">
+                   <h3>Película HD</h3>
+                   <p>
+                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                   </p>
+                </div>
+            </div>
+
+            <div class="box-4">
+                <div class="content">
+                   <img src="../IMG/20.jpg" alt="">
+                   <h3>Película HD</h3>
+                   <p>
+                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                   </p>
+                </div>
+            </div>
+
+            <div class="box-4">
+                <div class="content">
+                   <img src="../IMG/21.jpg" alt="">
+                   <h3>Película HD</h3>
+                   <p>
+                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                   </p>
+                </div>
+            </div>
+
+            <div class="box-4">
+                <div class="content">
+                   <img src="../IMG/22.jpg" alt="">
+                   <h3>Película HD</h3>
+                   <p>
+                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                   </p>
+                </div>
+            </div>
+
+            <div class="box-4">
+                <div class="content">
+                   <img src="../IMG/23.jpg" alt="">
+                   <h3>Película HD</h3>
+                   <p>
+                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                   </p>
+                </div>
+            </div>
+
+            <div class="box-4">
+                <div class="content">
+                   <img src="../IMG/24.jpg" alt="">
+                   <h3>Película HD</h3>
+                   <p>
+                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                   </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="load-more" id="load-more-4">Cargar más</div>
+
+    </section>
+
+    <section class="movies container">
+     
+       <h2>Películas de Comedia</h2>
+       <hr>
+
+        <div class="box-container-5">
+
+            <div class="box-5">
+                <div class="content">
+                   <img src="../IMG/17.jpg" alt="">
+                   <h3>Película HD</h3>
+                   <p>
+                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                   </p>
+                </div>
+            </div>
+
+            <div class="box-5">
+                <div class="content">
+                   <img src="../IMG/18.jpg" alt="">
+                   <h3>Película HD</h3>
+                   <p>
+                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                   </p>
+                </div>
+            </div>
+
+            <div class="box-5">
+                <div class="content">
+                   <img src="../IMG/19.jpg" alt="">
+                   <h3>Película HD</h3>
+                   <p>
+                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                   </p>
+                </div>
+            </div>
+
+            <div class="box-5">
+                <div class="content">
+                   <img src="../IMG/20.jpg" alt="">
+                   <h3>Película HD</h3>
+                   <p>
+                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                   </p>
+                </div>
+            </div>
+
+            <div class="box-5">
+                <div class="content">
+                   <img src="../IMG/21.jpg" alt="">
+                   <h3>Película HD</h3>
+                   <p>
+                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                   </p>
+                </div>
+            </div>
+
+            <div class="box-5">
+                <div class="content">
+                   <img src="../IMG/22.jpg" alt="">
+                   <h3>Película HD</h3>
+                   <p>
+                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                   </p>
+                </div>
+            </div>
+
+            <div class="box-5">
+                <div class="content">
+                   <img src="../IMG/23.jpg" alt="">
+                   <h3>Película HD</h3>
+                   <p>
+                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                   </p>
+                </div>
+            </div>
+
+            <div class="box-5">
+                <div class="content">
+                   <img src="../IMG/24.jpg" alt="">
+                   <h3>Película HD</h3>
+                   <p>
+                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                   </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="load-more" id="load-more-5">Cargar más</div>
+
+    </section>
+
+    <section class="movies container">
+     
+       <h2>Series de Comedia</h2>
+       <hr>
+
+        <div class="box-container-6">
+
+            <div class="box-6">
+                <div class="content">
+                   <img src="../IMG/17.jpg" alt="">
+                   <h3>Película HD</h3>
+                   <p>
+                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                   </p>
+                </div>
+            </div>
+
+            <div class="box-6">
+                <div class="content">
+                   <img src="../IMG/18.jpg" alt="">
+                   <h3>Película HD</h3>
+                   <p>
+                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                   </p>
+                </div>
+            </div>
+
+            <div class="box-6">
+                <div class="content">
+                   <img src="../IMG/19.jpg" alt="">
+                   <h3>Película HD</h3>
+                   <p>
+                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                   </p>
+                </div>
+            </div>
+
+            <div class="box-6">
+                <div class="content">
+                   <img src="../IMG/20.jpg" alt="">
+                   <h3>Película HD</h3>
+                   <p>
+                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                   </p>
+                </div>
+            </div>
+
+            <div class="box-6">
+                <div class="content">
+                   <img src="../IMG/21.jpg" alt="">
+                   <h3>Película HD</h3>
+                   <p>
+                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                   </p>
+                </div>
+            </div>
+
+            <div class="box-6">
+                <div class="content">
+                   <img src="../IMG/22.jpg" alt="">
+                   <h3>Película HD</h3>
+                   <p>
+                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                   </p>
+                </div>
+            </div>
+
+            <div class="box-6">
+                <div class="content">
+                   <img src="../IMG/23.jpg" alt="">
+                   <h3>Película HD</h3>
+                   <p>
+                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                   </p>
+                </div>
+            </div>
+
+            <div class="box-6">
+                <div class="content">
+                   <img src="../IMG/24.jpg" alt="">
+                   <h3>Película HD</h3>
+                   <p>
+                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                   </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="load-more" id="load-more-6">Cargar más</div>
+
+    </section>
+
+    <section class="movies container">
+     
+       <h2>Series de Anime</h2>
+       <hr>
+
+        <div class="box-container-7">
+
+            <div class="box-7">
+                <div class="content">
+                   <img src="../IMG/17.jpg" alt="">
+                   <h3>Película HD</h3>
+                   <p>
+                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                   </p>
+                </div>
+            </div>
+
+            <div class="box-7">
+                <div class="content">
+                   <img src="../IMG/18.jpg" alt="">
+                   <h3>Película HD</h3>
+                   <p>
+                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                   </p>
+                </div>
+            </div>
+
+            <div class="box-7">
+                <div class="content">
+                   <img src="../IMG/19.jpg" alt="">
+                   <h3>Película HD</h3>
+                   <p>
+                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                   </p>
+                </div>
+            </div>
+
+            <div class="box-7">
+                <div class="content">
+                   <img src="../IMG/20.jpg" alt="">
+                   <h3>Película HD</h3>
+                   <p>
+                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                   </p>
+                </div>
+            </div>
+
+            <div class="box-7">
+                <div class="content">
+                   <img src="../IMG/21.jpg" alt="">
+                   <h3>Película HD</h3>
+                   <p>
+                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                   </p>
+                </div>
+            </div>
+
+            <div class="box-7">
+                <div class="content">
+                   <img src="../IMG/22.jpg" alt="">
+                   <h3>Película HD</h3>
+                   <p>
+                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                   </p>
+                </div>
+            </div>
+
+            <div class="box-7">
+                <div class="content">
+                   <img src="../IMG/23.jpg" alt="">
+                   <h3>Película HD</h3>
+                   <p>
+                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                   </p>
+                </div>
+            </div>
+
+            <div class="box-7">
+                <div class="content">
+                   <img src="../IMG/24.jpg" alt="">
+                   <h3>Película HD</h3>
+                   <p>
+                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                   </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="load-more" id="load-more-7">Cargar más</div>
+
+    </section>
+
+    <section class="movies container">
+     
+       <h2>TV de Misterio y Suspense</h2>
+       <hr>
+
+        <div class="box-container-8">
+
+            <div class="box-8">
+                <div class="content">
+                   <img src="../IMG/17.jpg" alt="">
+                   <h3>Película HD</h3>
+                   <p>
+                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                   </p>
+                </div>
+            </div>
+
+            <div class="box-8">
+                <div class="content">
+                   <img src="../IMG/18.jpg" alt="">
+                   <h3>Película HD</h3>
+                   <p>
+                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                   </p>
+                </div>
+            </div>
+
+            <div class="box-8">
+                <div class="content">
+                   <img src="../IMG/19.jpg" alt="">
+                   <h3>Película HD</h3>
+                   <p>
+                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                   </p>
+                </div>
+            </div>
+
+            <div class="box-8">
+                <div class="content">
+                   <img src="../IMG/20.jpg" alt="">
+                   <h3>Película HD</h3>
+                   <p>
+                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                   </p>
+                </div>
+            </div>
+
+            <div class="box-8">
+                <div class="content">
+                   <img src="../IMG/21.jpg" alt="">
+                   <h3>Película HD</h3>
+                   <p>
+                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                   </p>
+                </div>
+            </div>
+
+            <div class="box-8">
+                <div class="content">
+                   <img src="../IMG/22.jpg" alt="">
+                   <h3>Película HD</h3>
+                   <p>
+                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                   </p>
+                </div>
+            </div>
+
+            <div class="box-8">
+                <div class="content">
+                   <img src="../IMG/23.jpg" alt="">
+                   <h3>Película HD</h3>
+                   <p>
+                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                   </p>
+                </div>
+            </div>
+
+            <div class="box-8">
+                <div class="content">
+                   <img src="../IMG/24.jpg" alt="">
+                   <h3>Película HD</h3>
+                   <p>
+                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                   </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="load-more" id="load-more-8">Cargar más</div>
+
+    </section>
+
+    <section class="movies container">
+     
+       <h2>Series Dramáticas</h2>
+       <hr>
+
+        <div class="box-container-9">
+
+            <div class="box-9">
+                <div class="content">
+                   <img src="../IMG/17.jpg" alt="">
+                   <h3>Película HD</h3>
+                   <p>
+                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                   </p>
+                </div>
+            </div>
+
+            <div class="box-9">
+                <div class="content">
+                   <img src="../IMG/18.jpg" alt="">
+                   <h3>Película HD</h3>
+                   <p>
+                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                   </p>
+                </div>
+            </div>
+
+            <div class="box-9">
+                <div class="content">
+                   <img src="../IMG/19.jpg" alt="">
+                   <h3>Película HD</h3>
+                   <p>
+                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                   </p>
+                </div>
+            </div>
+
+            <div class="box-9">
+                <div class="content">
+                   <img src="../IMG/20.jpg" alt="">
+                   <h3>Película HD</h3>
+                   <p>
+                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                   </p>
+                </div>
+            </div>
+
+            <div class="box-9">
+                <div class="content">
+                   <img src="../IMG/21.jpg" alt="">
+                   <h3>Película HD</h3>
+                   <p>
+                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                   </p>
+                </div>
+            </div>
+
+            <div class="box-9">
+                <div class="content">
+                   <img src="../IMG/22.jpg" alt="">
+                   <h3>Película HD</h3>
+                   <p>
+                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                   </p>
+                </div>
+            </div>
+
+            <div class="box-9">
+                <div class="content">
+                   <img src="../IMG/23.jpg" alt="">
+                   <h3>Película HD</h3>
+                   <p>
+                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                   </p>
+                </div>
+            </div>
+
+            <div class="box-9">
+                <div class="content">
+                   <img src="../IMG/24.jpg" alt="">
+                   <h3>Película HD</h3>
+                   <p>
+                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                   </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="load-more" id="load-more-9">Cargar más</div>
+
+    </section>
+
+    <section class="movies container">
+     
+       <h2>Series de Ciencia Ficción</h2>
+       <hr>
+
+        <div class="box-container-10">
+
+            <div class="box-10">
+                <div class="content">
+                   <img src="../IMG/17.jpg" alt="">
+                   <h3>Película HD</h3>
+                   <p>
+                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                   </p>
+                </div>
+            </div>
+
+            <div class="box-10">
+                <div class="content">
+                   <img src="../IMG/18.jpg" alt="">
+                   <h3>Película HD</h3>
+                   <p>
+                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                   </p>
+                </div>
+            </div>
+
+            <div class="box-10">
+                <div class="content">
+                   <img src="../IMG/19.jpg" alt="">
+                   <h3>Película HD</h3>
+                   <p>
+                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                   </p>
+                </div>
+            </div>
+
+            <div class="box-10">
+                <div class="content">
+                   <img src="../IMG/20.jpg" alt="">
+                   <h3>Película HD</h3>
+                   <p>
+                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                   </p>
+                </div>
+            </div>
+
+            <div class="box-10">
+                <div class="content">
+                   <img src="../IMG/21.jpg" alt="">
+                   <h3>Película HD</h3>
+                   <p>
+                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                   </p>
+                </div>
+            </div>
+
+            <div class="box-10">
+                <div class="content">
+                   <img src="../IMG/22.jpg" alt="">
+                   <h3>Película HD</h3>
+                   <p>
+                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                   </p>
+                </div>
+            </div>
+
+            <div class="box-10">
+                <div class="content">
+                   <img src="../IMG/23.jpg" alt="">
+                   <h3>Película HD</h3>
+                   <p>
+                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                   </p>
+                </div>
+            </div>
+
+            <div class="box-10">
+                <div class="content">
+                   <img src="../IMG/24.jpg" alt="">
+                   <h3>Película HD</h3>
+                   <p>
+                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                   </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="load-more" id="load-more-10">Cargar más</div>
+
+    </section>
+    
     <footer class="footer container">
     
         <h3>Capricornio</h3>
@@ -326,8 +966,9 @@ echo'
         </ul>
         
     </footer>
-    <script src="../JS/Scroll.js"></script>
     <script src="../JS/Script.js"></script>
+    <script src="../JS/Menu.js"></script>
+
 <a href="../Vista/CerrarSesion.php">Cerrar Sesion</a>
 </body>
 </html>

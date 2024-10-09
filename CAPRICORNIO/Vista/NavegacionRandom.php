@@ -3,7 +3,7 @@ echo'
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="../CSS/Style.css">
+    <link rel="stylesheet" href="../CSS/RandomStyle.css">
 </head>
 <body>
     <header class="header">
@@ -323,7 +323,7 @@ echo'
         </ul>
         
     </footer>
-    <script src="../JS/Script.js"></script>
+    <script src="../JS/RandomScript.js"></script>
 <a href="../Vista/CerrarSesion.php">Cerrar Sesion</a>
 </body>
 </html>

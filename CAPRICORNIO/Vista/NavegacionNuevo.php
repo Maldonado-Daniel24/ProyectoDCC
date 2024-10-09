@@ -37,12 +37,12 @@ echo'
 
     <section class="movies container">
      
-       <h2>Series del momento</h2>
+       <h2>De las Últimas 24 Horas</h2>
        <hr>
 
-        <div class="box-container-1">
+        <div class="n-box-container-1">
 
-            <div class="box-1">
+            <div class="n-box-1">
                 <div class="content">
                    <img src="../IMG/1.jpg" alt="">
                    <h3>Película HD</h3>
@@ -52,7 +52,7 @@ echo'
                 </div>
             </div>
 
-            <div class="box-1">
+            <div class="n-box-1">
                 <div class="content">
                    <img src="../IMG/2.jpg" alt="">
                    <h3>Película HD</h3>
@@ -62,7 +62,7 @@ echo'
                 </div>
             </div>
 
-            <div class="box-1">
+            <div class="n-box-1">
                 <div class="content">
                    <img src="../IMG/3.jpg" alt="">
                    <h3>Película HD</h3>
@@ -72,7 +72,7 @@ echo'
                 </div>
             </div>
 
-            <div class="box-1">
+            <div class="n-box-1">
                 <div class="content">
                    <img src="../IMG/4.jpg" alt="">
                    <h3>Película HD</h3>
@@ -82,7 +82,7 @@ echo'
                 </div>
             </div>
 
-            <div class="box-1">
+            <div class="n-box-1">
                 <div class="content">
                    <img src="../IMG/5.jpg" alt="">
                    <h3>Película HD</h3>
@@ -92,7 +92,7 @@ echo'
                 </div>
             </div>
 
-            <div class="box-1">
+            <div class="n-box-1">
                 <div class="content">
                    <img src="../IMG/6.jpg" alt="">
                    <h3>Película HD</h3>
@@ -102,7 +102,7 @@ echo'
                 </div>
             </div>
 
-            <div class="box-1">
+            <div class="n-box-1">
                 <div class="content">
                    <img src="../IMG/7.jpg" alt="">
                    <h3>Película HD</h3>
@@ -112,7 +112,7 @@ echo'
                 </div>
             </div>
 
-            <div class="box-1">
+            <div class="n-box-1">
                 <div class="content">
                    <img src="../IMG/8.jpg" alt="">
                    <h3>Película HD</h3>
@@ -123,18 +123,18 @@ echo'
             </div>
         </div>
 
-        <div class="load-more" id="load-more-1">Cargar más</div>
+        <div class="load-more" id="n-load-more-1">Cargar más</div>
 
     </section>
 
     <section class="movies container">
      
-       <h2>Películas del Momento</h2>
+       <h2>De la Última Semana</h2>
        <hr>
 
-        <div class="box-container-2">
+        <div class="n-box-container-2">
 
-            <div class="box-2">
+            <div class="n-box-2">
                 <div class="content">
                    <img src="../IMG/9.jpg" alt="">
                    <h3>Película HD</h3>
@@ -144,7 +144,7 @@ echo'
                 </div>
             </div>
 
-            <div class="box-2">
+            <div class="n-box-2">
                 <div class="content">
                    <img src="../IMG/10.jpg" alt="">
                    <h3>Película HD</h3>
@@ -154,7 +154,7 @@ echo'
                 </div>
             </div>
 
-            <div class="box-2">
+            <div class="n-box-2">
                 <div class="content">
                    <img src="../IMG/11.jpg" alt="">
                    <h3>Película HD</h3>
@@ -164,7 +164,7 @@ echo'
                 </div>
             </div>
 
-            <div class="box-2">
+            <div class="n-box-2">
                 <div class="content">
                    <img src="../IMG/12.jpg" alt="">
                    <h3>Película HD</h3>
@@ -174,7 +174,7 @@ echo'
                 </div>
             </div>
 
-            <div class="box-2">
+            <div class="n-box-2">
                 <div class="content">
                    <img src="../IMG/13.jpg" alt="">
                    <h3>Película HD</h3>
@@ -184,7 +184,7 @@ echo'
                 </div>
             </div>
 
-            <div class="box-2">
+            <div class="n-box-2">
                 <div class="content">
                    <img src="../IMG/14.jpg" alt="">
                    <h3>Película HD</h3>
@@ -194,7 +194,7 @@ echo'
                 </div>
             </div>
 
-            <div class="box-2">
+            <div class="n-box-2">
                 <div class="content">
                    <img src="../IMG/15.jpg" alt="">
                    <h3>Película HD</h3>
@@ -204,7 +204,7 @@ echo'
                 </div>
             </div>
 
-            <div class="box-2">
+            <div class="n-box-2">
                 <div class="content">
                    <img src="../IMG/16.jpg" alt="">
                    <h3>Película HD</h3>
@@ -215,18 +215,18 @@ echo'
             </div>
         </div>
 
-        <div class="load-more" id="load-more-2">Cargar más</div>
+        <div class="load-more" id="n-load-more-2">Cargar más</div>
 
     </section>
 
      <section class="movies container">
      
-       <h2>Lo Nuevo en Romance</h2>
+       <h2>Del Último Mes</h2>
        <hr>
 
-        <div class="box-container-3">
+        <div class="n-box-container-3">
 
-            <div class="box-3">
+            <div class="n-box-3">
                 <div class="content">
                    <img src="../IMG/17.jpg" alt="">
                    <h3>Película HD</h3>
@@ -236,7 +236,7 @@ echo'
                 </div>
             </div>
 
-            <div class="box-3">
+            <div class="n-box-3">
                 <div class="content">
                    <img src="../IMG/18.jpg" alt="">
                    <h3>Película HD</h3>
@@ -246,7 +246,7 @@ echo'
                 </div>
             </div>
 
-            <div class="box-3">
+            <div class="n-box-3">
                 <div class="content">
                    <img src="../IMG/19.jpg" alt="">
                    <h3>Película HD</h3>
@@ -256,7 +256,7 @@ echo'
                 </div>
             </div>
 
-            <div class="box-3">
+            <div class="n-box-3">
                 <div class="content">
                    <img src="../IMG/20.jpg" alt="">
                    <h3>Película HD</h3>
@@ -266,7 +266,7 @@ echo'
                 </div>
             </div>
 
-            <div class="box-3">
+            <div class="n-box-3">
                 <div class="content">
                    <img src="../IMG/21.jpg" alt="">
                    <h3>Película HD</h3>
@@ -276,7 +276,7 @@ echo'
                 </div>
             </div>
 
-            <div class="box-3">
+            <div class="n-box-3">
                 <div class="content">
                    <img src="../IMG/22.jpg" alt="">
                    <h3>Película HD</h3>
@@ -286,7 +286,7 @@ echo'
                 </div>
             </div>
 
-            <div class="box-3">
+            <div class="n-box-3">
                 <div class="content">
                    <img src="../IMG/23.jpg" alt="">
                    <h3>Película HD</h3>
@@ -296,7 +296,7 @@ echo'
                 </div>
             </div>
 
-            <div class="box-3">
+            <div class="n-box-3">
                 <div class="content">
                    <img src="../IMG/24.jpg" alt="">
                    <h3>Película HD</h3>
@@ -307,10 +307,102 @@ echo'
             </div>
         </div>
 
-        <div class="load-more" id="load-more-3">Cargar más</div>
+        <div class="load-more" id="n-load-more-3">Cargar más</div>
 
     </section>
 
+     <section class="movies container">
+     
+       <h2>De Este Año</h2>
+       <hr>
+
+        <div class="n-box-container-4">
+
+            <div class="n-box-4">
+                <div class="content">
+                   <img src="../IMG/17.jpg" alt="">
+                   <h3>Película HD</h3>
+                   <p>
+                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                   </p>
+                </div>
+            </div>
+
+            <div class="n-box-4">
+                <div class="content">
+                   <img src="../IMG/18.jpg" alt="">
+                   <h3>Película HD</h3>
+                   <p>
+                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                   </p>
+                </div>
+            </div>
+
+            <div class="n-box-4">
+                <div class="content">
+                   <img src="../IMG/19.jpg" alt="">
+                   <h3>Película HD</h3>
+                   <p>
+                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                   </p>
+                </div>
+            </div>
+
+            <div class="n-box-4">
+                <div class="content">
+                   <img src="../IMG/20.jpg" alt="">
+                   <h3>Película HD</h3>
+                   <p>
+                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                   </p>
+                </div>
+            </div>
+
+            <div class="n-box-4">
+                <div class="content">
+                   <img src="../IMG/21.jpg" alt="">
+                   <h3>Película HD</h3>
+                   <p>
+                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                   </p>
+                </div>
+            </div>
+
+            <div class="n-box-4">
+                <div class="content">
+                   <img src="../IMG/22.jpg" alt="">
+                   <h3>Película HD</h3>
+                   <p>
+                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                   </p>
+                </div>
+            </div>
+
+            <div class="n-box-4">
+                <div class="content">
+                   <img src="../IMG/23.jpg" alt="">
+                   <h3>Película HD</h3>
+                   <p>
+                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                   </p>
+                </div>
+            </div>
+
+            <div class="n-box-4">
+                <div class="content">
+                   <img src="../IMG/24.jpg" alt="">
+                   <h3>Película HD</h3>
+                   <p>
+                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                   </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="load-more" id="n-load-more-4">Cargar más</div>
+
+    </section>
+    
     <footer class="footer container">
 
         <h3>Capricornio</h3>
@@ -323,7 +415,8 @@ echo'
         </ul>
         
     </footer>
-    <script src="../JS/Script.js"></script>
+    <script src="../JS/NuevoMenu.js"></script>
+    <script src="../JS/NuevoScript.js"></script>
 <a href="../Vista/CerrarSesion.php">Cerrar Sesion</a>
 </body>
 </html>
