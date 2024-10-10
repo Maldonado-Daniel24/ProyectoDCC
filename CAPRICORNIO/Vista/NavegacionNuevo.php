@@ -3,7 +3,7 @@ echo'
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="../CSS/NuevoStyle.css">
+    <link rel="stylesheet" href="../CSS/NewStyle.css">
 </head>
 <body>
     <header class="header">
