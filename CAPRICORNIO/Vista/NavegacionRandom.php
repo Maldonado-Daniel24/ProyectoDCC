@@ -316,13 +316,14 @@ echo'
         <h3>Capricornio</h3>
 
         <ul>
-           <li><a href="#">Inicio</li>
-           <li><a href="#">Nosotros</li>
-           <li><a href="#">Películas</li>
-           <li><a href="#">Contacto</li>
+           <li><a href="../Vista/navegacion.php">Inicio</li>
+           <li><a href="../Vista/NavegacionNuevo.php">Nuevo</li>
+           <li><a href="../Vista/NavegacionPopular.php">Popular</li>
+           <li><a href="../Vista/NavegacionRandom.php">Random</li>
         </ul>
         
     </footer>
+    <script src="../JS/RandomMenu.js"></script>
     <script src="../JS/RandomScript.js"></script>
 <a href="../Vista/CerrarSesion.php">Cerrar Sesion</a>
 </body>
