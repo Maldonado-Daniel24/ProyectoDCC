@@ -36,6 +36,9 @@ echo'
         </div>      
     </header>
 <section class="carrusel">
+
+<img src="../IMG/flecha-izquierda.png" class="swiper-button-prev" alt="">
+
     <div class="swiper mySwiper">
 
         <div class="swiper-wrapper">
@@ -72,7 +75,7 @@ echo'
             </div>
 
         </div>
-        <button class="avance">→</button>>
+        <img src="../IMG/flecha.png" class="swiper-button-next" alt="">
     </div>
 
     </section>
