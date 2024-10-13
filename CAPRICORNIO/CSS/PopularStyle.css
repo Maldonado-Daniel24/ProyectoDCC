@@ -14,6 +14,128 @@ body{
   color: #FFFFFF
 }
 
+.titulo{
+  color: rgb(255, 255, 255);
+    text-align: center;
+    margin-top: 0px;
+    margin-left: 422px;
+    font-size: 160px;
+    font-family: "Bebas Neue", sans-serif;
+    
+}
+
+.litas-desplegables{
+  background: #23242a;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  z-index: 99999;
+}
+
+.dropdown {
+  min-width: 15em;
+  position: relative;
+  margin: 2em;
+  width: 1000px;
+}
+
+.dropdown * {
+  box-sizing: border-box;
+}
+
+.select {
+  background: #2a2f3b;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px #2a2f3b solid;
+  border-radius: 0.5em;
+  padding: 1em;
+  cursor: pointer;
+  transition: background 0.3s;
+  margin-left: 571.5px;
+}
+
+.select.-clicked {
+  border: 2px #26489a solid;
+  box-shadow: 0.0.8em #26489a;
+}
+
+select:hover {
+  background: #323741;
+}
+
+.caret {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 6px solid #fff;
+  transition: 0.3s;
+}
+
+.caret-rotate {
+  transform: rotate(180deg);
+}
+
+.seleccion-desplegable {
+    list-style: none;
+    padding: 0.2em 0.5em;
+    background: #323741;
+    border: 1px #363a43 solid;
+    box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.2);
+    border-radius: 0.5em;
+    color: #9fa5b5;
+    position: absolute;
+    top: 3em;
+    margin-top: 10px;
+    left: 78.6%;
+    width: 424px;
+    transform: translateX(-50%);
+    opacity: 0;
+    display: none;
+    transition: opacity 0.3s ease, display 0s linear 0.3s;
+    z-index: 9999;
+
+}
+
+.seleccion-desplegable li {
+  padding: 0.7em 0.5em;
+  margin: 0.3em 0;
+  border-radius: 0.5em;
+  cursor: pointer;
+}
+
+.seleccion-desplegable li:hover {
+  background: #2a2d35;
+}
+
+.active {
+  background: #23242a;
+}
+
+.seleccion-desplegable.-open {
+  display: block;
+  opacity: 1;
+  transition: opacity 0.3s ease; /* Ahora solo transiciona la opacidad */
+}
+
+.listas{
+  color: rgb(255, 255, 255);
+  text-align: center;
+  margin-top: 230px;
+  margin-left: -490px;
+  font-size: 30px;
+  font-family: "Bebas Neue", sans-serif;
+  text-transform: lowercase;
+}
+
+.listas::first-letter {
+  text-transform: uppercase;
+}
 .container{
   max-width: 1200px;
   margin: 0 auto;
@@ -22,7 +144,7 @@ body{
 }
 
 .header {
-  background-image: url(../IMG/bg.jpg);
+  background-image: url(../IMG/fondo-popular.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -91,33 +213,6 @@ body{
 .header-content {
   display: flex;
   width: 100%;
-}
-
-.header-1 {
-  display: flex;
-  flex-direction: column;
-  width: 50%;
-  align-self: flex-end;
-}
-
-.header-1 img{
-  width: 300px;
-}
-
-.header-2 {
-  width: 50%;
-  margin-top: 80px;
-  text-align: end;
-}
-
-.header-2 h1 {
-  color:#FFFFFF72;
-  font-size: 80px;
-  line-height: 80px;
-}
-
-.header-2 img {
-  width: 70px;
 }
 
 .btn-1 {
@@ -192,6 +287,7 @@ hr{
   height: 100%;
   margin: 0;
   padding: 0;
+  margin-top: -100px;
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -234,3 +330,36 @@ hr{
     padding: 0 100px;
   }
 }
+
+img[src="../IMG/flecha-izquierda.png"] {
+  position: absolute;
+  top: 50%;
+  left: 30px; /* Ajusta esta distancia según tu preferencia */
+  transform: translateY(-50%);
+  z-index: 9999;
+  cursor: pointer;
+  width: 100px; /* Ajusta el tamaño según la imagen */
+}
+
+img[src="../IMG/flecha.png"] {
+  position: absolute;
+  top: 50%;
+  right: 30px; /* Ajusta esta distancia según tu preferencia */
+  transform: translateY(-50%);
+  z-index: 9999;
+  cursor: pointer;
+  width: 100px; /* Ajusta el tamaño según la imagen */
+}
+
+img[src="../IMG/flecha-izquierda.png"]:hover,
+img[src="../IMG/flecha.png"]:hover {
+  opacity: 0.8; /* Efecto de hover */
+}
+
+.custom-next.disabled,
+.custom-prev.disabled{
+  opacity: 0.5;
+  pointer-events: none; 
+}
+
+

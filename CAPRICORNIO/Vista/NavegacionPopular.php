@@ -24,20 +24,24 @@ echo'
             </nav>
             <a href="#" class="btn-1">Usuario</a>
         </div>
-        <div class="header-content container">
-          <div class="header-1">
-            <img src="../IMG/venom.png" alt="">
-            <a href="#" class="btn-2">Ver ahora</a>
-        </div>
-        <div class="header-2">
-            <h1>Las mejores <br> películas</h1>
-            <img src="../IMG/play.png" alt="">
-          </div>
-        </div>      
+        <h1 class="titulo">Top 10 global</h1>
+        <p class="listas">Listas semanales del Top 10 de <br> películas y TV más vistos</p>
     </header>
+<section class="lista-desplegable">
+<div class="dropdown">
+     <div class="select"> 
+         <span class="selected">Películas</span>
+         <div class="caret"></div>
+     </div>
+     <ul class="seleccion-desplegable">
+       <li>Películas</li>
+       <li>Series</li>
+     </ul>
+</div>
+</section>
 <section class="carrusel">
 
-<img src="../IMG/flecha-izquierda.png" class="swiper-button-prev" alt="">
+<img src="../IMG/flecha-izquierda.png" alt="" class="custom-prev" id="custom-prev">
 
     <div class="swiper mySwiper">
 
@@ -75,8 +79,9 @@ echo'
             </div>
 
         </div>
-        <img src="../IMG/flecha.png" class="swiper-button-next" alt="">
+    
     </div>
+    <img src="../IMG/flecha.png" alt="" class="custom-next" id="custom-next">
 
     </section>
 
@@ -92,9 +97,9 @@ echo'
         </ul>
         
     </footer>
+    <script src="../JS/PopularDesplegable.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="../JS/PopularMenu.js"></script>
-    <script src="../JS/PopularScript.js"></script>
     <script src="../JS/PopularCarrusel.js"></script>
 <a href="../Vista/CerrarSesion.php">Cerrar Sesion</a>
 </body>
