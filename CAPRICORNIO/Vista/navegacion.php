@@ -21,7 +21,15 @@ echo'
                 <li><a href="../Vista/NavegacionRandom.php">Random</a></li>
              </ul>
             </nav> 
-            <a href="#" class="btn-1">Usuario</a>
+            <a href="#" class="btn-1" id="btn-abrir-modal">Usuario</a>
+            <dialog id="modal">
+             <img src="../IMG/IMG-USUARIO.png" class="usuario"><h4>Cristian</h4>
+             <hr class="linea-usuario">
+             <section class="cierre-usuario">
+             <img src="../IMG/LogOut.png" class="logout"><a href="../Vista/CerrarSesion.php" class="cerrar-sesion">Cerrar Sesion</a><br>
+             </section>
+             <button class="modal-c "id="btn-cerrar-modal">Cerrar modal</button>
+            </dialog>
         </div>
         <div class="header-content container">
           <div class="header-1">
@@ -38,7 +46,7 @@ echo'
     <section class="movies container">
      
        <h2>Películas del Momento</h2>
-       <hr>
+       <hr class="linea-1">
 
         <div class="box-container-1">
 
@@ -130,7 +138,7 @@ echo'
     <section class="movies container">
      
        <h2>Cine de Acción y Aventuras</h2>
-       <hr>
+       <hr class="linea-2">
 
         <div class="box-container-2">
 
@@ -222,7 +230,7 @@ echo'
      <section class="movies container">
      
        <h2>Cine de Terror</h2>
-       <hr>
+       <hr class="linea-3">
 
         <div class="box-container-3">
 
@@ -314,7 +322,7 @@ echo'
      <section class="movies container">
      
        <h2>Películas de Ciencia Ficción</h2>
-       <hr>
+       <hr class="linea-4">
 
         <div class="box-container-4">
 
@@ -406,7 +414,7 @@ echo'
     <section class="movies container">
      
        <h2>Películas de Comedia</h2>
-       <hr>
+       <hr class="linea-5">
 
         <div class="box-container-5">
 
@@ -498,7 +506,7 @@ echo'
     <section class="movies container">
      
        <h2>Series de Comedia</h2>
-       <hr>
+       <hr class="linea-6">
 
         <div class="box-container-6">
 
@@ -590,7 +598,7 @@ echo'
     <section class="movies container">
      
        <h2>Series de Anime</h2>
-       <hr>
+       <hr class="linea-7">
 
         <div class="box-container-7">
 
@@ -682,7 +690,7 @@ echo'
     <section class="movies container">
      
        <h2>TV de Misterio y Suspense</h2>
-       <hr>
+       <hr class="linea-8">
 
         <div class="box-container-8">
 
@@ -774,7 +782,7 @@ echo'
     <section class="movies container">
      
        <h2>Series Dramáticas</h2>
-       <hr>
+       <hr class="linea-9">
 
         <div class="box-container-9">
 
@@ -866,7 +874,7 @@ echo'
     <section class="movies container">
      
        <h2>Series de Ciencia Ficción</h2>
-       <hr>
+       <hr class="linea-10">
 
         <div class="box-container-10">
 
@@ -968,8 +976,8 @@ echo'
     </footer>
     <script src="../JS/Script.js"></script>
     <script src="../JS/Menu.js"></script>
+    <script src="../JS/Modal.js"></script>
 
-<a href="../Vista/CerrarSesion.php">Cerrar Sesion</a>
 </body>
 </html>
 ';

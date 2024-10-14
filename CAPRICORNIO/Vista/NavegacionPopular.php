@@ -27,6 +27,7 @@ echo'
         <h1 class="titulo">Top 10 global</h1>
         <p class="listas">Listas semanales del Top 10 de <br> películas y TV más vistos</p>
     </header>
+<img src="../IMG/top10.png" class="top10">
 <section class="lista-desplegable">
 <div class="dropdown">
      <div class="select"> 

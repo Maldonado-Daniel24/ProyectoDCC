@@ -129,6 +129,48 @@ body{
   font-size: 20px;
 }
 
+img[src="../IMG/IMG-USUARIO.png"] {
+  width: 25px;
+}
+
+h4{
+  font-size: 20px;
+  font-family: "Roboto","Arial",sans-serif;
+  margin-left: 30px;
+  margin-top: -29px;
+}
+
+#modal {
+  margin-left: 1280px;
+  margin-top: 65px;
+  background: #282828;
+  color: #fff;
+  border: 1px #282828 solid;
+  border-radius: 0.5em;
+  transition: background 0.3s;
+  width: 500px;
+}
+
+.linea-usuario {
+  border: 1px solid #535353 solid;
+  width: 100%;
+}
+
+.cierre-usuario {
+  display: flex;
+}
+
+img[src="../IMG/LogOut.png"] {
+  position: relative;
+  width: 20px;
+  z-index: -9999;
+}
+
+.cerrar-sesion {
+  font-size: 5px;
+  font-family: "Roboto","Arial",sans-serif;
+}
+
 .btn-2 {
   width: 110px;
   display: inline-block;
@@ -150,7 +192,16 @@ h2{
   margin-bottom: 20px;
 }
 
-hr{
+.linea-1,
+.linea-2,
+.linea-3,
+.linea-4,
+.linea-5,
+.linea-6,
+.linea-7,
+.linea-8,
+.linea-9,
+.linea-10 {
   border: 1px solid #FF2F28;
   width: 50%;
   margin-bottom: 40px;
@@ -307,6 +358,7 @@ hr{
 
 .footer ul {
   display: flex;
+  margin-right: 0px;
 }
 
 .footer h3 {
@@ -349,6 +401,10 @@ hr{
 
   .btn-1 {
     display: none;
+  }
+
+  .modal {
+    margin-left: 600px;
   }
 
   menu:checked ~ .navbar{
