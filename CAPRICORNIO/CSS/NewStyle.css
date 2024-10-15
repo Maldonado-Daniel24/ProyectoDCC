@@ -130,6 +130,70 @@ body{
   font-size: 20px;
 }
 
+img[src="../IMG/close-icon.png"] {
+  position: relative;
+  width: 15px;
+  margin-left: 110px;
+  margin-top: 6px;
+  z-index: -9999;
+}
+
+.usuario-1 {
+  display: flex;
+}
+
+img[src="../IMG/IMG-USUARIO.png"] {
+  width: 25px;
+  z-index: -9999;
+}
+
+h4{
+  position:fixed;
+  font-size: 20px;
+  font-family: "Roboto","Arial",sans-serif;
+  margin-left: 25px;
+  margin-top: 2px;
+  z-index: 9999;
+}
+
+#modal {
+  margin-left: 1280px;
+  margin-top: 65px;
+  background: #282828;
+  color: #fff;
+  border: 1px #282828 solid;
+  border-radius: 0.5em;
+  transition: background 0.3s;
+  width: 160px;
+}
+
+.linea-usuario {
+  border: 1px solid #535353 solid;
+  width: 100%;
+}
+
+.cierre-usuario {
+  display: flex;
+  margin-top: 3px;
+}
+
+img[src="../IMG/LogOut.png"] {
+  position: relative;
+  width: 20px;
+  z-index: -9999;
+}
+
+.cerrar-sesion {
+  font-size: 20px;
+  margin-left: 5px;
+  color: #fff;
+  font-family: "Roboto","Arial",sans-serif;
+}
+
+.cerrar-sesion.active{
+  color: #FF2F28;
+}
+
 .btn-2 {
   width: 110px;
   display: inline-block;
@@ -151,7 +215,10 @@ h2{
   margin-bottom: 20px;
 }
 
-hr{
+.linea-1,
+.linea-2,
+.linea-3,
+.linea-4 {
   border: 1px solid #FF2F28;
   width: 50%;
   margin-bottom: 40px;

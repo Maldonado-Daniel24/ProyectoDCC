@@ -129,15 +129,30 @@ body{
   font-size: 20px;
 }
 
+img[src="../IMG/close-icon.png"] {
+  position: relative;
+  width: 15px;
+  margin-left: 110px;
+  margin-top: 6px;
+  z-index: -9999;
+}
+
+.usuario-1 {
+  display: flex;
+}
+
 img[src="../IMG/IMG-USUARIO.png"] {
   width: 25px;
+  z-index: -9999;
 }
 
 h4{
+  position:fixed;
   font-size: 20px;
   font-family: "Roboto","Arial",sans-serif;
-  margin-left: 30px;
-  margin-top: -29px;
+  margin-left: 25px;
+  margin-top: 2px;
+  z-index: 9999;
 }
 
 #modal {
@@ -148,7 +163,7 @@ h4{
   border: 1px #282828 solid;
   border-radius: 0.5em;
   transition: background 0.3s;
-  width: 500px;
+  width: 160px;
 }
 
 .linea-usuario {
@@ -158,6 +173,7 @@ h4{
 
 .cierre-usuario {
   display: flex;
+  margin-top: 3px;
 }
 
 img[src="../IMG/LogOut.png"] {
@@ -167,8 +183,14 @@ img[src="../IMG/LogOut.png"] {
 }
 
 .cerrar-sesion {
-  font-size: 5px;
+  font-size: 20px;
+  margin-left: 5px;
+  color: #fff;
   font-family: "Roboto","Arial",sans-serif;
+}
+
+.cerrar-sesion.active{
+  color: #FF2F28;
 }
 
 .btn-2 {

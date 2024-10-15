@@ -18,17 +18,18 @@ echo'
                 <li><a href="../Vista/navegacion.php">Inicio</a></li>
                 <li><a href="../Vista/NavegacionNuevo.php">Nuevo</a></li>
                 <li><a href="../Vista/NavegacionPopular.php">Popular</a></li>
-                <li><a href="../Vista/NavegacionRandom.php">Random</a></li>
+                <li><a href="">Random</a></li>
              </ul>
             </nav> 
             <a href="#" class="btn-1" id="btn-abrir-modal">Usuario</a>
             <dialog id="modal">
-             <img src="../IMG/IMG-USUARIO.png" class="usuario"><h4>Cristian</h4>
+             <section class="usuario-1">
+             <img src="../IMG/IMG-USUARIO.png" class="usuario"><h4>Cristian</h4><a href="" class="modal-c" "id="btn-cerrar-modal"><img src="../IMG/close-icon.png" ></a>
+             </section>
              <hr class="linea-usuario">
              <section class="cierre-usuario">
              <img src="../IMG/LogOut.png" class="logout"><a href="../Vista/CerrarSesion.php" class="cerrar-sesion">Cerrar Sesion</a><br>
              </section>
-             <button class="modal-c "id="btn-cerrar-modal">Cerrar modal</button>
             </dialog>
         </div>
         <div class="header-content container">
@@ -977,6 +978,7 @@ echo'
     <script src="../JS/Script.js"></script>
     <script src="../JS/Menu.js"></script>
     <script src="../JS/Modal.js"></script>
+    <script src="../JS/Usuario.js"></script>
 
 </body>
 </html>

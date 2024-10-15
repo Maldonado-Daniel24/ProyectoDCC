@@ -19,10 +19,19 @@ echo'
                 <li><a href="../Vista/navegacion.php">Inicio</a></li>
                 <li><a href="../Vista/NavegacionNuevo.php">Nuevo</a></li>
                 <li><a href="../Vista/NavegacionPopular.php">Popular</a></li>
-                <li><a href="../Vista/NavegacionRandom.php">Random</a></li>
+                <li><a href="">Random</a></li>
              </ul>
             </nav>
-            <a href="#" class="btn-1">Usuario</a>
+             <a href="#" class="btn-1" id="btn-abrir-modal">Usuario</a>
+             <dialog id="modal">
+             <section class="usuario-1">
+             <img src="../IMG/IMG-USUARIO.png" class="usuario"><h4>Cristian</h4><a href="" class="modal-c" "id="btn-cerrar-modal"><img src="../IMG/close-icon.png" ></a>
+             </section>
+             <hr class="linea-usuario">
+             <section class="cierre-usuario">
+             <img src="../IMG/LogOut.png" class="logout"><a href="../Vista/CerrarSesion.php" class="cerrar-sesion">Cerrar Sesion</a><br>
+             </section>
+            </dialog>
         </div>
         <h1 class="titulo">Top 10 global</h1>
         <p class="listas">Listas semanales del Top 10 de <br> películas y TV más vistos</p>
@@ -100,6 +109,8 @@ echo'
     </footer>
     <script src="../JS/PopularDesplegable.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="../JS/PopularModal.js"></script>
+    <script src="../JS/PopularUsuario.js"></script>
     <script src="../JS/PopularMenu.js"></script>
     <script src="../JS/PopularCarrusel.js"></script>
 <a href="../Vista/CerrarSesion.php">Cerrar Sesion</a>
