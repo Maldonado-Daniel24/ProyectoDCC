@@ -18,7 +18,7 @@ echo'
                 <li><a href="../Vista/navegacion.php">Inicio</a></li>
                 <li><a href="../Vista/NavegacionNuevo.php">Nuevo</a></li>
                 <li><a href="../Vista/NavegacionPopular.php">Popular</a></li>
-                <li><a href="../Vista/NavegacionRandom.php">Random</a></li>
+                <li><a href="">Random</a></li>
              </ul>
             </nav>
             <a href="#" class="btn-1" id="btn-abrir-modal">Usuario</a>
