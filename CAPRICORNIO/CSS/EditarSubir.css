@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+body{
+    background-image: url(../IMG/FONDO-INICIARSESSION.png);
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: 100vh; /* Ocupa toda la altura de la ventana */
+    margin: 0; /* Elimina el margen por defecto */
+    font-family: "Bebas Neue", sans-serif;
+}
+
+
+.contenedor_Editar{
+    background-color: rgb(32, 32, 32);
+    color: white;
+    width: 500px;
+    height: 600px;
+    border-radius: 15px 15px 15px 15px;
+    text-align: left;
+    padding: 15px;
+    
+}
+
+.titulo{
+    background-color: black;
+    color: white;
+    border-radius: 15px 15px 15px 15px;
+    width: 480px;
+    height: 40px;
+    padding: 10px;
+    text-align: justify;
+    outline: none;
+    font-size: 15px;
+    box-shadow: none;
+    transition: border-color 0.3s;
+    border: 1px solid #727272;
+    align-items: center;
+}
+
+
+.descripcion{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    margin-top: 10px;
+    border-radius: 15px 15px 15px 15px;
+    width: 500px;
+    height: 65px;
+    padding: 10px;
+    outline: none;
+    font-size: 15px;
+    box-shadow: none;
+    transition: border-color 0.3s;
+    border: 1px solid #727272;
+    box-sizing: border-box;
+    line-height: 20px;
+    align-items: center;
+    
+}
+
+h4{
+    color: #888888;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-top: 0px;
+    
+}
+
+
+.Btn_Regresar{
+    background-color: transparent;
+    color: #ffffff;
+    border: none;
+    font-size: 40px;
+    cursor: pointer;
+    position: absolute;
+    margin-left: 465px;
+}
+
+.Genero{
+    background-color: black;
+    transition: border-color 0.3s;
+    border: 1px solid #727272;
+    color: rgb(255, 255, 255);
+    height: 30px;
+    border-radius: 8px 8px 8px 8px;
+    text-align: center;
+}
+
+.Text_Img{
+    position: absolute;
+    top: 265px;
+}
+
+.Text_gen{
+    position: absolute;
+    top: 425px;
+}
+
+.platafor{
+    position: absolute;
+    top: 470px;
+    
+}
+
+.Text_pla{
+    position: absolute;
+    top: 495px;
+    right: 627px;
+}
+#Etiquetas{
+    position: absolute;
+    top: 510px;
+    right: 445px;
+}
+
+.Generos{
+    position: absolute;
+    top: 400px;
+}
+
+.btn_guardar{
+    position: absolute;
+    top: 580px;
+    left: 420px;
+    background-color: #ffffff;
+    border-radius: 8px 8px 8px 8px;
+    height: 40px;
+    width: 510px;
+    cursor: pointer;
+
+}
+
+#Genero{
+    position: absolute;
+    top: 440px;
+    right: 465px;
+}
+
+.videoEditar{
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    position: absolute;
+    top: 100px;
+    right: 190px;
+}
+
+h1{
+    text-align: center;
+}
+
+.imagen{
+    position: absolute;
+    left: 433px;
+}
+
+.video{
+    position: absolute;
+    left: 433px;
+    top: 385px;
+}
+
+.Text_Vid{
+    position: absolute;
+    top: 339px;
+}
+
+.text_trailer{
+   position: absolute;
+   top: 315px;
+}

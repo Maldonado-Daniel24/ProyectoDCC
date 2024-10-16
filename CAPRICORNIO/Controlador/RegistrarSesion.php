@@ -20,8 +20,7 @@ if (!empty($_POST["ContraseñaUsuario"]) && !empty($_POST["NombreUsuario"])) {
      if ($Resultado == false) { $Mensaje="No se pudo registrar al usuario";
         //die($mysqli_error($Conexion));
     }
-     else {$Mensaje="El usuario se registro correctamente :D";}
-     echo "<h2>" . $Mensaje . "</h2>";
+     else {header("Location: ../Vista/navegacion.php");}
      } //Fin del If
 
     ?>
