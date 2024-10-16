@@ -25,7 +25,7 @@ echo'
              <a href="#" class="btn-1" id="btn-abrir-modal">Usuario</a>
              <dialog id="modal">
              <section class="usuario-1">
-             <img src="../IMG/IMG-USUARIO.png" class="usuario"><h4>Cristian</h4><a href="" class="modal-c" "id="btn-cerrar-modal"><img src="../IMG/close-icon.png">
+             <img src="../IMG/IMG-USUARIO.png" class="usuario"><h4>Cristian</h4><a href="" "id="btn-cerrar-modal"><img src="../IMG/close-icon.png">
              </section>
              <hr class="linea-usuario">
              <section class="cierre-usuario">
