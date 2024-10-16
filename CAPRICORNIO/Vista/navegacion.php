@@ -53,7 +53,7 @@ echo'
 
             <div class="box-1">
                 <div class="content">
-                   <img src="../IMG/1.jpg" alt="">
+                   <a href="../Vista/Reproduccion.php"><img src="../IMG/1.jpg" alt=""></a>
                    <h3>Película HD</h3>
                    <p>
                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -63,7 +63,7 @@ echo'
 
             <div class="box-1">
                 <div class="content">
-                   <img src="../IMG/2.jpg" alt="">
+                   <a href="../Vista/Reproduccion.php"><img src="../IMG/2.jpg" alt=""></a>
                    <h3>Película HD</h3>
                    <p>
                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -73,7 +73,7 @@ echo'
 
             <div class="box-1">
                 <div class="content">
-                   <img src="../IMG/3.jpg" alt="">
+                   <a href="../Vista/Reproduccion.php"><img src="../IMG/3.jpg" alt=""></a>
                    <h3>Película HD</h3>
                    <p>
                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -83,7 +83,7 @@ echo'
 
             <div class="box-1">
                 <div class="content">
-                   <img src="../IMG/4.jpg" alt="">
+                   <a href="../Vista/Reproduccion.php"><img src="../IMG/4.jpg" alt=""></a>
                    <h3>Película HD</h3>
                    <p>
                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -93,7 +93,7 @@ echo'
 
             <div class="box-1">
                 <div class="content">
-                   <img src="../IMG/5.jpg" alt="">
+                   <a href="../Vista/Reproduccion.php"><img src="../IMG/5.jpg" alt=""></a>
                    <h3>Película HD</h3>
                    <p>
                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -103,7 +103,7 @@ echo'
 
             <div class="box-1">
                 <div class="content">
-                   <img src="../IMG/6.jpg" alt="">
+                   <a href="../Vista/Reproduccion.php"><img src="../IMG/6.jpg" alt=""></a>
                    <h3>Película HD</h3>
                    <p>
                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -113,7 +113,7 @@ echo'
 
             <div class="box-1">
                 <div class="content">
-                   <img src="../IMG/7.jpg" alt="">
+                   <a href="../Vista/Reproduccion.php"><img src="../IMG/7.jpg" alt=""></a>
                    <h3>Película HD</h3>
                    <p>
                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -123,7 +123,7 @@ echo'
 
             <div class="box-1">
                 <div class="content">
-                   <img src="../IMG/8.jpg" alt="">
+                   <a href="../Vista/Reproduccion.php"><img src="../IMG/8.jpg" alt=""></a>
                    <h3>Película HD</h3>
                    <p>
                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -145,7 +145,7 @@ echo'
 
             <div class="box-2">
                 <div class="content">
-                   <img src="../IMG/9.jpg" alt="">
+                   <a href="../Vista/Reproduccion.php"><img src="../IMG/9.jpg" alt=""></a>
                    <h3>Película HD</h3>
                    <p>
                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -155,7 +155,7 @@ echo'
 
             <div class="box-2">
                 <div class="content">
-                   <img src="../IMG/10.jpg" alt="">
+                   <a href="../Vista/Reproduccion.php"><img src="../IMG/10.jpg" alt=""></a>
                    <h3>Película HD</h3>
                    <p>
                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -165,7 +165,7 @@ echo'
 
             <div class="box-2">
                 <div class="content">
-                   <img src="../IMG/11.jpg" alt="">
+                   <a href="../Vista/Reproduccion.php"><img src="../IMG/11.jpg" alt=""></a>
                    <h3>Película HD</h3>
                    <p>
                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -175,7 +175,7 @@ echo'
 
             <div class="box-2">
                 <div class="content">
-                   <img src="../IMG/12.jpg" alt="">
+                   <a href="../Vista/Reproduccion.php"><img src="../IMG/12.jpg" alt=""></a>
                    <h3>Película HD</h3>
                    <p>
                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -185,7 +185,7 @@ echo'
 
             <div class="box-2">
                 <div class="content">
-                   <img src="../IMG/13.jpg" alt="">
+                   <a href="../Vista/Reproduccion.php"><img src="../IMG/13.jpg" alt=""></a>
                    <h3>Película HD</h3>
                    <p>
                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -195,7 +195,7 @@ echo'
 
             <div class="box-2">
                 <div class="content">
-                   <img src="../IMG/14.jpg" alt="">
+                   <a href="../Vista/Reproduccion.php"><img src="../IMG/14.jpg" alt=""></a>
                    <h3>Película HD</h3>
                    <p>
                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -205,7 +205,7 @@ echo'
 
             <div class="box-2">
                 <div class="content">
-                   <img src="../IMG/15.jpg" alt="">
+                   <a href="../Vista/Reproduccion.php"><img src="../IMG/15.jpg" alt=""></a>
                    <h3>Película HD</h3>
                    <p>
                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -215,7 +215,7 @@ echo'
 
             <div class="box-2">
                 <div class="content">
-                   <img src="../IMG/16.jpg" alt="">
+                   <a href="../Vista/Reproduccion.php"><img src="../IMG/16.jpg" alt=""></a>
                    <h3>Película HD</h3>
                    <p>
                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -237,7 +237,7 @@ echo'
 
             <div class="box-3">
                 <div class="content">
-                   <img src="../IMG/17.jpg" alt="">
+                   <a href="../Vista/Reproduccion.php"><img src="../IMG/17.jpg" alt=""></a>
                    <h3>Película HD</h3>
                    <p>
                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -247,7 +247,7 @@ echo'
 
             <div class="box-3">
                 <div class="content">
-                   <img src="../IMG/18.jpg" alt="">
+                   <a href="../Vista/Reproduccion.php"><img src="../IMG/18.jpg" alt=""></a>
                    <h3>Película HD</h3>
                    <p>
                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -257,7 +257,7 @@ echo'
 
             <div class="box-3">
                 <div class="content">
-                   <img src="../IMG/19.jpg" alt="">
+                   <a href="../Vista/Reproduccion.php"><img src="../IMG/19.jpg" alt=""></a>
                    <h3>Película HD</h3>
                    <p>
                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -267,7 +267,7 @@ echo'
 
             <div class="box-3">
                 <div class="content">
-                   <img src="../IMG/20.jpg" alt="">
+                   <a href="../Vista/Reproduccion.php"><img src="../IMG/20.jpg" alt=""></a>
                    <h3>Película HD</h3>
                    <p>
                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -277,7 +277,7 @@ echo'
 
             <div class="box-3">
                 <div class="content">
-                   <img src="../IMG/21.jpg" alt="">
+                   <a href="../Vista/Reproduccion.php"><img src="../IMG/21.jpg" alt=""></a>
                    <h3>Película HD</h3>
                    <p>
                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -287,7 +287,7 @@ echo'
 
             <div class="box-3">
                 <div class="content">
-                   <img src="../IMG/22.jpg" alt="">
+                   <a href="../Vista/Reproduccion.php"><img src="../IMG/22.jpg" alt=""></a>
                    <h3>Película HD</h3>
                    <p>
                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -297,7 +297,7 @@ echo'
 
             <div class="box-3">
                 <div class="content">
-                   <img src="../IMG/23.jpg" alt="">
+                   <a href="../Vista/Reproduccion.php"><img src="../IMG/23.jpg" alt=""></a>
                    <h3>Película HD</h3>
                    <p>
                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -307,7 +307,7 @@ echo'
 
             <div class="box-3">
                 <div class="content">
-                   <img src="../IMG/24.jpg" alt="">
+                   <a href="../Vista/Reproduccion.php"><img src="../IMG/24.jpg" alt=""></a>
                    <h3>Película HD</h3>
                    <p>
                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -329,7 +329,7 @@ echo'
 
             <div class="box-4">
                 <div class="content">
-                   <img src="../IMG/17.jpg" alt="">
+                   <a href="../Vista/Reproduccion.php"><img src="../IMG/17.jpg" alt=""></a>
                    <h3>Película HD</h3>
                    <p>
                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -339,7 +339,7 @@ echo'
 
             <div class="box-4">
                 <div class="content">
-                   <img src="../IMG/18.jpg" alt="">
+                   <a href="../Vista/Reproduccion.php"><img src="../IMG/18.jpg" alt=""></a>
                    <h3>Película HD</h3>
                    <p>
                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -349,7 +349,7 @@ echo'
 
             <div class="box-4">
                 <div class="content">
-                   <img src="../IMG/19.jpg" alt="">
+                   <a href="../Vista/Reproduccion.php"><img src="../IMG/19.jpg" alt=""></a>
                    <h3>Película HD</h3>
                    <p>
                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -359,7 +359,7 @@ echo'
 
             <div class="box-4">
                 <div class="content">
-                   <img src="../IMG/20.jpg" alt="">
+                   <a href="../Vista/Reproduccion.php"><img src="../IMG/20.jpg" alt=""></a>
                    <h3>Película HD</h3>
                    <p>
                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -369,7 +369,7 @@ echo'
 
             <div class="box-4">
                 <div class="content">
-                   <img src="../IMG/21.jpg" alt="">
+                   <a href="../Vista/Reproduccion.php"><img src="../IMG/21.jpg" alt=""></a>
                    <h3>Película HD</h3>
                    <p>
                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -379,7 +379,7 @@ echo'
 
             <div class="box-4">
                 <div class="content">
-                   <img src="../IMG/22.jpg" alt="">
+                   <a href="../Vista/Reproduccion.php"><img src="../IMG/22.jpg" alt=""></a>
                    <h3>Película HD</h3>
                    <p>
                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -389,7 +389,7 @@ echo'
 
             <div class="box-4">
                 <div class="content">
-                   <img src="../IMG/23.jpg" alt="">
+                   <a href="../Vista/Reproduccion.php"><img src="../IMG/23.jpg" alt=""></a>
                    <h3>Película HD</h3>
                    <p>
                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -399,7 +399,7 @@ echo'
 
             <div class="box-4">
                 <div class="content">
-                   <img src="../IMG/24.jpg" alt="">
+                   <a href="../Vista/Reproduccion.php"><img src="../IMG/24.jpg" alt=""></a>
                    <h3>Película HD</h3>
                    <p>
                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -421,7 +421,7 @@ echo'
 
             <div class="box-5">
                 <div class="content">
-                   <img src="../IMG/17.jpg" alt="">
+                   <a href="../Vista/Reproduccion.php"><img src="../IMG/17.jpg" alt=""></a>
                    <h3>Película HD</h3>
                    <p>
                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -431,7 +431,7 @@ echo'
 
             <div class="box-5">
                 <div class="content">
-                   <img src="../IMG/18.jpg" alt="">
+                   <a href="../Vista/Reproduccion.php"><img src="../IMG/18.jpg" alt=""></a>
                    <h3>Película HD</h3>
                    <p>
                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -441,7 +441,7 @@ echo'
 
             <div class="box-5">
                 <div class="content">
-                   <img src="../IMG/19.jpg" alt="">
+                   <a href="../Vista/Reproduccion.php"><img src="../IMG/19.jpg" alt=""></a>
                    <h3>Película HD</h3>
                    <p>
                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -451,7 +451,7 @@ echo'
 
             <div class="box-5">
                 <div class="content">
-                   <img src="../IMG/20.jpg" alt="">
+                   <a href="../Vista/Reproduccion.php"><img src="../IMG/20.jpg" alt=""></a>
                    <h3>Película HD</h3>
                    <p>
                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -461,7 +461,7 @@ echo'
 
             <div class="box-5">
                 <div class="content">
-                   <img src="../IMG/21.jpg" alt="">
+                   <a href="../Vista/Reproduccion.php"><img src="../IMG/21.jpg" alt=""></a>
                    <h3>Película HD</h3>
                    <p>
                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -471,7 +471,7 @@ echo'
 
             <div class="box-5">
                 <div class="content">
-                   <img src="../IMG/22.jpg" alt="">
+                   <a href="../Vista/Reproduccion.php"><img src="../IMG/22.jpg" alt=""></a>
                    <h3>Película HD</h3>
                    <p>
                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -481,7 +481,7 @@ echo'
 
             <div class="box-5">
                 <div class="content">
-                   <img src="../IMG/23.jpg" alt="">
+                   <a href="../Vista/Reproduccion.php"><img src="../IMG/23.jpg" alt=""></a>
                    <h3>Película HD</h3>
                    <p>
                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -491,7 +491,7 @@ echo'
 
             <div class="box-5">
                 <div class="content">
-                   <img src="../IMG/24.jpg" alt="">
+                   <a href="../Vista/Reproduccion.php"><img src="../IMG/24.jpg" alt=""></a>
                    <h3>Película HD</h3>
                    <p>
                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -513,7 +513,7 @@ echo'
 
             <div class="box-6">
                 <div class="content">
-                   <img src="../IMG/17.jpg" alt="">
+                   <a href="../Vista/Reproduccion.php"><img src="../IMG/17.jpg" alt=""></a>
                    <h3>Película HD</h3>
                    <p>
                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -523,7 +523,7 @@ echo'
 
             <div class="box-6">
                 <div class="content">
-                   <img src="../IMG/18.jpg" alt="">
+                   <a href="../Vista/Reproduccion.php"><img src="../IMG/18.jpg" alt=""></a>
                    <h3>Película HD</h3>
                    <p>
                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -533,7 +533,7 @@ echo'
 
             <div class="box-6">
                 <div class="content">
-                   <img src="../IMG/19.jpg" alt="">
+                   <a href="../Vista/Reproduccion.php"><img src="../IMG/19.jpg" alt=""></a>
                    <h3>Película HD</h3>
                    <p>
                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -543,7 +543,7 @@ echo'
 
             <div class="box-6">
                 <div class="content">
-                   <img src="../IMG/20.jpg" alt="">
+                   <a href="../Vista/Reproduccion.php"><img src="../IMG/20.jpg" alt=""></a>
                    <h3>Película HD</h3>
                    <p>
                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -553,7 +553,7 @@ echo'
 
             <div class="box-6">
                 <div class="content">
-                   <img src="../IMG/21.jpg" alt="">
+                   <a href="../Vista/Reproduccion.php"><img src="../IMG/21.jpg" alt=""></a>
                    <h3>Película HD</h3>
                    <p>
                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -563,7 +563,7 @@ echo'
 
             <div class="box-6">
                 <div class="content">
-                   <img src="../IMG/22.jpg" alt="">
+                   <a href="../Vista/Reproduccion.php"><img src="../IMG/22.jpg" alt=""></a>
                    <h3>Película HD</h3>
                    <p>
                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -573,7 +573,7 @@ echo'
 
             <div class="box-6">
                 <div class="content">
-                   <img src="../IMG/23.jpg" alt="">
+                   <a href="../Vista/Reproduccion.php"><img src="../IMG/23.jpg" alt=""></a>
                    <h3>Película HD</h3>
                    <p>
                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -583,7 +583,7 @@ echo'
 
             <div class="box-6">
                 <div class="content">
-                   <img src="../IMG/24.jpg" alt="">
+                   <a href="../Vista/Reproduccion.php"><img src="../IMG/24.jpg" alt=""></a>
                    <h3>Película HD</h3>
                    <p>
                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -605,7 +605,7 @@ echo'
 
             <div class="box-7">
                 <div class="content">
-                   <img src="../IMG/17.jpg" alt="">
+                   <a href="../Vista/Reproduccion.php"><img src="../IMG/17.jpg" alt=""></a>
                    <h3>Película HD</h3>
                    <p>
                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -615,7 +615,7 @@ echo'
 
             <div class="box-7">
                 <div class="content">
-                   <img src="../IMG/18.jpg" alt="">
+                   <a href="../Vista/Reproduccion.php"><img src="../IMG/18.jpg" alt=""></a>
                    <h3>Película HD</h3>
                    <p>
                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -625,7 +625,7 @@ echo'
 
             <div class="box-7">
                 <div class="content">
-                   <img src="../IMG/19.jpg" alt="">
+                   <a href="../Vista/Reproduccion.php"><img src="../IMG/19.jpg" alt=""></a>
                    <h3>Película HD</h3>
                    <p>
                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -635,7 +635,7 @@ echo'
 
             <div class="box-7">
                 <div class="content">
-                   <img src="../IMG/20.jpg" alt="">
+                   <a href="../Vista/Reproduccion.php"><img src="../IMG/20.jpg" alt=""></a>
                    <h3>Película HD</h3>
                    <p>
                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -645,7 +645,7 @@ echo'
 
             <div class="box-7">
                 <div class="content">
-                   <img src="../IMG/21.jpg" alt="">
+                   <a href="../Vista/Reproduccion.php"><img src="../IMG/21.jpg" alt=""></a>
                    <h3>Película HD</h3>
                    <p>
                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -655,7 +655,7 @@ echo'
 
             <div class="box-7">
                 <div class="content">
-                   <img src="../IMG/22.jpg" alt="">
+                   <a href="../Vista/Reproduccion.php"><img src="../IMG/22.jpg" alt=""></a>
                    <h3>Película HD</h3>
                    <p>
                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -665,7 +665,7 @@ echo'
 
             <div class="box-7">
                 <div class="content">
-                   <img src="../IMG/23.jpg" alt="">
+                   <a href="../Vista/Reproduccion.php"><img src="../IMG/23.jpg" alt=""></a>
                    <h3>Película HD</h3>
                    <p>
                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -675,7 +675,7 @@ echo'
 
             <div class="box-7">
                 <div class="content">
-                   <img src="../IMG/24.jpg" alt="">
+                   <a href="../Vista/Reproduccion.php"><img src="../IMG/24.jpg" alt=""></a>
                    <h3>Película HD</h3>
                    <p>
                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -697,7 +697,7 @@ echo'
 
             <div class="box-8">
                 <div class="content">
-                   <img src="../IMG/17.jpg" alt="">
+                   <a href="../Vista/Reproduccion.php"><img src="../IMG/17.jpg" alt=""></a>
                    <h3>Película HD</h3>
                    <p>
                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -707,7 +707,7 @@ echo'
 
             <div class="box-8">
                 <div class="content">
-                   <img src="../IMG/18.jpg" alt="">
+                   <a href="../Vista/Reproduccion.php"><img src="../IMG/18.jpg" alt=""></a>
                    <h3>Película HD</h3>
                    <p>
                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -717,7 +717,7 @@ echo'
 
             <div class="box-8">
                 <div class="content">
-                   <img src="../IMG/19.jpg" alt="">
+                   <a href="../Vista/Reproduccion.php"><img src="../IMG/19.jpg" alt=""></a>
                    <h3>Película HD</h3>
                    <p>
                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -727,7 +727,7 @@ echo'
 
             <div class="box-8">
                 <div class="content">
-                   <img src="../IMG/20.jpg" alt="">
+                   <a href="../Vista/Reproduccion.php"><img src="../IMG/20.jpg" alt=""></a>
                    <h3>Película HD</h3>
                    <p>
                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -737,7 +737,7 @@ echo'
 
             <div class="box-8">
                 <div class="content">
-                   <img src="../IMG/21.jpg" alt="">
+                   <a href="../Vista/Reproduccion.php"><img src="../IMG/21.jpg" alt=""></a>
                    <h3>Película HD</h3>
                    <p>
                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -747,7 +747,7 @@ echo'
 
             <div class="box-8">
                 <div class="content">
-                   <img src="../IMG/22.jpg" alt="">
+                   <a href="../Vista/Reproduccion.php"><img src="../IMG/22.jpg" alt=""></a>
                    <h3>Película HD</h3>
                    <p>
                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -757,7 +757,7 @@ echo'
 
             <div class="box-8">
                 <div class="content">
-                   <img src="../IMG/23.jpg" alt="">
+                   <a href="../Vista/Reproduccion.php"><img src="../IMG/23.jpg" alt=""></a>
                    <h3>Película HD</h3>
                    <p>
                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -767,7 +767,7 @@ echo'
 
             <div class="box-8">
                 <div class="content">
-                   <img src="../IMG/24.jpg" alt="">
+                   <a href="../Vista/Reproduccion.php"><img src="../IMG/24.jpg" alt=""></a>
                    <h3>Película HD</h3>
                    <p>
                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -789,7 +789,7 @@ echo'
 
             <div class="box-9">
                 <div class="content">
-                   <img src="../IMG/17.jpg" alt="">
+                   <a href="../Vista/Reproduccion.php"><img src="../IMG/17.jpg" alt=""></a>
                    <h3>Película HD</h3>
                    <p>
                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -799,7 +799,7 @@ echo'
 
             <div class="box-9">
                 <div class="content">
-                   <img src="../IMG/18.jpg" alt="">
+                   <a href="../Vista/Reproduccion.php"><img src="../IMG/18.jpg" alt=""></a>
                    <h3>Película HD</h3>
                    <p>
                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -809,7 +809,7 @@ echo'
 
             <div class="box-9">
                 <div class="content">
-                   <img src="../IMG/19.jpg" alt="">
+                   <a href="../Vista/Reproduccion.php"><img src="../IMG/19.jpg" alt=""></a>
                    <h3>Película HD</h3>
                    <p>
                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -819,7 +819,7 @@ echo'
 
             <div class="box-9">
                 <div class="content">
-                   <img src="../IMG/20.jpg" alt="">
+                   <a href="../Vista/Reproduccion.php"><img src="../IMG/20.jpg" alt=""></a>
                    <h3>Película HD</h3>
                    <p>
                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -829,7 +829,7 @@ echo'
 
             <div class="box-9">
                 <div class="content">
-                   <img src="../IMG/21.jpg" alt="">
+                   <a href="../Vista/Reproduccion.php"><img src="../IMG/21.jpg" alt=""></a>
                    <h3>Película HD</h3>
                    <p>
                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -839,7 +839,7 @@ echo'
 
             <div class="box-9">
                 <div class="content">
-                   <img src="../IMG/22.jpg" alt="">
+                   <a href="../Vista/Reproduccion.php"><img src="../IMG/22.jpg" alt=""></a>
                    <h3>Película HD</h3>
                    <p>
                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -849,7 +849,7 @@ echo'
 
             <div class="box-9">
                 <div class="content">
-                   <img src="../IMG/23.jpg" alt="">
+                   <a href="../Vista/Reproduccion.php"><img src="../IMG/23.jpg" alt=""></a>
                    <h3>Película HD</h3>
                    <p>
                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -859,7 +859,7 @@ echo'
 
             <div class="box-9">
                 <div class="content">
-                   <img src="../IMG/24.jpg" alt="">
+                   <a href="../Vista/Reproduccion.php"><img src="../IMG/24.jpg" alt=""></a>
                    <h3>Película HD</h3>
                    <p>
                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -881,7 +881,7 @@ echo'
 
             <div class="box-10">
                 <div class="content">
-                   <img src="../IMG/17.jpg" alt="">
+                   <a href="../Vista/Reproduccion.php"><img src="../IMG/17.jpg" alt=""></a>
                    <h3>Película HD</h3>
                    <p>
                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -891,7 +891,7 @@ echo'
 
             <div class="box-10">
                 <div class="content">
-                   <img src="../IMG/18.jpg" alt="">
+                   <a href="../Vista/Reproduccion.php"><img src="../IMG/18.jpg" alt=""></a>
                    <h3>Película HD</h3>
                    <p>
                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -901,7 +901,7 @@ echo'
 
             <div class="box-10">
                 <div class="content">
-                   <img src="../IMG/19.jpg" alt="">
+                   <a href="../Vista/Reproduccion.php"><img src="../IMG/19.jpg" alt=""></a>
                    <h3>Película HD</h3>
                    <p>
                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -911,7 +911,7 @@ echo'
 
             <div class="box-10">
                 <div class="content">
-                   <img src="../IMG/20.jpg" alt="">
+                   <a href="../Vista/Reproduccion.php"><img src="../IMG/20.jpg" alt=""></a>
                    <h3>Película HD</h3>
                    <p>
                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -921,7 +921,7 @@ echo'
 
             <div class="box-10">
                 <div class="content">
-                   <img src="../IMG/21.jpg" alt="">
+                   <a href="../Vista/Reproduccion.php"><img src="../IMG/21.jpg" alt=""></a>
                    <h3>Película HD</h3>
                    <p>
                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -931,7 +931,7 @@ echo'
 
             <div class="box-10">
                 <div class="content">
-                   <img src="../IMG/22.jpg" alt="">
+                   <a href="../Vista/Reproduccion.php"><img src="../IMG/22.jpg" alt=""></a>
                    <h3>Película HD</h3>
                    <p>
                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -941,7 +941,7 @@ echo'
 
             <div class="box-10">
                 <div class="content">
-                   <img src="../IMG/23.jpg" alt="">
+                   <a href="../Vista/Reproduccion.php"><img src="../IMG/23.jpg" alt=""></a>
                    <h3>Película HD</h3>
                    <p>
                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -951,7 +951,7 @@ echo'
 
             <div class="box-10">
                 <div class="content">
-                   <img src="../IMG/24.jpg" alt="">
+                   <a href="../Vista/Reproduccion.php"><img src="../IMG/24.jpg" alt=""></a>
                    <h3>Película HD</h3>
                    <p>
                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.

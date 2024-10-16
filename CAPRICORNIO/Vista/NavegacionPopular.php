@@ -12,7 +12,7 @@ echo'
             <a href="#" class="logo">Capricornio</a>
             <input type="checkbox" id="menu" />
             <label for="menu">
-             <img src="../IMG/menu.png" class="menu-icono" alt="menu"> 
+             <a href="../Vista/Reproduccion.php"><img src="../IMG/menu.png" class="menu-icono" alt="menu"> 
             </label>
             <nav class="navbar">
              <ul>
@@ -25,18 +25,18 @@ echo'
              <a href="#" class="btn-1" id="btn-abrir-modal">Usuario</a>
              <dialog id="modal">
              <section class="usuario-1">
-             <img src="../IMG/IMG-USUARIO.png" class="usuario"><h4>Cristian</h4><a href="" class="modal-c" "id="btn-cerrar-modal"><img src="../IMG/close-icon.png" ></a>
+             <a href="../Vista/Reproduccion.php"><img src="../IMG/IMG-USUARIO.png" class="usuario"><h4>Cristian</h4><a href="" class="modal-c" "id="btn-cerrar-modal"><a href="../Vista/Reproduccion.php"><img src="../IMG/close-icon.png" ></a>
              </section>
              <hr class="linea-usuario">
              <section class="cierre-usuario">
-             <img src="../IMG/LogOut.png" class="logout"><a href="../Vista/CerrarSesion.php" class="cerrar-sesion">Cerrar Sesion</a><br>
+             <a href="../Vista/Reproduccion.php"><img src="../IMG/LogOut.png" class="logout"><a href="../Vista/CerrarSesion.php" class="cerrar-sesion">Cerrar Sesion</a><br>
              </section>
             </dialog>
         </div>
         <h1 class="titulo">Top 10 global</h1>
         <p class="listas">Listas semanales del Top 10 de <br> películas y TV más vistos</p>
     </header>
-<img src="../IMG/top10.png" class="top10">
+<a href="../Vista/Reproduccion.php"><img src="../IMG/top10.png" class="top10">
 <section class="lista-desplegable">
 <div class="dropdown">
      <div class="select"> 
@@ -58,40 +58,40 @@ echo'
         <div class="swiper-wrapper">
 
             <div class="swiper-slide">
-                <img src="../IMG/1.jpg" alt="">
+                <a href="../Vista/Reproduccion.php"><img src="../IMG/1.jpg" alt=""></a>
             </div>
             <div class="swiper-slide">
-                <img src="../IMG/2.jpg" alt="">
+                <a href="../Vista/Reproduccion.php"><img src="../IMG/2.jpg" alt=""></a>
             </div>
             <div class="swiper-slide">
-                <img src="../IMG/3.jpg" alt="">
+                <a href="../Vista/Reproduccion.php"><img src="../IMG/3.jpg" alt=""></a>
             </div>
             <div class="swiper-slide">
-                <img src="../IMG/4.jpg" alt="">
+                <a href="../Vista/Reproduccion.php"><img src="../IMG/4.jpg" alt=""></a>
             </div>
             <div class="swiper-slide">
-                <img src="../IMG/5.jpg" alt="">
+                <a href="../Vista/Reproduccion.php"><img src="../IMG/5.jpg" alt=""></a>
             </div>
             <div class="swiper-slide">
-                <img src="../IMG/6.jpg" alt="">
+                <a href="../Vista/Reproduccion.php"><img src="../IMG/6.jpg" alt=""></a>
             </div>
             <div class="swiper-slide">
-                <img src="../IMG/7.jpg" alt="">
+                <a href="../Vista/Reproduccion.php"><img src="../IMG/7.jpg" alt=""></a>
             </div>
             <div class="swiper-slide">
-                <img src="../IMG/8.jpg" alt="">
+                <a href="../Vista/Reproduccion.php"><img src="../IMG/8.jpg" alt=""></a>
             </div>
             <div class="swiper-slide">
-                <img src="../IMG/9.jpg" alt="">
+                <a href="../Vista/Reproduccion.php"><img src="../IMG/9.jpg" alt=""></a>
             </div>
             <div class="swiper-slide">
-                <img src="../IMG/10.jpg" alt="">
+                <a href="../Vista/Reproduccion.php"><img src="../IMG/10.jpg" alt=""></a>
             </div>
 
         </div>
     
     </div>
-    <img src="../IMG/flecha.png" alt="" class="custom-next" id="custom-next">
+    <a href="../Vista/Reproduccion.php"><img src="../IMG/flecha.png" alt="" class="custom-next" id="custom-next">
 
     </section>
 
@@ -113,7 +113,6 @@ echo'
     <script src="../JS/PopularUsuario.js"></script>
     <script src="../JS/PopularMenu.js"></script>
     <script src="../JS/PopularCarrusel.js"></script>
-<a href="../Vista/CerrarSesion.php">Cerrar Sesion</a>
 </body>
 </html>
 ';
