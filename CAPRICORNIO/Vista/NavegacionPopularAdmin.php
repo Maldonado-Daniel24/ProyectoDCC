@@ -16,16 +16,18 @@ echo'
             </label>
             <nav class="navbar">
              <ul>
-                <li><a href="../Vista/navegacion.php">Inicio</a></li>
-                <li><a href="../Vista/NavegacionNuevo.php">Nuevo</a></li>
-                <li><a href="../Vista/NavegacionPopular.php">Popular</a></li>
+                <li><a href="../Vista/navegacionadmin.php">Inicio</a></li>
+                <li><a href="../Vista/NavegacionNuevoAdmin.php">Nuevo</a></li>
+                <li><a href="../Vista/NavegacionPopularAdmin.php">Popular</a></li>
                 <li><a href="">Random</a></li>
+                <li><a href="../Vista/navegacionsubir.php">Subir</a></li>
+
              </ul>
             </nav>
              <a href="#" class="btn-1" id="btn-abrir-modal">Usuario</a>
              <dialog id="modal">
              <section class="usuario-1">
-             <img src="../IMG/IMG-USUARIO.png" class="usuario"><h4>Cristian</h4><a href="" class="modal-c" "id="btn-cerrar-modal"><img src="../IMG/close-icon.png">
+             <img src="../IMG/IMG-USUARIO.png" class="usuario"><h4>Cristian</h4><a href="" class="modal-c" "id="btn-cerrar-modal"><a href="../Vista/Reproduccion.php"><img src="../IMG/close-icon.png" ></a>
              </section>
              <hr class="linea-usuario">
              <section class="cierre-usuario">
@@ -100,10 +102,11 @@ echo'
         <h3>Capricornio</h3>
 
         <ul>
-           <li><a href="../Vista/navegacion.php">Inicio</li>
-           <li><a href="../Vista/NavegacionNuevo.php">Nuevo</li>
-           <li><a href="../Vista/NavegacionPopular.php">Popular</li>
+           <li><a href="../Vista/navegacionadmin.php">Inicio</li>
+           <li><a href="../Vista/NavegacionNuevoAdmin.php">Nuevo</li>
+           <li><a href="../Vista/NavegacionPopularAdmin.php">Popular</li>
            <li><a href="">Random</li>
+           <li><a href="../Vista/navegacionsubir.php">Subir</a></li>
         </ul>
         
     </footer>

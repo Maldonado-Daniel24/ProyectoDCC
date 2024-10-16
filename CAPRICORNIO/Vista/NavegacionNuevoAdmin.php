@@ -15,11 +15,11 @@ echo'
             </label>
             <nav class="navbar">
              <ul>
-                <li><a href="../Vista/navegacion.php">Inicio</a></li>
-                <li><a href="../Vista/NavegacionNuevo.php">Nuevo</a></li>
-                <li><a href="../Vista/NavegacionPopular.php">Popular</a></li>
+                <li><a href="../Vista/navegacionadmin.php">Inicio</a></li>
+                <li><a href="../Vista/NavegacionNuevoAdmin.php">Nuevo</a></li>
+                <li><a href="../Vista/NavegacionPopularAdmin.php">Popular</a></li>
                 <li><a href="">Random</a></li>
-                
+                <li><a href="../Vista/navegacionsubir.php">Subir</a></li>
              </ul>
             </nav>
             <a href="#" class="btn-1" id="btn-abrir-modal">Usuario</a>
@@ -418,10 +418,11 @@ echo'
         <h3>Capricornio</h3>
 
         <ul>
-           <li><a href="../Vista/navegacion.php">Inicio</li>
-           <li><a href="../Vista/NavegacionNuevo.php">Nuevo</li>
-           <li><a href="../Vista/NavegacionPopular.php">Popular</li>
+           <li><a href="../Vista/navegacionadmin.php">Inicio</li>
+           <li><a href="../Vista/NavegacionNuevoAdmin.php">Nuevo</li>
+           <li><a href="../Vista/NavegacionPopularAdmin.php">Popular</li>
            <li><a href="">Random</li>
+           <li><a href="../Vista/navegacionsubirAdmin.php">Subir</a></li>
         </ul>
         
     </footer>
