@@ -33,9 +33,19 @@ echo'
              </section>
             </dialog>
         </div>
-        <h1 class="titulo">Top 10 global</h1>
-        <p class="listas">Listas semanales del Top 10 de <br> películas y TV más vistos</p>
     </header>
+    <section class="portada">
+    <h1 class="Titulo">Espectral</h1>
+    <img src="../IMG/6.jpg" class="poster">
+    </section>
+    <section class="contenido">
+    <video width="600" controls>
+    <source src="../IMG2/Spectral .mp4" class="trailer" "type="video/mp4">
+    Tu navegador no soporta el elemento de video.
+    </video>
+
+    <h2>Spectral es una película estadounidense en 3D de ciencia ficción y acción dirigida por Nic Mathieu. La historia trata sobre un científico enviado al frente de guerra en Europa del Este para intentar esclarecer las misteriosas muertes de algunos soldados a manos de entidades similares a fantasmas que solo pueden ser vistos gracias a unas gafas de su invención. </h2>
+    </section>
 
     <footer class="footer container">
 
