@@ -9,7 +9,10 @@
 }
 
 body{
-  background-image: url("../IMG/bg3.png");
+  background-color: #030303;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
   font-family: "Bebas Neue", sans-serif;
   color: #FFFFFF
 }
@@ -22,10 +25,11 @@ body{
 }
 
 .header {
-  background-color:#030303;
+  background-image: url(../IMG/bg3.jpeg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+  height: 50px;
   min-height: 70vh;
   display: flex;
   align-items: center;
@@ -50,11 +54,12 @@ body{
   justify-content: space-between;
   z-index: 9999;
   transition: 1s;
-  width: 100%;
-  background: transparent;
+  max-width: 9000px;
+  
 }
 
 .logo {
+  margin-left: 180px;
   font-size: 35px;
   color: #FFFFFF;
   transition: 1s;
@@ -125,6 +130,7 @@ body{
   display: inline-block;
   padding: 7px 20px;
   background-color: #FF2F28;
+  margin-right: 180px;
   color: #FFFFFF;
   font-size: 20px;
 }
@@ -203,19 +209,104 @@ img[src="../IMG/LogOut.png"] {
   color: #FFFFFF;
 }
 
+h1 {
+  position: absolute;
+  margin-top: -445px;
+  margin-left: 200px;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 15px;
+  background-color: #FF2F28;
+  font-weight: 600;
+  text-shadow: none !important;
+  display: inline-block;
+  padding: 6px 12px;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
 .Titulo{
   font-size: 35px;
-  font-family: "Roboto","Arial",sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
   margin-bottom: 20px;
-  margin-left: 250px;
+  margin-top: -492px;
+  margin-left: 200px
 }
 
 .poster{
   margin-left: 200px;
+  margin-top: 40px;
+  z-index: 999;
 }
 
-.trailer{
+.plataformas {
+  display: block;
+  text-align: justify;
+  font-family: "Roboto", "Arial", sans-serif;
+  color: #FF2F28;
+  font-size: 25px;
+  margin: 20px;
+  margin-top: -216px;
+  margin-left: 245px;
+  z-index: 1;
+}
 
+img[src="../IMG/netflix.png"] {
+  width: 100px;
+  z-index: -9999;
+  margin-left: 287px;
+  margin-top: -30px;
+}
+
+video {
+  position: absolute;
+  margin-left: 600px;
+  margin-top: -368px;
+  object-fit: cover;
+  z-index: 999;
+}
+
+.titulo-sinopsis {
+  display: block;
+  text-align: justify;
+  font-family: "Roboto", "Arial", sans-serif;
+  color: #FF2F28;
+  font-size: 25px;
+  margin: 20px;
+  padding: 10px;
+  max-width: 37.5%;
+  margin-left: 600px;
+  margin-top: 15px;
+}
+
+.linea-sinopsis {
+  border: 1px solid #535353 solid;
+  margin-left: 610px;
+  margin-top: -20px;
+  width: 30%;
+}
+
+.sinopsis {
+  display: block;
+  text-align: justify;
+  font-family: "Roboto", "Arial", sans-serif;;
+  font-size: 20px;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  max-width: 37.5%;
+  margin-left: 600px;
+  margin-top: -1px;
 }
 
 h2{
@@ -331,6 +422,7 @@ h2{
 
   .footer ul {
     margin-top: 15px;
+    margin-right: 10px;
     justify-content: center;
   }
 }
