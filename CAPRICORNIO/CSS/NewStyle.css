@@ -30,7 +30,6 @@ body{
   display: flex;
   align-items: center;
   transition: 1s;
-  backdrop-filter: 500px;
 }
 
 .menu.active{

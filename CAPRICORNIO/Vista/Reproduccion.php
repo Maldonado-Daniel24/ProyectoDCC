@@ -34,20 +34,18 @@ echo'
             </dialog>
         </div>
     </header>
-    <h1 class="genero">Acción</h1>
-    <h2 class="Titulo">Spectral</h1>
+    <section class="portada">
+    <h1 class="Titulo">Espectral</h1>
     <img src="../IMG/6.jpg" class="poster">
+    </section>
     <section class="contenido">
-    <video width="600" controls autoplay>
+    <video width="600" controls>
     <source src="../IMG2/Spectral .mp4" class="trailer" "type="video/mp4">
     Tu navegador no soporta el elemento de video.
     </video>
-    <p class="titulo-sinopsis">SINOPSIS</p>
-    <hr class="linea-sinopsis">
-    <p class="sinopsis">Spectral es una película estadounidense en 3D de ciencia ficción y acción dirigida por Nic Mathieu. La historia trata sobre un científico enviado al frente de guerra en Europa del Este para intentar esclarecer las misteriosas muertes de algunos soldados a manos de entidades similares a fantasmas que solo pueden ser vistos gracias a unas gafas de su invención.</p>
+
+    <h2>Spectral es una película estadounidense en 3D de ciencia ficción y acción dirigida por Nic Mathieu. La historia trata sobre un científico enviado al frente de guerra en Europa del Este para intentar esclarecer las misteriosas muertes de algunos soldados a manos de entidades similares a fantasmas que solo pueden ser vistos gracias a unas gafas de su invención. </h2>
     </section>
-    <p class="plataformas">PLATAFORMAS</p>
-    <img src="../IMG/netflix.png" class="netflix">
 
     <footer class="footer container">
 
