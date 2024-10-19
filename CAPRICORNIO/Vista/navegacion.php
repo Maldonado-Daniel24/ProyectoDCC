@@ -25,7 +25,7 @@ echo'
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="../CSS/Style.css">
+    <link rel="stylesheet" href="../CSS/Style_.css">
 </head>
 <body>
     <header class="header">
