@@ -46,8 +46,10 @@ echo'
             <input type="text" placeholder="Descripción" class="descripcion" name="descripcion">
             <h2>Portada</h2>
             <h4 class="Text_Img">Elige una imagen para tu pelicula</h4>
+            <input class="imagen" type="file" name="image" required>
             <h2 class="text_trailer">Trailer</h2>
             <h4 class="Text_Vid">Elige un video para tu pelicula</h4>
+            <input class="video" type="file" name="media" required>
             <h2 class="Generos">Genero</h2>
             <h4 class="Text_gen">Elige de que genero es la pelicula</h4>
             <h2 class="platafor">plataforma</h2>
@@ -74,8 +76,8 @@ echo'
     ?>
   </select>
 
-  <input class="imagen" type="file" name="image" required><br>
-  <input class="video" type="file" name="media" required>
+  
+  
   
   
   

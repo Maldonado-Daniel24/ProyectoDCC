@@ -25,7 +25,7 @@ echo'
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="../CSS/Style.css">
+    <link rel="stylesheet" href="../CSS/Style_.css">
 </head>
 <body>
     <header class="header">
@@ -48,7 +48,7 @@ echo'
             <dialog id="modal">
              <section class="usuario-1">
              
-             <img src="../IMG/IMG-USUARIO.png" class="usuario">'; echo $_SESSION['usuario'] ;echo'<a href="" class="modal-c" "id="btn-cerrar-modal"><img src="../IMG/close-icon.png" ></a>
+             <img src="../IMG/IMG-USUARIO.png" class="usuario">'; echo $_SESSION['usuario'] ;echo'<a href="" class="modal-c" "id="btn-cerrar-modal"><img src="../IMG/close-icon.png"></a>
              </section>
              <hr class="linea-usuario">
              <section class="cierre-usuario">
