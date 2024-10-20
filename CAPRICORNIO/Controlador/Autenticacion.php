@@ -1,42 +1,40 @@
 <?php
-
 session_start();
+include("../Controlador/bd.php");
 
-include("bd.php");
-if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    $Inicio= htmlspecialchars($_POST['Inicio']);
-}
-if(mysqli_connect_error()){
-    exit("Fallo al conectarse a la base de datos ".mysqli_connect_error());
-}
+$NombreUsuario = $_POST['NombreUsuario'];
+$ClaveUsuario = $_POST['ClaveUsuario'];
 
-if(!isset($_POST["NombreUsuario"], $_POST["ClaveUsuario"])){
-    header("Location: ../index.php");
-}
+$validar_login = mysqli_query($Conexion, "SELECT * FROM usuario WHERE NombreUsuario='$NombreUsuario' and ClaveUsuario='$ClaveUsuario' ");
 
-if($Resultado = $Conexion->prepare('select NombreUsuario, ClaveUsuario, TipoUsuario from usuario where NombreUsuario= ?')){
-    $Resultado->bind_param('s', $_POST["NombreUsuario"]);
-    $Resultado->execute();
-}
-
- $Resultado->store_result();
- if($Resultado->num_rows > 0) 
-    $Resultado->bind_result($NombreUsuario, $ClaveUsuario, $TipoUsuario);
-    $Resultado->fetch();
-    if($_POST["ClaveUsuario"]==$ClaveUsuario){
-        //Iniciar sesion
-        $_SESSION['loggedin'] = True;
-        $_SESSION['NombreUsuario'] = $_POST["NombreUsuario"];
-        $_SESSION['TipoUsuario'] = $TipoUsuario;
-        header("Location: ../vista/navegacion.php");
-    }  
-
-    header("Location: ../vista/iniciarsesion.php?men=Credenciales INCORRECTAS");
+if(mysqli_num_rows($validar_login) > 0){
     
+    // Extraer el tipo de usuario
+    $fila = mysqli_fetch_assoc($validar_login); // Obtener la fila resultante
+    $TipoUsuario = $fila['TipoUsuario']; // Guardar el valor de TipoUsuario
+
+    // Guardar el nombre de usuario en la sesión
+    $_SESSION['usuario'] = $NombreUsuario;
+    $_SESSION['TipoUsuario'] = $TipoUsuario;
     
-
-
-$Resultado->close(); 
- 
+    // Verificar el tipo de usuario y redirigir a la página correspondiente
+    if($TipoUsuario == 2) {
+        header("location: ../Vista/navegacionadmin.php"); // Redirige a la página de tipo de usuario 2
+    } elseif($TipoUsuario == 0) {
+        header("location: ../Vista/navegacion.php"); // Redirige a la página de tipo de usuario 0
+    } else {
+        header("location: ../index.php"); // Redirige a otra página si no es ni tipo 0 ni 2
+    }
+    
+    exit();
+} else {
+    // Si el usuario no está registrado o las credenciales no coinciden
+    echo '
+    <script>
+    alert("Este Usuario no está registrado, por favor verifique los datos introducidos");
+    window.location="../index.php";
+    </script>';
+    exit();
+}
 
 ?>

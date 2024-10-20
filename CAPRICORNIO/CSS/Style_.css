@@ -171,6 +171,12 @@ h4{
   width: 100%;
 }
 
+.modal-c{
+   position: relative;
+   right: 30px;
+   
+}
+
 .cierre-usuario {
   display: flex;
   margin-top: 3px;

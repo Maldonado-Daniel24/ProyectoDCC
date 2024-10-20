@@ -2,6 +2,7 @@
 
 body{
     background-image: url(../IMG/FONDO-INICIARSESSION.png);
+    background-size: cover;
     display: flex;
     justify-content: center; /* Centra horizontalmente */
     align-items: center; /* Centra verticalmente */
@@ -87,41 +88,40 @@ h4{
 }
 
 .Text_Img{
-    position: absolute;
-    top: 265px;
+    margin-top: -20px;
 }
 
 .Text_gen{
-    position: absolute;
-    top: 425px;
+    position: relative;
+    margin-top: 30px;
 }
 
 .platafor{
-    position: absolute;
-    top: 470px;
+    position: relative;
+    top: -15px;
     
 }
 
 .Text_pla{
-    position: absolute;
-    top: 495px;
-    right: 627px;
+    position: relative;
+    top: -35px;
+    
 }
 #Etiquetas{
-    position: absolute;
-    top: 510px;
-    right: 445px;
+    position: relative;
+    top: -117px;
+    left: 225px;
 }
 
 .Generos{
     position: absolute;
-    top: 400px;
+    margin-top: -1px;
 }
 
 .btn_guardar{
-    position: absolute;
-    top: 580px;
-    left: 420px;
+    position: relative;
+    top: -16px;
+    left: -4px;
     background-color: #ffffff;
     border-radius: 8px 8px 8px 8px;
     height: 40px;
@@ -131,9 +131,9 @@ h4{
 }
 
 #Genero{
-    position: absolute;
-    top: 440px;
-    right: 465px;
+    position: relative;
+    top: -170px;
+    left: 357px;
 }
 
 .videoEditar{
@@ -150,21 +150,21 @@ h1{
 
 .imagen{
     position: absolute;
-    left: 433px;
+    margin-top: -10px;
+    z-index: 9999;
 }
 
 .video{
-    position: absolute;
-    left: 433px;
-    top: 385px;
+    position: relative;
+    top: -10px;
 }
 
 .Text_Vid{
-    position: absolute;
-    top: 339px;
+    position: relative;
+    margin-top: -20px;
 }
 
 .text_trailer{
-   position: absolute;
-   top: 315px;
+   
+    margin-top: 40px;
 }

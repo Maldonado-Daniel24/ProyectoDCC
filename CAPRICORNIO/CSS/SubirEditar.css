@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 body{
-    background-color: #030303;
+    background-color: #000000;
 }
 
 .logoAdmin{
@@ -28,13 +28,13 @@ body{
     padding: 10px;
     font-size: 11px;
     border: 1px solid #ccc;
-    border-radius: 15px 0px 0px 15px;
+    border-radius: 15px 15px 15px 15px;
     flex: 1;
     margin-right: -4px;
     margin-left: 60px;
     flex-grow: 1;
-    min-width: 700px;
-    max-width: 800px;
+    min-width: 800px;
+    max-width: 900px;
 
     
     
@@ -42,7 +42,7 @@ body{
 
 .btn_buscar{
     padding: 10px 15px;
-    font-size: 12px;
+    font-size: 59px;
     background-color: #FF2F28;
     color: white;
     border: none;
@@ -113,4 +113,8 @@ body{
 
 .filtro{
     display: none;
+}
+
+#Barra_Buscar{
+    outline: none;
 }

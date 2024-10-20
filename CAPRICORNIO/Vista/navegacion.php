@@ -1,14 +1,36 @@
 <?php
+session_start();
+if(!isset($_SESSION['usuario'])){
+  echo'
+        <script>
+        alert("Por favor debes iniciar sesión");
+        window.location ="../index.php";
+        </script>';
+       
+        session_destroy();
+        
+        die();
+}
+if($_SESSION['TipoUsuario']== 2){
+  echo'
+        <script>
+        
+        window.location ="../Vista/navegacionadmin.php";
+        </script>';
+       
+    
+        
+}
 echo'
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="../CSS/Style.css">
+    <link rel="stylesheet" href="../CSS/Style_.css">
 </head>
 <body>
     <header class="header">
          <div class ="menu container">
-            <a href="#" class="logo">Capricornio</a>
+            <a href="../Vista/navegacion.php" class="logo">Capricornio</a>
             <input type="checkbox" id="menu" />
             <label for="menu">
              <img src="../IMG/menu.png" class="menu-icono" alt="menu"> 
@@ -24,7 +46,7 @@ echo'
             <a href="#" class="btn-1" id="btn-abrir-modal">Usuario</a>
             <dialog id="modal">
              <section class="usuario-1">
-             <img src="../IMG/IMG-USUARIO.png" class="usuario"><h4>Cristian</h4><a href="" class="modal-c" "id="btn-cerrar-modal"><img src="../IMG/close-icon.png" ></a>
+             <img src="../IMG/IMG-USUARIO.png" class="usuario">'; echo $_SESSION['usuario'] ;echo'<a href="" class="modal-c" "id="btn-cerrar-modal"><img src="../IMG/close-icon.png" ></a>
              </section>
              <hr class="linea-usuario">
              <section class="cierre-usuario">

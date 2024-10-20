@@ -1,5 +1,26 @@
 <?php
+session_start();
+if(!isset($_SESSION['usuario'])){
+  echo'
+        <script>
+        alert("Por favor debes iniciar sesión");
+        window.location ="../index.php";
+        </script>';
+       
+        session_destroy();
+        
+        die();
+}
+if($_SESSION['TipoUsuario']== 0){
+    echo'
+          <script>
+          
+          window.location ="../Vista/navegacion.php";
+          </script>';
+         
+}
 echo'
+
 <!DOCTYPE html>
 <html>
 <head>

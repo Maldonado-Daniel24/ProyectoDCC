@@ -1,5 +1,25 @@
 <?php
 include("../Controlador/bd.php");
+session_start();
+if(!isset($_SESSION['usuario'])){
+  echo'
+        <script>
+        alert("Por favor debes iniciar sesión");
+        window.location ="../index.php";
+        </script>';
+       
+        session_destroy();
+        
+        die();
+}
+if($_SESSION['TipoUsuario']== 0){
+    echo'
+          <script>
+          
+          window.location ="../Vista/navegacion.php";
+          </script>';
+}
+        
 
 $estado1 = $Conexion->query("SELECT CATEGORIA, NOMBRE FROM categoria");
 $estado2 = $Conexion->query("SELECT PLATAFORMAS, NOMBRE FROM plataformas");
@@ -26,8 +46,10 @@ echo'
             <input type="text" placeholder="Descripción" class="descripcion" name="descripcion">
             <h2>Portada</h2>
             <h4 class="Text_Img">Elige una imagen para tu pelicula</h4>
+            <input class="imagen" type="file" name="image" required>
             <h2 class="text_trailer">Trailer</h2>
             <h4 class="Text_Vid">Elige un video para tu pelicula</h4>
+            <input class="video" type="file" name="media" required>
             <h2 class="Generos">Genero</h2>
             <h4 class="Text_gen">Elige de que genero es la pelicula</h4>
             <h2 class="platafor">plataforma</h2>
@@ -54,8 +76,8 @@ echo'
     ?>
   </select>
 
-  <input class="imagen" type="file" name="image" required><br>
-  <input class="video" type="file" name="media" required>
+  
+  
   
   
   
