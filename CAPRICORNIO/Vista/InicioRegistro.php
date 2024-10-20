@@ -3,7 +3,7 @@ echo'
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="../CAPRICORNIO/CSS/IniciarSession.css">
+    <link rel="stylesheet" href="../CAPRICORNIO/CSS/IniciarSesion.css">
 </head>
 
 
