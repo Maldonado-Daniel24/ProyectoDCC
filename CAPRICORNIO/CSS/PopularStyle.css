@@ -422,5 +422,9 @@ img[src="../IMG/flecha.png"]:hover {
   pointer-events: none; 
 }
 
-
+.modal-c{
+  position: relative;
+  right: 30px;
+  
+}
 

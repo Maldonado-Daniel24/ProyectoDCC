@@ -1,11 +1,19 @@
 <?php
-
+session_start();
+if(isset($_SESSION['usuario'])){
+    echo'
+    <script>
+    window.onload = function() {
+        window.location.href = "http://127.0.0.1/proyectodcc/capricornio/Vista/navegacionadmin.php"; 
+    };
+</script>';      
+}
 If(!empty($_GET["men"]))
 {
     echo "<h1 class='cred'>". $_GET["men"] ."</h1>";
 };
 
-session_start();
+
 
 If(!isset($_SESSION['loggedin'])){
 

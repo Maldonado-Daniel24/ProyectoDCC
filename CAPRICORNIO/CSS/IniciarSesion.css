@@ -213,9 +213,10 @@ input#ContraseñaUsuario:focus {
   border-radius: 5px 5px 5px 5px;
   text-decoration: none;
   color: white;
-  position: relative;
-  left: 565px;
-  top: 140px;
+  margin: 0 auto;
+  width: 10%; /* ajusta el ancho según sea necesario */
+  text-align: center;
+  
 }
 
 .boton2{
@@ -226,11 +227,19 @@ input#ContraseñaUsuario:focus {
   border-radius: 5px 5px 5px 5px;
   text-decoration: none;
   color: white;
-  position: relative;
-  top: 140px;
-  left: 575px;}
+  margin: 0 auto;
+  width: 12%;
+  
+  text-align: center;
 
-.Btn_Regresar:hover{
-  border: 1px solid #ffffff;
-    
 }
+
+.Btn_Inicio{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 55vh; 
+}
+
+.boton1 + .boton2 { 
+  margin-left: -450px;}

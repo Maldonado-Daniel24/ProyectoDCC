@@ -418,3 +418,8 @@ h2{
   background:  -webkit-linear-gradient(to right, #FF2F28, #030303);
   background: linear-gradient(to right, #FF2F28, #030303);
 }
+.modal-c{
+  position: relative;
+  right: 30px;
+  
+}
