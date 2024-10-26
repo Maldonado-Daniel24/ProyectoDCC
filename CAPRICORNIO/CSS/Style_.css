@@ -130,11 +130,11 @@ body{
 }
 
 img[src="../IMG/close-icon.png"] {
-  position: relative;
+  position: fixed;
   width: 15px;
-  margin-left: 110px;
+  margin-left: 100px;
   margin-top: 6px;
-  z-index: -9999;
+  z-index: 9999;
 }
 
 .usuario-1 {

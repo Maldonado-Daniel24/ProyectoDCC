@@ -15,8 +15,8 @@ body{
   background-color: rgb(27, 27, 27);
   text-align: center;
   position: fixed;
-  top: 135px;
-  right: 540px;
+  top: 224.8px;
+  right: 615px;
   padding: 55px;
   border-radius: 15px 15px 15px 15px;
   font-family: "Bebas Neue", sans-serif;
@@ -117,7 +117,7 @@ body{
     text-align: center;
     position: fixed;
     top: 135px;
-    right: 540px;
+    right: 615px;
     padding: 40px;
     border-radius: 15px 15px 15px 15px;
     font-family: "Bebas Neue", sans-serif;
