@@ -119,3 +119,29 @@ body{
 #Barra_Buscar{
     outline: none;
 }
+
+.EditarB{
+    background-color: #E49B0F;
+    position: relative;
+    right: 20px;
+    padding: 10px;
+    top: 20px;
+    border-radius: 8px 8px 8px 8px;
+    font-size: 20px;
+}
+
+.EliminarB{
+    background-color: #FF2F28;
+    position: relative;
+    left: 33px;
+    padding: 10px;
+    top: 20px;
+    border-radius: 8px 8px 8px 8px;
+    font-size: 20px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    
+}
