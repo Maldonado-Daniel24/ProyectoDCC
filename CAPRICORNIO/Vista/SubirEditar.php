@@ -42,20 +42,20 @@ echo'
     </form>
         <form action="../Controlador/GuardarEditor.php" method="POST" enctype="multipart/form-data">
             <h1 class="titulo1">Detalles</h1>
-            <input type="text" placeholder="Titulo (Obligatorio)" class="titulo" name="titulo"><br>
+            <input type="text" placeholder="Titulo (Obligatorio)" class="titulo" name="titulo" required><br>
             <input type="text" placeholder="Descripción" class="descripcion" name="descripcion">
             <h2>Portada</h2>
             <h4 class="Text_Img">Elige una imagen para tu pelicula</h4>
-            <input class="imagen" type="file" name="image" required>
+            <input class="imagen" placeholder="Coloca el link de la imagen" type="text" name="image" required>
             <h2 class="text_trailer">Trailer</h2>
             <h4 class="Text_Vid">Elige un video para tu pelicula</h4>
-            <input class="video" type="file" name="media" required>
+            <input class="video" placeholder="Coloca el link del video" type="text" name="media" required>
             <h2 class="Generos">Genero</h2>
             <h4 class="Text_gen">Elige de que genero es la pelicula</h4>
             <h2 class="platafor">plataforma</h2>
             <h4 class="Text_pla">Elige en que plataforma puedes encontrarlo</h4>
   
-            <button class="btn_guardar">Guardar</button>
+            <button class="btn_guardar">Subir</button>
 ';
 ?>
 

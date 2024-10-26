@@ -90,6 +90,7 @@ body{
  border: 3px solid #FF2F28;
  border-radius: 15px 15px 15px 15px;
  background-image: url(../IMG/fondoNegro.png);
+ padding: 20px;
 }
 
 .Nombre1{

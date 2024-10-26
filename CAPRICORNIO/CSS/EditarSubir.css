@@ -21,12 +21,13 @@ body{
     text-align: left;
     padding: 15px;
     
+    
 }
 
 .titulo{
     background-color: black;
     color: white;
-    border-radius: 15px 15px 15px 15px;
+    border-radius: 10px 10px 10px 10px;
     width: 480px;
     height: 40px;
     padding: 10px;
@@ -36,15 +37,16 @@ body{
     box-shadow: none;
     transition: border-color 0.3s;
     border: 1px solid #727272;
-    align-items: center;
+    position: relative;
+    top: -20px;
 }
 
 
 .descripcion{
     background-color: rgb(0, 0, 0);
     color: white;
-    margin-top: 10px;
-    border-radius: 15px 15px 15px 15px;
+    margin-top: -10px;
+    border-radius: 10px 10px 10px 10px;
     width: 500px;
     height: 65px;
     padding: 10px;
@@ -56,6 +58,7 @@ body{
     box-sizing: border-box;
     line-height: 20px;
     align-items: center;
+    
     
 }
 
@@ -146,15 +149,39 @@ h4{
 
 h1{
     text-align: center;
+    font-size: 40PX;
 }
 
 .imagen{
-    position: absolute;
-    margin-top: -10px;
-    z-index: 9999;
+    background-color: black;
+    color: white;
+    border-radius: 10px 10px 10px 10px;
+    width: 480px;
+    height: 25px;
+    padding: 10px;
+    text-align: justify;
+    outline: none;
+    font-size: 15px;
+    box-shadow: none;
+    transition: border-color 0.3s;
+    border: 1px solid #727272;
+    position: relative;
+    top: -10px;
 }
 
 .video{
+    background-color: black;
+    color: white;
+    border-radius: 10px 10px 10px 10px;
+    width: 480px;
+    height: 25px;
+    padding: 10px;
+    text-align: justify;
+    outline: none;
+    font-size: 15px;
+    box-shadow: none;
+    transition: border-color 0.3s;
+    border: 1px solid #727272;
     position: relative;
     top: -10px;
 }
@@ -166,5 +193,42 @@ h1{
 
 .text_trailer{
    
-    margin-top: 40px;
+    margin-top: 5px;
 }
+
+.btn_guardar2{
+    position: relative;
+    top: 20px;
+    left: -4px;
+    background-color: #ffffff;
+    border-radius: 8px 8px 8px 8px;
+    height: 40px;
+    width: 510px;
+    cursor: pointer;
+
+}
+
+.contenedor_Editar2{
+    background-color: rgb(32, 32, 32);
+    color: white;
+    width: 500px;
+    height: 400px;
+    border-radius: 15px 15px 15px 15px;
+    text-align: left;
+    padding: 15px;
+
+}
+
+.titulo2{ 
+   color: white; 
+   text-align: center;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.titulo3{
+   color: white; 
+   text-align: center;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+

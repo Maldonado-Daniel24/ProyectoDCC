@@ -65,11 +65,11 @@ echo'
     <tr class= cuadro0>
     <td class="Cuadro1">
           <video width="440" height="260" controls>
-        <source src="<?php echo $mostrar['filepath2'] ?>" type="video/mp4">
+        <source src="<?php echo $mostrar['VIDEO'] ?>" type="video/mp4">
     </video></td>
-    <td class="Cuadro2"><span class="Nombre1"><?php echo $mostrar      ['NOMBRE']?></span> <br> 
-                        <span class="Nombre2"><?php echo $mostrar['SINOPSIS']?></span><br>
-                        <span class="Nombre3"><?php echo $mostrar['COD_CONTENIDO']?></span></td>
+    <td class="Cuadro2"><span class="Nombre1"><?php echo $mostrar['NOMBRE']?></span> <br><span class=""><?php echo $mostrar['COD_CONTENIDO']?></span> <br><span class="EditarB"><?php echo "<a href='SubirEditar_modificar.php?id=".$mostrar['COD_CONTENIDO']."'>Editar</a>";?></span> <span class="EliminarB"><?php echo "<a href=''>Eliminar</a>";?></span>   
+  
+                        
     </tr>
    
     
