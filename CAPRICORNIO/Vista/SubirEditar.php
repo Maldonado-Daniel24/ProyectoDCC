@@ -55,7 +55,7 @@ echo'
             <h2 class="platafor">plataforma</h2>
             <h4 class="Text_pla">Elige en que plataforma puedes encontrarlo</h4>
   
-            <button class="btn_guardar">Subir</button>
+            <button class="btn_guardar">SUBIR</button>
 ';
 ?>
 

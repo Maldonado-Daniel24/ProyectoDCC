@@ -64,12 +64,13 @@ echo'
     ?>
     <tr class= cuadro0>
     <td class="Cuadro1">
-          <video width="440" height="260" controls>
-        <source src="<?php echo $mostrar['VIDEO'] ?>" type="video/mp4">
-    </video></td>
-    <td class="Cuadro2"><span class="Nombre1"><?php echo $mostrar['NOMBRE']?></span> <br><span class=""><?php echo $mostrar['COD_CONTENIDO']?></span> <br><span class="EditarB"><?php echo "<a href='SubirEditar_modificar.php?id=".$mostrar['COD_CONTENIDO']."'>Editar</a>";?></span> <span class="EliminarB"><?php echo "<a href=''>Eliminar</a>";?></span>   
+          <iframe width="440" height="260" controls src="<?php echo $mostrar['VIDEO'] ?>" type="video/mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope picture-in-picture" 
+            allowfullscreen>
+    </iframe>
+    </td>
+    <td class="Cuadro2"><span class="Nombre1"><?php echo $mostrar['NOMBRE']?></span> <br><span class="Nombre2"><?php echo $mostrar['SINOPSIS']?></span> <br><span class=""><?php echo $mostrar['COD_CONTENIDO']?></span> <br><span class="EditarB"><?php echo "<a href='SubirEditar_modificar.php?id=".$mostrar['COD_CONTENIDO']."'>Editar</a>";?></span> <span class="EliminarB"><?php echo "<a href='Eliminar.php?id=".$mostrar['COD_CONTENIDO']."' onclick='return confirmar()'>Eliminar</a>";?></span>   
   
-                        
+                       
     </tr>
    
     
