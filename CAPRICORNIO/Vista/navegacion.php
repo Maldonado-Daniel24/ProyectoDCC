@@ -21,6 +21,12 @@ if($_SESSION['TipoUsuario']== 2){
     
         
 }
+
+include("../Controlador/bd.php");
+
+
+
+
 echo'
 <!DOCTYPE html>
 <html>
@@ -159,97 +165,39 @@ echo'
     </section>
 
     <section class="movies container">
-     
+';
+?>
        <h2>Cine de Acción y Aventuras</h2>
        <hr class="linea-2">
 
-        <div class="box-container-2">
+        <div class="">
 
-            <div class="box-2">
-                <div class="content">
-                   <a href="../Vista/Reproduccion.php"><img src="../IMG/9.jpg" alt=""></a>
-                   <h3>Película HD</h3>
-                   <p>
-                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                   </p>
-                </div>
-            </div>
-
-            <div class="box-2">
-                <div class="content">
-                   <a href="../Vista/Reproduccion.php"><img src="../IMG/10.jpg" alt=""></a>
-                   <h3>Película HD</h3>
-                   <p>
-                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                   </p>
-                </div>
-            </div>
-
-            <div class="box-2">
-                <div class="content">
-                   <a href="../Vista/Reproduccion.php"><img src="../IMG/11.jpg" alt=""></a>
-                   <h3>Película HD</h3>
-                   <p>
-                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                   </p>
-                </div>
-            </div>
-
-            <div class="box-2">
-                <div class="content">
-                   <a href="../Vista/Reproduccion.php"><img src="../IMG/12.jpg" alt=""></a>
-                   <h3>Película HD</h3>
-                   <p>
-                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                   </p>
-                </div>
-            </div>
-
-            <div class="box-2">
-                <div class="content">
-                   <a href="../Vista/Reproduccion.php"><img src="../IMG/13.jpg" alt=""></a>
-                   <h3>Película HD</h3>
-                   <p>
-                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                   </p>
-                </div>
-            </div>
-
-            <div class="box-2">
-                <div class="content">
-                   <a href="../Vista/Reproduccion.php"><img src="../IMG/14.jpg" alt=""></a>
-                   <h3>Película HD</h3>
-                   <p>
-                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                   </p>
-                </div>
-            </div>
-
-            <div class="box-2">
-                <div class="content">
-                   <a href="../Vista/Reproduccion.php"><img src="../IMG/15.jpg" alt=""></a>
-                   <h3>Película HD</h3>
-                   <p>
-                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                   </p>
-                </div>
-            </div>
-
-            <div class="box-2">
-                <div class="content">
-                   <a href="../Vista/Reproduccion.php"><img src="../IMG/16.jpg" alt=""></a>
-                   <h3>Película HD</h3>
-                   <p>
-                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                   </p>
+            <div class="">
+                <div class="">
+                <table class="tbl_Accion">
+                  
+                   <?php
+                   $ConsultaA="SELECT * from contenido WHERE CATEGORIA IN (1, 2)";
+                   $resultadoA=mysqli_query($Conexion,$ConsultaA);
+                   
+                    while ($mostrarA = mysqli_fetch_assoc($resultadoA)) {
+                  ?>
+                       <td>
+                           <?php echo"<a href='Reproduccion.php?id=".$mostrarA['COD_CONTENIDO']."'>"?><img src="<?php echo $mostrarA['IMAGEN']; ?>" alt="Imagen" width="250" height="400"></a><br>
+                           <span class="Nombre1"><?php echo $mostrarA['NOMBRE']?></span>
+                       </td>
+                <?php
+                }
+                 ?>
+               </table>
                 </div>
             </div>
         </div>
-
         <div class="load-more" id="load-more-2">Cargar más</div>
 
     </section>
-
+<?php
+echo'
      <section class="movies container">
      
        <h2>Cine de Terror</h2>

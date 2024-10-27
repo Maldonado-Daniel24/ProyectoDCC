@@ -490,3 +490,12 @@ h2{
   background: linear-gradient(to right, #FF2F28, #030303);
 }
 
+.tbl_Accion{
+  border-collapse: separate; /* Asegúrate de que las celdas no se colapsen */
+  border-spacing: 20px; /* Espacio entre las celdas */
+}
+
+td {
+  text-align: center; /* Centra el contenido de las celdas */
+}
+

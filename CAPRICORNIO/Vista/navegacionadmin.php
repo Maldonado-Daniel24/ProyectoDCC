@@ -16,10 +16,7 @@ if($_SESSION['TipoUsuario']== 0){
         <script>
         
         window.location ="../Vista/navegacion.php";
-        </script>';
-       
-    
-        
+        </script>';      
 }
 echo'
 <!DOCTYPE html>

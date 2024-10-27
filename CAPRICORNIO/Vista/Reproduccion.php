@@ -9,7 +9,7 @@ echo'
 <body>
     <header class="header">
          <div class ="menu container">
-            <a href="#" class="logo">Capricornio</a>
+            <a href="../Vista/navegacion.php" class="logo">Capricornio</a>
             <input type="checkbox" id="menu" />
             <label for="menu">
              <img src="../IMG/menu.png" class="menu-icono" alt="menu"> 
@@ -34,20 +34,41 @@ echo'
             </dialog>
         </div>
     </header>
-    <h1 class="genero">Acción</h1>
-    <h2 class="Titulo">Spectral</h1>
-    <img src="../IMG/6.jpg" class="poster">
+    ';
+    include("../Controlador/bd.php");
+    $id=$_GET['id'];
+    $sql="SELECT * from contenido WHERE COD_CONTENIDO='".$id."'";
+    $resultado=mysqli_query($Conexion,$sql);
+    $mostrar=mysqli_fetch_assoc($resultado);
+    $titulo=$mostrar["NOMBRE"];
+    $descripcion=$mostrar["SINOPSIS"];
+    $imagen=$mostrar["IMAGEN"];
+    $video=$mostrar["VIDEO"];
+    $categoria=$mostrar["CATEGORIA"];
+    $plataforma=$mostrar["PLATAFORMAS"];
+    $sql2="SELECT * from categoria WHERE CATEGORIA='".$categoria."'";
+    $resultado2=mysqli_query($Conexion,$sql2);
+    $mostrar2=mysqli_fetch_assoc($resultado2);
+    $categoriaV=$mostrar2["NOMBREC"];
+    $sql3="SELECT * from plataformas WHERE PLATAFORMAS='".$plataforma."'";
+    $resultado3=mysqli_query($Conexion,$sql3);
+    $mostrar3=mysqli_fetch_assoc($resultado3);
+    $plataformaV=$mostrar3["IMAGEN"];
+    ?>
+    
+    <h1 class="genero"><?php echo $categoriaV;?></h1>
+    <h5 class="Titulo"style="text-transform: uppercase;"><?php echo $titulo;?></h5>
+    <img src="<?php echo $imagen;?>" class="poster">
     <section class="contenido">
-    <video width="600" controls autoplay>
-    <source src="../IMG2/Spectral .mp4" class="trailer" "type="video/mp4">
-    Tu navegador no soporta el elemento de video.
-    </video>
+    <span class="video_peli"><iframe width="640" height="460" controls src="<?php echo $video;?>" type="video/mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope picture-in-picture" 
+            allowfullscreen>
+    </iframe></span>
     <p class="titulo-sinopsis">SINOPSIS</p>
     <hr class="linea-sinopsis">
-    <p class="sinopsis">Spectral es una película estadounidense en 3D de ciencia ficción y acción dirigida por Nic Mathieu. La historia trata sobre un científico enviado al frente de guerra en Europa del Este para intentar esclarecer las misteriosas muertes de algunos soldados a manos de entidades similares a fantasmas que solo pueden ser vistos gracias a unas gafas de su invención.</p>
+    <p class="sinopsis"><?php echo $descripcion;?></p>
     </section>
     <p class="plataformas">PLATAFORMAS</p>
-    <img src="../IMG/netflix.png" class="netflix">
+    <img src="<?php echo $plataformaV;?>" class="netflix" width="95" height="95">
 
     <footer class="footer container">
 
@@ -67,5 +88,4 @@ echo'
     <script src="../JS/PopularMenu.js"></script>
 </body>
 </html>
-';
-?>
+
