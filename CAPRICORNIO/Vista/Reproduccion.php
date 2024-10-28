@@ -49,7 +49,7 @@ echo'
     $sql2="SELECT * from categoria WHERE CATEGORIA='".$categoria."'";
     $resultado2=mysqli_query($Conexion,$sql2);
     $mostrar2=mysqli_fetch_assoc($resultado2);
-    $categoriaV=$mostrar2["NOMBREC"];
+    $categoriaV=$mostrar2["NOMBRE"];
     $sql3="SELECT * from plataformas WHERE PLATAFORMAS='".$plataforma."'";
     $resultado3=mysqli_query($Conexion,$sql3);
     $mostrar3=mysqli_fetch_assoc($resultado3);
