@@ -36,24 +36,60 @@ echo'
     </header>
     ';
     include("../Controlador/bd.php");
-    $id=$_GET['id'];
-    $sql="SELECT * from contenido WHERE COD_CONTENIDO='".$id."'";
-    $resultado=mysqli_query($Conexion,$sql);
-    $mostrar=mysqli_fetch_assoc($resultado);
-    $titulo=$mostrar["NOMBRE"];
-    $descripcion=$mostrar["SINOPSIS"];
-    $imagen=$mostrar["IMAGEN"];
-    $video=$mostrar["VIDEO"];
-    $categoria=$mostrar["CATEGORIA"];
-    $plataforma=$mostrar["PLATAFORMAS"];
-    $sql2="SELECT * from categoria WHERE CATEGORIA='".$categoria."'";
-    $resultado2=mysqli_query($Conexion,$sql2);
-    $mostrar2=mysqli_fetch_assoc($resultado2);
-    $categoriaV=$mostrar2["NOMBRE"];
-    $sql3="SELECT * from plataformas WHERE PLATAFORMAS='".$plataforma."'";
-    $resultado3=mysqli_query($Conexion,$sql3);
-    $mostrar3=mysqli_fetch_assoc($resultado3);
-    $plataformaV=$mostrar3["IMAGEN"];
+
+    
+    $id = $_GET['id'];
+    
+    
+    $sql = "SELECT * FROM contenido WHERE COD_CONTENIDO='" . $id . "'";
+    $resultado = mysqli_query($Conexion, $sql);
+    
+    
+    if ($resultado && mysqli_num_rows($resultado) > 0) {
+        $mostrar = mysqli_fetch_assoc($resultado);
+        
+        
+        $titulo = $mostrar["NOMBRE"];
+        $descripcion = $mostrar["SINOPSIS"];
+        $imagen = $mostrar["IMAGEN"];
+        $video = $mostrar["VIDEO"];
+        $categoria = $mostrar["CATEGORIA"];
+        $plataforma = $mostrar["PLATAFORMAS"];
+        $popular = $mostrar["Popular"];
+    
+        
+        $sql2 = "SELECT * FROM categoria WHERE CATEGORIA='" . $categoria . "'";
+        $resultado2 = mysqli_query($Conexion, $sql2);
+        if ($resultado2) {
+            $mostrar2 = mysqli_fetch_assoc($resultado2);
+            $categoriaV = $mostrar2["NOMBRE"];
+        } else {
+            $categoriaV = "Categoría no encontrada";
+        }
+    
+     
+        $sql3 = "SELECT * FROM plataformas WHERE PLATAFORMAS='" . $plataforma . "'";
+        $resultado3 = mysqli_query($Conexion, $sql3);
+        if ($resultado3) {
+            $mostrar3 = mysqli_fetch_assoc($resultado3);
+            $plataformaV = $mostrar3["IMAGEN"];
+        } else {
+            $plataformaV = "Plataforma no encontrada";
+        }
+    
+      
+        $consultaP = "UPDATE contenido SET Popular = Popular + 1 WHERE COD_CONTENIDO='" . $id . "'";
+        $resultadoP = mysqli_query($Conexion, $consultaP);
+        
+  
+        if (!$resultadoP) {
+            echo "Error al actualizar la popularidad: " . mysqli_error($Conexion);
+        }
+    
+    } else {
+        echo "Contenido no encontrado";
+    }
+    
     ?>
     
     <h1 class="genero"><?php echo $categoriaV;?></h1>

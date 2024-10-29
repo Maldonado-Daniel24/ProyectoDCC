@@ -11,16 +11,9 @@ if(!isset($_SESSION['usuario'])){
         
         die();
 }
-if($_SESSION['TipoUsuario']== 2){
-    echo'
-          <script>
-          
-          window.location ="../Vista/navegacionadmin.php";
-          </script>';
-         
-      
-          
-  }
+
+
+
 echo'
 <!DOCTYPE html>
 <html>
@@ -31,7 +24,7 @@ echo'
 <body>
     <header class="header">
          <div class ="menu container">
-            <a href="#" class="logo">Capricornio</a>
+            <a href="../Vista/navegacion.php" class="logo">Capricornio</a>
             <input type="checkbox" id="menu" />
             <label for="menu">
              <img src="../IMG/menu.png" class="menu-icono" alt="menu"> 
@@ -56,67 +49,72 @@ echo'
              </section>
             </dialog>
         </div>
-        <h1 class="titulo">Top 10 global</h1>
-        <p class="listas">Listas semanales del Top 10 de <br> películas y TV más vistos</p>
+        <h1 class="titulo">Lo mas popular en<br> peliculas</h1>
+        
     </header>
-<img src="../IMG/top10.png" class="top10">
-<section class="lista-desplegable">
-<div class="dropdown">
-     <div class="select"> 
-         <span class="selected">Películas</span>
-         <div class="caret"></div>
-     </div>
-     <ul class="seleccion-desplegable">
-       <li>Películas</li>
-       <li>Series</li>
-     </ul>
-</div>
-</section>
-<section class="carrusel">
 
-<img src="../IMG/flecha-izquierda.png" alt="" class="custom-prev" id="custom-prev">
 
-    <div class="swiper mySwiper">
 
-        <div class="swiper-wrapper">
+';
+?>
 
-            <div class="swiper-slide">
-                <a href="../Vista/Reproduccion.php"><img src="../IMG/1.jpg" alt=""></a>
-            </div>
-            <div class="swiper-slide">
-                <a href="../Vista/Reproduccion.php"><img src="../IMG/2.jpg" alt=""></a>
-            </div>
-            <div class="swiper-slide">
-                <a href="../Vista/Reproduccion.php"><img src="../IMG/3.jpg" alt=""></a>
-            </div>
-            <div class="swiper-slide">
-                <a href="../Vista/Reproduccion.php"><img src="../IMG/4.jpg" alt=""></a>
-            </div>
-            <div class="swiper-slide">
-                <a href="../Vista/Reproduccion.php"><img src="../IMG/5.jpg" alt=""></a>
-            </div>
-            <div class="swiper-slide">
-                <a href="../Vista/Reproduccion.php"><img src="../IMG/6.jpg" alt=""></a>
-            </div>
-            <div class="swiper-slide">
-                <a href="../Vista/Reproduccion.php"><img src="../IMG/7.jpg" alt=""></a>
-            </div>
-            <div class="swiper-slide">
-                <a href="../Vista/Reproduccion.php"><img src="../IMG/8.jpg" alt=""></a>
-            </div>
-            <div class="swiper-slide">
-                <a href="../Vista/Reproduccion.php"><img src="../IMG/9.jpg" alt=""></a>
-            </div>
-            <div class="swiper-slide">
-                <a href="../Vista/Reproduccion.php"><img src="../IMG/10.jpg" alt=""></a>
-            </div>
 
-        </div>
+<?php
+include("../Controlador/bd.php");
+$sql = "SELECT * FROM contenido ORDER BY Popular DESC";
+$resultado = mysqli_query($Conexion, $sql);
+$sql2 = "SELECT COUNT(*) AS total FROM contenido";
+$resultado2 = mysqli_query($Conexion, $sql2);
+
+if ($resultado2) {
+    $fila = mysqli_fetch_assoc($resultado2);
+    $totalPeliculas = $fila['total'];
+}
+else {
+    echo "<p>Error al contar las películas.</p>";
+}
+
+ ?> <h1 class="tituloS"><?php echo "" . $totalPeliculas . " titulos ordenados por Popularidad";?></h1>
+ <hr class="linearoja" style="border: none; border-top: 2px solid red; width: 30%;">
+<?php
+
+
+if ($resultado && mysqli_num_rows($resultado) > 0) {
     
-    </div>
-    <img src="../IMG/flecha.png" alt="" class="custom-next" id="custom-next">
 
-    </section>
+
+echo "<div style='display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 10px; padding: 10px;'>";
+
+
+    
+while ($mostrar = mysqli_fetch_assoc($resultado)) {
+$titulo = $mostrar["NOMBRE"];
+$imagen = $mostrar["IMAGEN"];
+
+echo "<div style='padding: 10px; text-align: center;'>";
+        
+        
+if (!empty($imagen)) {?>
+<?php echo"<a href='Reproduccion.php?id=".$mostrar['COD_CONTENIDO']."'>"?><img src="<?php echo $mostrar['IMAGEN']; ?>" alt="Imagen" width= "200px" height="300px"></a>
+<?php
+}    
+echo "</div>";
+
+}
+echo "</div>";
+}else {
+echo "<p>No se encontraron películas.</p>";
+}
+
+
+?>
+            
+        
+    
+    
+    
+
+   
 
     <footer class="footer container">
 
@@ -138,6 +136,5 @@ echo'
     <script src="../JS/PopularCarrusel.js"></script>
 </body>
 </html>
-';
-?>
+
 

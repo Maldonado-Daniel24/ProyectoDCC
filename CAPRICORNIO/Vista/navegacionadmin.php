@@ -36,7 +36,7 @@ echo'
              <ul>
                 <li><a href="../Vista/navegacionadmin.php">Inicio</a></li>
                 <li><a href="../Vista/NavegacionNuevoAdmin.php">Nuevo</a></li>
-                <li><a href="../Vista/NavegacionPopularAdmin.php">Popular</a></li>
+                <li><a href="../Vista/NavegacionPopular.php">Popular</a></li>
                 <li><a href="">Random</a></li>
                 <li><a href="../Vista/navegacionsubir.php">Subir</a></li>
              </ul>
