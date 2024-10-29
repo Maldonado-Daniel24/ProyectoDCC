@@ -467,3 +467,9 @@ h2{
   display: flex;
   margin-top: 480px;
 }
+
+.modal-c{
+  position: relative;
+  right: 30px;
+  
+}
