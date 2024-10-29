@@ -46,7 +46,7 @@ echo'
                 <li><a href="../Vista/navegacion.php">Inicio</a></li>
                 <li><a href="../Vista/NavegacionNuevo.php">Nuevo</a></li>
                 <li><a href="../Vista/NavegacionPopular.php">Popular</a></li>
-                <li><a href="">Random</a></li>
+                <li><a href="../Vista/Navegacionrandom.php">Random</a></li>
              </ul>
             </nav> 
             <a href="#" class="btn-1" id="btn-abrir-modal">Usuario</a>
@@ -407,7 +407,7 @@ echo'
            <li><a href="../Vista/navegacion.php">Inicio</li>
            <li><a href="../Vista/NavegacionNuevo.php">Nuevo</li>
            <li><a href="../Vista/NavegacionPopular.php">Popular</li>
-           <li><a href="../Vista/NavegacionRandom.php">Random</li>
+           <li><a href="../Vista/Navegacionrandom.php">Random</li>
         </ul>
         
     </footer>
