@@ -95,16 +95,16 @@ echo'
     <h1 class="genero"><?php echo $categoriaV;?></h1>
     <h5 class="Titulo"style="text-transform: uppercase;"><?php echo $titulo;?></h5>
     <img src="<?php echo $imagen;?>" class="poster">
-    <section class="contenido">
     <span class="video_peli"><iframe width="640" height="460" controls src="<?php echo $video;?>" type="video/mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope picture-in-picture" 
             allowfullscreen>
     </iframe></span>
-    <p class="titulo-sinopsis">SINOPSIS</p>
     <hr class="linea-sinopsis">
+    <section class="alineacion">
+    <p class="titulo-sinopsis">SINOPSIS</p>
     <p class="sinopsis"><?php echo $descripcion;?></p>
-    </section>
     <p class="plataformas">PLATAFORMAS</p>
     <img src="<?php echo $plataformaV;?>" class="netflix" width="95" height="95">
+    </section>
 
     <footer class="footer container">
 
