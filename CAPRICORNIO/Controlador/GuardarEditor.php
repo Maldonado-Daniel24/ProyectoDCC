@@ -9,10 +9,11 @@ $descripcion = $_POST['descripcion'];
 $categoria = $_POST['categoria'];
 $etiquetas = $_POST['etiquetas'];
 $imagen = $_POST['image'];
+$imagenbg = $_POST['imagenbg'];
 $video = $_POST['media'];
 
 
-$Consulta = "INSERT INTO contenido(NOMBRE, SINOPSIS, CATEGORIA, PLATAFORMAS, VIDEO, IMAGEN) VALUE('$titulo', '$descripcion', '$categoria', '$etiquetas', '$video', '$imagen')";
+$Consulta = "INSERT INTO contenido(NOMBRE, SINOPSIS, CATEGORIA, PLATAFORMAS, VIDEO, IMAGEN, IMAGENBG) VALUE('$titulo', '$descripcion', '$categoria', '$etiquetas', '$video', '$imagen', '$imagenbg')";
 
 $resultado = mysqli_query($Conexion,$Consulta);
 
