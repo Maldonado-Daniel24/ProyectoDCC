@@ -1,4 +1,5 @@
 <?php
+
 session_start();
 if(!isset($_SESSION['usuario'])){
   echo'
@@ -18,6 +19,7 @@ if($_SESSION['TipoUsuario']== 0){
         window.location ="../Vista/navegacion.php";
         </script>';      
 }
+include("../Controlador/bd.php");
 echo'
 <!DOCTYPE html>
 <html>
@@ -64,927 +66,334 @@ echo'
           </div>
         </div>      
     </header>
+';
+    ?>
 
     <section class="movies container">
-     
-       <h2>Películas del Momento</h2>
-       <hr class="linea-1">
-
-        <div class="box-container-1">
-
-            <div class="box-1">
-                <div class="content">
-                   <a href="../Vista/Reproduccion.php"><img src="../IMG/1.jpg" alt=""></a>
-                   <h3>Película HD</h3>
-                   <p>
-                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                   </p>
+    
+    <h2>Cine de Catástrofes</h2>
+    <hr class="linea-1">
+    
+     <div class="">
+    
+         <div class="">
+             <div class="">
+             <table class="tbl_Accion">
+               
+                <?php
+                $ConsultaC="SELECT * from contenido WHERE CATEGORIA IN (3)";
+                $resultadoC=mysqli_query($Conexion,$ConsultaC);
+                
+                 while ($mostrarC = mysqli_fetch_assoc($resultadoC)) {
+               ?>
+                    <td>
+                        <?php echo"<a href='Reproduccion.php?id=".$mostrarC['COD_CONTENIDO']."'>"?><img src="<?php echo $mostrarC['IMAGEN']; ?>" alt="Imagen" width="250" height="400"></a><br>
+                        <span class="Nombre1"><?php echo $mostrarC['NOMBRE']?></span>
+                    </td>
+             <?php
+             }
+              ?>
+            </table>
+             </div>
+         </div>
+     </div>
+    
+            <div class="load-more" id="load-more-1">Cargar más</div>
+    
+        </section>
+    
+        <section class="movies container">
+    
+           <h2>Cine de Acción y Aventuras</h2>
+           <hr class="linea-2">
+    
+            <div class="">
+    
+                <div class="">
+                    <div class="">
+                    <table class="tbl_Accion">
+                      
+                       <?php
+                       $ConsultaA="SELECT * from contenido WHERE CATEGORIA IN (1, 2)";
+                       $resultadoA=mysqli_query($Conexion,$ConsultaA);
+                       
+                        while ($mostrarA = mysqli_fetch_assoc($resultadoA)) {
+                      ?>
+                           <td>
+                               <?php echo"<a href='Reproduccion.php?id=".$mostrarA['COD_CONTENIDO']."'>"?><img src="<?php echo $mostrarA['IMAGEN']; ?>" alt="Imagen" width="250" height="400"></a><br>
+                               <span class="Nombre1"><?php echo $mostrarA['NOMBRE']?></span>
+                           </td>
+                    <?php
+                    }
+                     ?>
+                   </table>
+                    </div>
                 </div>
             </div>
-
-            <div class="box-1">
-                <div class="content">
-                   <a href="../Vista/Reproduccion.php"><img src="../IMG/2.jpg" alt=""></a>
-                   <h3>Película HD</h3>
-                   <p>
-                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                   </p>
+            <div class="load-more" id="load-more-2">Cargar más</div>
+    
+        </section>
+    
+        <section class="movies container">
+    
+           <h2>Anime</h2>
+           <hr class="linea-3">
+    
+            <div class="">
+    
+                <div class="">
+                    <div class="">
+                    <table class="tbl_Accion">
+                      
+                       <?php
+                       $ConsultaANI="SELECT * from contenido WHERE CATEGORIA IN (11)";
+                       $resultadoANI=mysqli_query($Conexion,$ConsultaANI);
+                       
+                        while ($mostrarANI = mysqli_fetch_assoc($resultadoANI)) {
+                      ?>
+                           <td>
+                               <?php echo"<a href='Reproduccion.php?id=".$mostrarANI['COD_CONTENIDO']."'>"?><img src="<?php echo $mostrarANI['IMAGEN']; ?>" alt="Imagen" width="250" height="400"></a><br>
+                               <span class="Nombre1"><?php echo $mostrarANI['NOMBRE']?></span>
+                           </td>
+                    <?php
+                    }
+                     ?>
+                   </table>
+                    </div>
                 </div>
             </div>
-
-            <div class="box-1">
-                <div class="content">
-                   <a href="../Vista/Reproduccion.php"><img src="../IMG/3.jpg" alt=""></a>
-                   <h3>Película HD</h3>
-                   <p>
-                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                   </p>
+            <div class="load-more" id="load-more-3">Cargar más</div>
+    
+        </section>
+    
+        <section class="movies container">
+    
+           <h2>Cine de Terror</h2>
+           <hr class="linea-4">
+    
+            <div class="">
+    
+                <div class="">
+                    <div class="">
+                    <table class="tbl_Accion">
+                      
+                       <?php
+                       $ConsultaT="SELECT * from contenido WHERE CATEGORIA IN (9)";
+                       $resultadoT=mysqli_query($Conexion,$ConsultaT);
+                       
+                        while ($mostrarT = mysqli_fetch_assoc($resultadoT)) {
+                      ?>
+                           <td>
+                               <?php echo"<a href='Reproduccion.php?id=".$mostrarT['COD_CONTENIDO']."'>"?><img src="<?php echo $mostrarT['IMAGEN']; ?>" alt="Imagen" width="250" height="400"></a><br>
+                               <span class="Nombre1"><?php echo $mostrarT['NOMBRE']?></span>
+                           </td>
+                    <?php
+                    }
+                     ?>
+                   </table>
+                    </div>
                 </div>
             </div>
-
-            <div class="box-1">
-                <div class="content">
-                   <a href="../Vista/Reproduccion.php"><img src="../IMG/4.jpg" alt=""></a>
-                   <h3>Película HD</h3>
-                   <p>
-                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                   </p>
+            <div class="load-more" id="load-more-4">Cargar más</div>
+    
+        </section>
+    
+        <section class="movies container">
+    
+           <h2>Películas de Ciencia Ficción</h2>
+           <hr class="linea-5">
+    
+            <div class="">
+    
+                <div class="">
+                    <div class="">
+                    <table class="tbl_Accion">
+                      
+                       <?php
+                       $ConsultaCF="SELECT * from contenido WHERE CATEGORIA IN (4)";
+                       $resultadoCF=mysqli_query($Conexion,$ConsultaCF);
+                       
+                        while ($mostrarCF = mysqli_fetch_assoc($resultadoCF)) {
+                      ?>
+                           <td>
+                               <?php echo"<a href='Reproduccion.php?id=".$mostrarCF['COD_CONTENIDO']."'>"?><img src="<?php echo $mostrarCF['IMAGEN']; ?>" alt="Imagen" width="250" height="400"></a><br>
+                               <span class="Nombre1"><?php echo $mostrarCF['NOMBRE']?></span>
+                           </td>
+                    <?php
+                    }
+                     ?>
+                   </table>
+                    </div>
                 </div>
             </div>
-
-            <div class="box-1">
-                <div class="content">
-                   <a href="../Vista/Reproduccion.php"><img src="../IMG/5.jpg" alt=""></a>
-                   <h3>Película HD</h3>
-                   <p>
-                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                   </p>
-                </div>
-            </div>
-
-            <div class="box-1">
-                <div class="content">
-                   <a href="../Vista/Reproduccion.php"><img src="../IMG/6.jpg" alt=""></a>
-                   <h3>Película HD</h3>
-                   <p>
-                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                   </p>
-                </div>
-            </div>
-
-            <div class="box-1">
-                <div class="content">
-                   <a href="../Vista/Reproduccion.php"><img src="../IMG/7.jpg" alt=""></a>
-                   <h3>Película HD</h3>
-                   <p>
-                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                   </p>
-                </div>
-            </div>
-
-            <div class="box-1">
-                <div class="content">
-                   <a href="../Vista/Reproduccion.php"><img src="../IMG/8.jpg" alt=""></a>
-                   <h3>Película HD</h3>
-                   <p>
-                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                   </p>
-                </div>
-            </div>
-        </div>
-
-        <div class="load-more" id="load-more-1">Cargar más</div>
-
-    </section>
-
+            <div class="load-more" id="load-more-5">Cargar más</div>
+    
+        </section>
+    
     <section class="movies container">
-     
-       <h2>Cine de Acción y Aventuras</h2>
-       <hr class="linea-2">
-
-        <div class="box-container-2">
-
-            <div class="box-2">
-                <div class="content">
-                   <a href="../Vista/Reproduccion.php"><img src="../IMG/9.jpg" alt=""></a>
-                   <h3>Película HD</h3>
-                   <p>
-                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                   </p>
-                </div>
-            </div>
-
-            <div class="box-2">
-                <div class="content">
-                   <a href="../Vista/Reproduccion.php"><img src="../IMG/10.jpg" alt=""></a>
-                   <h3>Película HD</h3>
-                   <p>
-                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                   </p>
-                </div>
-            </div>
-
-            <div class="box-2">
-                <div class="content">
-                   <a href="../Vista/Reproduccion.php"><img src="../IMG/11.jpg" alt=""></a>
-                   <h3>Película HD</h3>
-                   <p>
-                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                   </p>
-                </div>
-            </div>
-
-            <div class="box-2">
-                <div class="content">
-                   <a href="../Vista/Reproduccion.php"><img src="../IMG/12.jpg" alt=""></a>
-                   <h3>Película HD</h3>
-                   <p>
-                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                   </p>
-                </div>
-            </div>
-
-            <div class="box-2">
-                <div class="content">
-                   <a href="../Vista/Reproduccion.php"><img src="../IMG/13.jpg" alt=""></a>
-                   <h3>Película HD</h3>
-                   <p>
-                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                   </p>
-                </div>
-            </div>
-
-            <div class="box-2">
-                <div class="content">
-                   <a href="../Vista/Reproduccion.php"><img src="../IMG/14.jpg" alt=""></a>
-                   <h3>Película HD</h3>
-                   <p>
-                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                   </p>
-                </div>
-            </div>
-
-            <div class="box-2">
-                <div class="content">
-                   <a href="../Vista/Reproduccion.php"><img src="../IMG/15.jpg" alt=""></a>
-                   <h3>Película HD</h3>
-                   <p>
-                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                   </p>
-                </div>
-            </div>
-
-            <div class="box-2">
-                <div class="content">
-                   <a href="../Vista/Reproduccion.php"><img src="../IMG/16.jpg" alt=""></a>
-                   <h3>Película HD</h3>
-                   <p>
-                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                   </p>
-                </div>
-            </div>
-        </div>
-
-        <div class="load-more" id="load-more-2">Cargar más</div>
-
-    </section>
-
-     <section class="movies container">
-     
-       <h2>Cine de Terror</h2>
-       <hr class="linea-3">
-
-        <div class="box-container-3">
-
-            <div class="box-3">
-                <div class="content">
-                   <a href="../Vista/Reproduccion.php"><img src="../IMG/17.jpg" alt=""></a>
-                   <h3>Película HD</h3>
-                   <p>
-                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                   </p>
-                </div>
-            </div>
-
-            <div class="box-3">
-                <div class="content">
-                   <a href="../Vista/Reproduccion.php"><img src="../IMG/18.jpg" alt=""></a>
-                   <h3>Película HD</h3>
-                   <p>
-                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                   </p>
-                </div>
-            </div>
-
-            <div class="box-3">
-                <div class="content">
-                   <a href="../Vista/Reproduccion.php"><img src="../IMG/19.jpg" alt=""></a>
-                   <h3>Película HD</h3>
-                   <p>
-                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                   </p>
-                </div>
-            </div>
-
-            <div class="box-3">
-                <div class="content">
-                   <a href="../Vista/Reproduccion.php"><img src="../IMG/20.jpg" alt=""></a>
-                   <h3>Película HD</h3>
-                   <p>
-                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                   </p>
-                </div>
-            </div>
-
-            <div class="box-3">
-                <div class="content">
-                   <a href="../Vista/Reproduccion.php"><img src="../IMG/21.jpg" alt=""></a>
-                   <h3>Película HD</h3>
-                   <p>
-                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                   </p>
-                </div>
-            </div>
-
-            <div class="box-3">
-                <div class="content">
-                   <a href="../Vista/Reproduccion.php"><img src="../IMG/22.jpg" alt=""></a>
-                   <h3>Película HD</h3>
-                   <p>
-                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                   </p>
-                </div>
-            </div>
-
-            <div class="box-3">
-                <div class="content">
-                   <a href="../Vista/Reproduccion.php"><img src="../IMG/23.jpg" alt=""></a>
-                   <h3>Película HD</h3>
-                   <p>
-                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                   </p>
-                </div>
-            </div>
-
-            <div class="box-3">
-                <div class="content">
-                   <a href="../Vista/Reproduccion.php"><img src="../IMG/24.jpg" alt=""></a>
-                   <h3>Película HD</h3>
-                   <p>
-                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                   </p>
-                </div>
-            </div>
-        </div>
-
-        <div class="load-more" id="load-more-3">Cargar más</div>
-
-    </section>
-
-     <section class="movies container">
-     
-       <h2>Películas de Ciencia Ficción</h2>
-       <hr class="linea-4">
-
-        <div class="box-container-4">
-
-            <div class="box-4">
-                <div class="content">
-                   <a href="../Vista/Reproduccion.php"><img src="../IMG/17.jpg" alt=""></a>
-                   <h3>Película HD</h3>
-                   <p>
-                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                   </p>
-                </div>
-            </div>
-
-            <div class="box-4">
-                <div class="content">
-                   <a href="../Vista/Reproduccion.php"><img src="../IMG/18.jpg" alt=""></a>
-                   <h3>Película HD</h3>
-                   <p>
-                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                   </p>
-                </div>
-            </div>
-
-            <div class="box-4">
-                <div class="content">
-                   <a href="../Vista/Reproduccion.php"><img src="../IMG/19.jpg" alt=""></a>
-                   <h3>Película HD</h3>
-                   <p>
-                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                   </p>
-                </div>
-            </div>
-
-            <div class="box-4">
-                <div class="content">
-                   <a href="../Vista/Reproduccion.php"><img src="../IMG/20.jpg" alt=""></a>
-                   <h3>Película HD</h3>
-                   <p>
-                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                   </p>
-                </div>
-            </div>
-
-            <div class="box-4">
-                <div class="content">
-                   <a href="../Vista/Reproduccion.php"><img src="../IMG/21.jpg" alt=""></a>
-                   <h3>Película HD</h3>
-                   <p>
-                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                   </p>
-                </div>
-            </div>
-
-            <div class="box-4">
-                <div class="content">
-                   <a href="../Vista/Reproduccion.php"><img src="../IMG/22.jpg" alt=""></a>
-                   <h3>Película HD</h3>
-                   <p>
-                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                   </p>
-                </div>
-            </div>
-
-            <div class="box-4">
-                <div class="content">
-                   <a href="../Vista/Reproduccion.php"><img src="../IMG/23.jpg" alt=""></a>
-                   <h3>Película HD</h3>
-                   <p>
-                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                   </p>
-                </div>
-            </div>
-
-            <div class="box-4">
-                <div class="content">
-                   <a href="../Vista/Reproduccion.php"><img src="../IMG/24.jpg" alt=""></a>
-                   <h3>Película HD</h3>
-                   <p>
-                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                   </p>
-                </div>
-            </div>
-        </div>
-
-        <div class="load-more" id="load-more-4">Cargar más</div>
-
-    </section>
-
-    <section class="movies container">
-     
-       <h2>Películas de Comedia</h2>
-       <hr class="linea-5">
-
-        <div class="box-container-5">
-
-            <div class="box-5">
-                <div class="content">
-                   <a href="../Vista/Reproduccion.php"><img src="../IMG/17.jpg" alt=""></a>
-                   <h3>Película HD</h3>
-                   <p>
-                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                   </p>
-                </div>
-            </div>
-
-            <div class="box-5">
-                <div class="content">
-                   <a href="../Vista/Reproduccion.php"><img src="../IMG/18.jpg" alt=""></a>
-                   <h3>Película HD</h3>
-                   <p>
-                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                   </p>
-                </div>
-            </div>
-
-            <div class="box-5">
-                <div class="content">
-                   <a href="../Vista/Reproduccion.php"><img src="../IMG/19.jpg" alt=""></a>
-                   <h3>Película HD</h3>
-                   <p>
-                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                   </p>
-                </div>
-            </div>
-
-            <div class="box-5">
-                <div class="content">
-                   <a href="../Vista/Reproduccion.php"><img src="../IMG/20.jpg" alt=""></a>
-                   <h3>Película HD</h3>
-                   <p>
-                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                   </p>
-                </div>
-            </div>
-
-            <div class="box-5">
-                <div class="content">
-                   <a href="../Vista/Reproduccion.php"><img src="../IMG/21.jpg" alt=""></a>
-                   <h3>Película HD</h3>
-                   <p>
-                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                   </p>
-                </div>
-            </div>
-
-            <div class="box-5">
-                <div class="content">
-                   <a href="../Vista/Reproduccion.php"><img src="../IMG/22.jpg" alt=""></a>
-                   <h3>Película HD</h3>
-                   <p>
-                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                   </p>
-                </div>
-            </div>
-
-            <div class="box-5">
-                <div class="content">
-                   <a href="../Vista/Reproduccion.php"><img src="../IMG/23.jpg" alt=""></a>
-                   <h3>Película HD</h3>
-                   <p>
-                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                   </p>
-                </div>
-            </div>
-
-            <div class="box-5">
-                <div class="content">
-                   <a href="../Vista/Reproduccion.php"><img src="../IMG/24.jpg" alt=""></a>
-                   <h3>Película HD</h3>
-                   <p>
-                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                   </p>
-                </div>
-            </div>
-        </div>
-
-        <div class="load-more" id="load-more-5">Cargar más</div>
-
-    </section>
-
-    <section class="movies container">
-     
-       <h2>Series de Comedia</h2>
-       <hr class="linea-6">
-
-        <div class="box-container-6">
-
-            <div class="box-6">
-                <div class="content">
-                   <a href="../Vista/Reproduccion.php"><img src="../IMG/17.jpg" alt=""></a>
-                   <h3>Película HD</h3>
-                   <p>
-                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                   </p>
-                </div>
-            </div>
-
-            <div class="box-6">
-                <div class="content">
-                   <a href="../Vista/Reproduccion.php"><img src="../IMG/18.jpg" alt=""></a>
-                   <h3>Película HD</h3>
-                   <p>
-                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                   </p>
-                </div>
-            </div>
-
-            <div class="box-6">
-                <div class="content">
-                   <a href="../Vista/Reproduccion.php"><img src="../IMG/19.jpg" alt=""></a>
-                   <h3>Película HD</h3>
-                   <p>
-                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                   </p>
-                </div>
-            </div>
-
-            <div class="box-6">
-                <div class="content">
-                   <a href="../Vista/Reproduccion.php"><img src="../IMG/20.jpg" alt=""></a>
-                   <h3>Película HD</h3>
-                   <p>
-                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                   </p>
-                </div>
-            </div>
-
-            <div class="box-6">
-                <div class="content">
-                   <a href="../Vista/Reproduccion.php"><img src="../IMG/21.jpg" alt=""></a>
-                   <h3>Película HD</h3>
-                   <p>
-                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                   </p>
-                </div>
-            </div>
-
-            <div class="box-6">
-                <div class="content">
-                   <a href="../Vista/Reproduccion.php"><img src="../IMG/22.jpg" alt=""></a>
-                   <h3>Película HD</h3>
-                   <p>
-                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                   </p>
-                </div>
-            </div>
-
-            <div class="box-6">
-                <div class="content">
-                   <a href="../Vista/Reproduccion.php"><img src="../IMG/23.jpg" alt=""></a>
-                   <h3>Película HD</h3>
-                   <p>
-                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                   </p>
-                </div>
-            </div>
-
-            <div class="box-6">
-                <div class="content">
-                   <a href="../Vista/Reproduccion.php"><img src="../IMG/24.jpg" alt=""></a>
-                   <h3>Película HD</h3>
-                   <p>
-                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                   </p>
-                </div>
-            </div>
-        </div>
-
-        <div class="load-more" id="load-more-6">Cargar más</div>
-
-    </section>
-
-    <section class="movies container">
-     
-       <h2>Series de Anime</h2>
-       <hr class="linea-7">
-
-        <div class="box-container-7">
-
-            <div class="box-7">
-                <div class="content">
-                   <a href="../Vista/Reproduccion.php"><img src="../IMG/17.jpg" alt=""></a>
-                   <h3>Película HD</h3>
-                   <p>
-                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                   </p>
-                </div>
-            </div>
-
-            <div class="box-7">
-                <div class="content">
-                   <a href="../Vista/Reproduccion.php"><img src="../IMG/18.jpg" alt=""></a>
-                   <h3>Película HD</h3>
-                   <p>
-                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                   </p>
-                </div>
-            </div>
-
-            <div class="box-7">
-                <div class="content">
-                   <a href="../Vista/Reproduccion.php"><img src="../IMG/19.jpg" alt=""></a>
-                   <h3>Película HD</h3>
-                   <p>
-                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                   </p>
-                </div>
-            </div>
-
-            <div class="box-7">
-                <div class="content">
-                   <a href="../Vista/Reproduccion.php"><img src="../IMG/20.jpg" alt=""></a>
-                   <h3>Película HD</h3>
-                   <p>
-                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                   </p>
-                </div>
-            </div>
-
-            <div class="box-7">
-                <div class="content">
-                   <a href="../Vista/Reproduccion.php"><img src="../IMG/21.jpg" alt=""></a>
-                   <h3>Película HD</h3>
-                   <p>
-                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                   </p>
-                </div>
-            </div>
-
-            <div class="box-7">
-                <div class="content">
-                   <a href="../Vista/Reproduccion.php"><img src="../IMG/22.jpg" alt=""></a>
-                   <h3>Película HD</h3>
-                   <p>
-                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                   </p>
-                </div>
-            </div>
-
-            <div class="box-7">
-                <div class="content">
-                   <a href="../Vista/Reproduccion.php"><img src="../IMG/23.jpg" alt=""></a>
-                   <h3>Película HD</h3>
-                   <p>
-                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                   </p>
-                </div>
-            </div>
-
-            <div class="box-7">
-                <div class="content">
-                   <a href="../Vista/Reproduccion.php"><img src="../IMG/24.jpg" alt=""></a>
-                   <h3>Película HD</h3>
-                   <p>
-                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                   </p>
-                </div>
-            </div>
-        </div>
-
-        <div class="load-more" id="load-more-7">Cargar más</div>
-
-    </section>
-
-    <section class="movies container">
-     
-       <h2>TV de Misterio y Suspense</h2>
-       <hr class="linea-8">
-
-        <div class="box-container-8">
-
-            <div class="box-8">
-                <div class="content">
-                   <a href="../Vista/Reproduccion.php"><img src="../IMG/17.jpg" alt=""></a>
-                   <h3>Película HD</h3>
-                   <p>
-                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                   </p>
-                </div>
-            </div>
-
-            <div class="box-8">
-                <div class="content">
-                   <a href="../Vista/Reproduccion.php"><img src="../IMG/18.jpg" alt=""></a>
-                   <h3>Película HD</h3>
-                   <p>
-                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                   </p>
-                </div>
-            </div>
-
-            <div class="box-8">
-                <div class="content">
-                   <a href="../Vista/Reproduccion.php"><img src="../IMG/19.jpg" alt=""></a>
-                   <h3>Película HD</h3>
-                   <p>
-                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                   </p>
-                </div>
-            </div>
-
-            <div class="box-8">
-                <div class="content">
-                   <a href="../Vista/Reproduccion.php"><img src="../IMG/20.jpg" alt=""></a>
-                   <h3>Película HD</h3>
-                   <p>
-                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                   </p>
-                </div>
-            </div>
-
-            <div class="box-8">
-                <div class="content">
-                   <a href="../Vista/Reproduccion.php"><img src="../IMG/21.jpg" alt=""></a>
-                   <h3>Película HD</h3>
-                   <p>
-                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                   </p>
-                </div>
-            </div>
-
-            <div class="box-8">
-                <div class="content">
-                   <a href="../Vista/Reproduccion.php"><img src="../IMG/22.jpg" alt=""></a>
-                   <h3>Película HD</h3>
-                   <p>
-                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                   </p>
-                </div>
-            </div>
-
-            <div class="box-8">
-                <div class="content">
-                   <a href="../Vista/Reproduccion.php"><img src="../IMG/23.jpg" alt=""></a>
-                   <h3>Película HD</h3>
-                   <p>
-                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                   </p>
-                </div>
-            </div>
-
-            <div class="box-8">
-                <div class="content">
-                   <a href="../Vista/Reproduccion.php"><img src="../IMG/24.jpg" alt=""></a>
-                   <h3>Película HD</h3>
-                   <p>
-                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                   </p>
-                </div>
-            </div>
-        </div>
-
-        <div class="load-more" id="load-more-8">Cargar más</div>
-
-    </section>
-
-    <section class="movies container">
-     
-       <h2>Series Dramáticas</h2>
-       <hr class="linea-9">
-
-        <div class="box-container-9">
-
-            <div class="box-9">
-                <div class="content">
-                   <a href="../Vista/Reproduccion.php"><img src="../IMG/17.jpg" alt=""></a>
-                   <h3>Película HD</h3>
-                   <p>
-                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                   </p>
-                </div>
-            </div>
-
-            <div class="box-9">
-                <div class="content">
-                   <a href="../Vista/Reproduccion.php"><img src="../IMG/18.jpg" alt=""></a>
-                   <h3>Película HD</h3>
-                   <p>
-                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                   </p>
-                </div>
-            </div>
-
-            <div class="box-9">
-                <div class="content">
-                   <a href="../Vista/Reproduccion.php"><img src="../IMG/19.jpg" alt=""></a>
-                   <h3>Película HD</h3>
-                   <p>
-                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                   </p>
-                </div>
-            </div>
-
-            <div class="box-9">
-                <div class="content">
-                   <a href="../Vista/Reproduccion.php"><img src="../IMG/20.jpg" alt=""></a>
-                   <h3>Película HD</h3>
-                   <p>
-                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                   </p>
-                </div>
-            </div>
-
-            <div class="box-9">
-                <div class="content">
-                   <a href="../Vista/Reproduccion.php"><img src="../IMG/21.jpg" alt=""></a>
-                   <h3>Película HD</h3>
-                   <p>
-                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                   </p>
-                </div>
-            </div>
-
-            <div class="box-9">
-                <div class="content">
-                   <a href="../Vista/Reproduccion.php"><img src="../IMG/22.jpg" alt=""></a>
-                   <h3>Película HD</h3>
-                   <p>
-                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                   </p>
-                </div>
-            </div>
-
-            <div class="box-9">
-                <div class="content">
-                   <a href="../Vista/Reproduccion.php"><img src="../IMG/23.jpg" alt=""></a>
-                   <h3>Película HD</h3>
-                   <p>
-                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                   </p>
-                </div>
-            </div>
-
-            <div class="box-9">
-                <div class="content">
-                   <a href="../Vista/Reproduccion.php"><img src="../IMG/24.jpg" alt=""></a>
-                   <h3>Película HD</h3>
-                   <p>
-                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                   </p>
-                </div>
-            </div>
-        </div>
-
-        <div class="load-more" id="load-more-9">Cargar más</div>
-
-    </section>
-
-    <section class="movies container">
-     
-       <h2>Series de Ciencia Ficción</h2>
-       <hr class="linea-10">
-
-        <div class="box-container-10">
-
-            <div class="box-10">
-                <div class="content">
-                   <a href="../Vista/Reproduccion.php"><img src="../IMG/17.jpg" alt=""></a>
-                   <h3>Película HD</h3>
-                   <p>
-                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                   </p>
-                </div>
-            </div>
-
-            <div class="box-10">
-                <div class="content">
-                   <a href="../Vista/Reproduccion.php"><img src="../IMG/18.jpg" alt=""></a>
-                   <h3>Película HD</h3>
-                   <p>
-                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                   </p>
-                </div>
-            </div>
-
-            <div class="box-10">
-                <div class="content">
-                   <a href="../Vista/Reproduccion.php"><img src="../IMG/19.jpg" alt=""></a>
-                   <h3>Película HD</h3>
-                   <p>
-                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                   </p>
-                </div>
-            </div>
-
-            <div class="box-10">
-                <div class="content">
-                   <a href="../Vista/Reproduccion.php"><img src="../IMG/20.jpg" alt=""></a>
-                   <h3>Película HD</h3>
-                   <p>
-                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                   </p>
-                </div>
-            </div>
-
-            <div class="box-10">
-                <div class="content">
-                   <a href="../Vista/Reproduccion.php"><img src="../IMG/21.jpg" alt=""></a>
-                   <h3>Película HD</h3>
-                   <p>
-                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                   </p>
-                </div>
-            </div>
-
-            <div class="box-10">
-                <div class="content">
-                   <a href="../Vista/Reproduccion.php"><img src="../IMG/22.jpg" alt=""></a>
-                   <h3>Película HD</h3>
-                   <p>
-                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                   </p>
-                </div>
-            </div>
-
-            <div class="box-10">
-                <div class="content">
-                   <a href="../Vista/Reproduccion.php"><img src="../IMG/23.jpg" alt=""></a>
-                   <h3>Película HD</h3>
-                   <p>
-                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                   </p>
-                </div>
-            </div>
-
-            <div class="box-10">
-                <div class="content">
-                   <a href="../Vista/Reproduccion.php"><img src="../IMG/24.jpg" alt=""></a>
-                   <h3>Película HD</h3>
-                   <p>
-                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                   </p>
-                </div>
-            </div>
-        </div>
-
-        <div class="load-more" id="load-more-10">Cargar más</div>
-
+    
+    <h2>Películas de Comedia</h2>
+    <hr class="linea-6">
+    
+     <div class="">
+    
+         <div class="">
+             <div class="">
+             <table class="tbl_Accion">
+               
+                <?php
+                $ConsultaCD="SELECT * from contenido WHERE CATEGORIA IN (5)";
+                $resultadoCD=mysqli_query($Conexion,$ConsultaCD);
+                
+                 while ($mostrarCD = mysqli_fetch_assoc($resultadoCD)) {
+               ?>
+                    <td>
+                        <?php echo"<a href='Reproduccion.php?id=".$mostrarCD['COD_CONTENIDO']."'>"?><img src="<?php echo $mostrarCD['IMAGEN']; ?>" alt="Imagen" width="250" height="400"></a><br>
+                        <span class="Nombre1"><?php echo $mostrarCD['NOMBRE']?></span>
+                    </td>
+             <?php
+             }
+              ?>
+            </table>
+             </div>
+         </div>
+     </div>
+     <div class="load-more" id="load-more-6">Cargar más</div>
+    
     </section>
     
+    <section class="movies container">
+    
+    <h2>Cine de Misterio y Suspense</h2>
+    <hr class="linea-7">
+    
+     <div class="">
+    
+         <div class="">
+             <div class="">
+             <table class="tbl_Accion">
+               
+                <?php
+                $ConsultaMS="SELECT * from contenido WHERE CATEGORIA IN (12, 10)";
+                $resultadoMS=mysqli_query($Conexion,$ConsultaMS);
+                
+                 while ($mostrarMS = mysqli_fetch_assoc($resultadoMS)) {
+               ?>
+                    <td>
+                        <?php echo"<a href='Reproduccion.php?id=".$mostrarMS['COD_CONTENIDO']."'>"?><img src="<?php echo $mostrarMS['IMAGEN']; ?>" alt="Imagen" width="250" height="400"></a><br>
+                        <span class="Nombre1"><?php echo $mostrarMS['NOMBRE']?></span>
+                    </td>
+             <?php
+             }
+              ?>
+            </table>
+             </div>
+         </div>
+     </div>
+     <div class="load-more" id="load-more-7">Cargar más</div>
+    
+    </section>
+    
+    <section class="movies container">
+    
+    <h2>Películas Dramáticas</h2>
+    <hr class="linea-8">
+    
+     <div class="">
+    
+         <div class="">
+             <div class="">
+             <table class="tbl_Accion">
+               
+                <?php
+                $ConsultaDR="SELECT * from contenido WHERE CATEGORIA IN (7)";
+                $resultadoDR=mysqli_query($Conexion,$ConsultaDR);
+                
+                 while ($mostrarDR = mysqli_fetch_assoc($resultadoDR)) {
+               ?>
+                    <td>
+                        <?php echo"<a href='Reproduccion.php?id=".$mostrarDR['COD_CONTENIDO']."'>"?><img src="<?php echo $mostrarDR['IMAGEN']; ?>" alt="Imagen" width="250" height="400"></a><br>
+                        <span class="Nombre1"><?php echo $mostrarDR['NOMBRE']?></span>
+                    </td>
+             <?php
+             }
+              ?>
+            </table>
+             </div>
+         </div>
+     </div>
+     <div class="load-more" id="load-more-8">Cargar más</div>
+    
+    </section>
+    
+    <section class="movies container">
+    
+    <h2>Películas de Fantasía</h2>
+    <hr class="linea-9">
+    
+     <div class="">
+    
+         <div class="">
+             <div class="">
+             <table class="tbl_Accion">
+               
+                <?php
+                $ConsultaFS="SELECT * from contenido WHERE CATEGORIA IN (8)";
+                $resultadoFS=mysqli_query($Conexion,$ConsultaFS);
+                
+                 while ($mostrarFS = mysqli_fetch_assoc($resultadoFS)) {
+               ?>
+                    <td>
+                        <?php echo"<a href='Reproduccion.php?id=".$mostrarFS['COD_CONTENIDO']."'>"?><img src="<?php echo $mostrarFS['IMAGEN']; ?>" alt="Imagen" width="250" height="400"></a><br>
+                        <span class="Nombre1"><?php echo $mostrarFS['NOMBRE']?></span>
+                    </td>
+             <?php
+             }
+              ?>
+            </table>
+             </div>
+         </div>
+     </div>
+     <div class="load-more" id="load-more-9">Cargar más</div>
+    
+    </section>
+    
+    
+    <section class="movies container">
+    
+    <h2>Documentales</h2>
+    <hr class="linea-10">
+    
+     <div class="">
+    
+         <div class="">
+             <div class="">
+             <table class="tbl_Accion">
+               
+                <?php
+                $ConsultaDT="SELECT * from contenido WHERE CATEGORIA IN (6)";
+                $resultadoDT=mysqli_query($Conexion,$ConsultaDT);
+                
+                 while ($mostrarDT = mysqli_fetch_assoc($resultadoDT)) {
+               ?>
+                    <td>
+                        <?php echo"<a href='Reproduccion.php?id=".$mostrarDT['COD_CONTENIDO']."'>"?><img src="<?php echo $mostrarDT['IMAGEN']; ?>" alt="Imagen" width="250" height="400"></a><br>
+                        <span class="Nombre1"><?php echo $mostrarDT['NOMBRE']?></span>
+                    </td>
+             <?php
+             }
+              ?>
+            </table>
+             </div>
+         </div>
+     </div>
+     <div class="load-more" id="load-more-10">Cargar más</div>
+    
+    </section>
+    
+    <?php
+    echo'
+        
     <footer class="footer container">
     
         <h3>Capricornio</h3>
