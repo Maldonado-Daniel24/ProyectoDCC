@@ -38,8 +38,9 @@ if(isset($_POST['enviar'])){
     $titulo = $_POST['titulo'];
     $descripcion = $_POST['descripcion'];
     $imagen = $_POST['image'];
+    $imagenbg = $_POST['imagenbg'];
     $video = $_POST['media'];
-    $sql="UPDATE contenido SET NOMBRE='".$titulo."', SINOPSIS='".$descripcion."', IMAGEN='".$imagen."', 	VIDEO='" .$video."' WHERE COD_CONTENIDO='".$id."'";
+    $sql="UPDATE contenido SET NOMBRE='".$titulo."', SINOPSIS='".$descripcion."', IMAGEN='".$imagen."', IMAGENBG='".$imagenbg."', 	VIDEO='" .$video."' WHERE COD_CONTENIDO='".$id."'";
     
    $resultado=mysqli_query($Conexion,$sql);
 
@@ -70,6 +71,7 @@ $mostrar=mysqli_fetch_assoc($resultado);
 $titulo=$mostrar["NOMBRE"];
 $descripcion=$mostrar["SINOPSIS"];
 $imagen=$mostrar["IMAGEN"];
+$imagenbg=$mostrar["IMAGENBG"];
 $video=$mostrar["VIDEO"];   
 
 
@@ -85,9 +87,12 @@ $video=$mostrar["VIDEO"];
     <h1 class="titulo1">Editor</h1>
             <input type="text" placeholder="Titulo (Obligatorio)" class="titulo" name="titulo"  VALUE="<?php echo $titulo; ?>"><br>
             <input type="text" placeholder="Descripción" class="descripcion" name="descripcion" VALUE="<?php echo $descripcion; ?>">
-            <h2>Portada</h2>
+            <h2 class="portada2">Portada</h2>
             <h4 class="Text_Img">Elige una imagen para tu pelicula</h4>
             <input class="imagen" placeholder="Coloca el link de la imagen" type="text" name="image" VALUE="<?php echo $imagen; ?>" >
+            <h2 class="fondo2">Fondo</h2>
+            <h4 class="Text_Img">Elige una imagen para tu pelicula</h4>
+            <input class="imagen" placeholder="Coloca el link de la imagen" type="text" name="imagenbg" VALUE="<?php echo $imagenbg; ?>" >
             <h2 class="text_trailer">Trailer</h2>
             <h4 class="Text_Vid">Elige un video para tu pelicula</h4>
             <input class="video" placeholder="Coloca el link del video" type="text" name="media" VALUE="<?php echo $video; ?>">

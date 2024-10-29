@@ -16,7 +16,7 @@ body{
     background-color: rgb(32, 32, 32);
     color: white;
     width: 500px;
-    height: 670px;
+    height: 740px;
     border-radius: 15px 15px 15px 15px;
     text-align: left;
     padding: 15px;
@@ -129,7 +129,7 @@ h4{
 
 .btn_guardar{
     position: relative;
-    top: -16px;
+    top: -30px;
     left: -4px;
     background-color: #ffffff;
     border-radius: 8px 8px 8px 8px;
@@ -156,6 +156,7 @@ h4{
 h1{
     text-align: center;
     font-size: 40PX;
+    margin-top: -3px;
 }
 
 .imagen{
@@ -214,7 +215,7 @@ h1{
 
 .btn_guardar2{
     position: relative;
-    top: 20px;
+    top: 15px;
     left: -4px;
     background-color: #ffffff;
     border-radius: 8px 8px 8px 8px;
@@ -228,7 +229,7 @@ h1{
     background-color: rgb(32, 32, 32);
     color: white;
     width: 500px;
-    height: 550px;
+    height: 620px;
     border-radius: 15px 15px 15px 15px;
     text-align: left;
     padding: 15px;
@@ -248,3 +249,18 @@ h1{
    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+.portada {
+    margin-top: 8px;
+}
+
+.fondo {
+    margin-top: 0px;
+}
+
+.portada2 {
+    margin-top: 8px;
+}
+
+.fondo2 {
+    margin-top: 0px;
+}

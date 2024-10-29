@@ -365,9 +365,8 @@ h2{
   margin-bottom: 15px;
 }
 
-.content h3 {
-  font-size: 20px;
-  margin-bottom: 10px;
+.Nombre1 {
+  font-size: 25px;
 }
 
 .content{
@@ -485,14 +484,24 @@ h2{
   to {transform: rotate(360deg);}
 }
 
-.transicion{
+.transicion {
   background:  -webkit-linear-gradient(to right, #FF2F28, #030303);
   background: linear-gradient(to right, #FF2F28, #030303);
 }
 
-.tbl_Accion{
+.tbl_Catastrofes, 
+.tbl_Accion,
+.tbl_Anime,
+.tbl_Terror,
+.tbl_Ficcion,
+.tbl_Comedia,
+.tbl_Misterio,
+.tbl_Drama,
+.tbl_Fantasia,
+.tbl_Documental {
   border-collapse: separate; /* Asegúrate de que las celdas no se colapsen */
-  border-spacing: 20px; /* Espacio entre las celdas */
+  border-spacing: 30px; /* Espacio entre las celdas */
+  margin-left: -19;
 }
 
 td {

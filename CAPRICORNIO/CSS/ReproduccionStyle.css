@@ -59,7 +59,7 @@ body{
 }
 
 .logo {
-  margin-left: 180px;
+  margin-left: 110px;
   font-size: 35px;
   color: #FFFFFF;
   transition: 1s;
@@ -212,7 +212,7 @@ img[src="../IMG/LogOut.png"] {
 h1 {
   position: absolute;
   margin-top: -400px;
-  margin-left: 40px;
+  margin-left: 130px;
   font-family: "Roboto", "Arial", sans-serif;
   font-size: 15px;
   background-color: #FF2F28;
@@ -241,16 +241,16 @@ h1 {
     font-family: "Roboto", "Arial", sans-serif;
     margin-bottom: 20px;
     margin-top: -553px;
-    margin-left: 40px;
+    margin-left: 129px;
     top: 100px;
   
 }
 
 .poster{
-  margin-left: 40px;
+  margin-left: 130px;
   margin-top: 140px;
   z-index: 999;
-  height: 400px;
+  height: 430px;
   width: 300px;
 }
 
@@ -261,17 +261,10 @@ h1 {
   color: #FF2F28;
   font-size: 25px;
   margin: 20px;
-  position: relative;
-  left: 20px;
-  top: -729px;
-  z-index: 1;
-}
-
-img[src="../IMG/netflix.png"] {
-  width: 100px;
-  z-index: -9999;
-  margin-left: 287px;
-  margin-top: -30px;
+  position: absolute;
+  left: 175px;
+  top: 740px;
+  z-index: 9999;
 }
 
 video {
@@ -292,14 +285,14 @@ video {
   padding: 10px;
   max-width: 37.5%;
   position: relative;
-  left: 420px;
+  left: 560px;
   top: -450px;
 }
 
 .linea-sinopsis {
   border: 1px solid #535353 solid;
   position: relative;
-  left: 450px;
+  left: 589px;
   top: -475px;
   width: 30%;
 
@@ -315,7 +308,7 @@ video {
   border-radius: 10px;
   max-width: 60%;
   position: relative;
-  left: 420px;
+  left: 560px;
   top: -500px;
   width: 50%;
 }
@@ -346,7 +339,7 @@ h2{
   justify-content: space-between;
   align-items: center;
   padding: 100px 0;
-  margin-top: -600px;
+  margin-top: -430px;
   border-top: 1px solid #FF2F283D;
 }
 
@@ -460,11 +453,12 @@ h2{
 .video_peli{
   position: relative;
   top: -445px;
-  left: 450px;
+  left: 590px;
+  height: 90%;
 }
 
 .netflix{
-  position: relative;
-  top: -740px;
-  left: 40px;
+  position: absolute;
+  top: 800px;
+  left: 240px;
 }

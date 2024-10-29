@@ -84,7 +84,7 @@ echo'
 
      <div class="">
          <div class="">
-         <table class="tbl_Accion">
+         <table class="tbl_Catastrofes">
            
             <?php
             $ConsultaC="SELECT * from contenido WHERE CATEGORIA IN (3)";
@@ -149,7 +149,7 @@ echo'
 
             <div class="">
                 <div class="">
-                <table class="tbl_Accion">
+                <table class="tbl_Anime">
                   
                    <?php
                    $ConsultaANI="SELECT * from contenido WHERE CATEGORIA IN (11)";
@@ -181,7 +181,7 @@ echo'
 
             <div class="">
                 <div class="">
-                <table class="tbl_Accion">
+                <table class="tbl_Terror">
                   
                    <?php
                    $ConsultaT="SELECT * from contenido WHERE CATEGORIA IN (9)";
@@ -213,7 +213,7 @@ echo'
 
             <div class="">
                 <div class="">
-                <table class="tbl_Accion">
+                <table class="tbl_Ficcion">
                   
                    <?php
                    $ConsultaCF="SELECT * from contenido WHERE CATEGORIA IN (4)";
@@ -245,7 +245,7 @@ echo'
 
      <div class="">
          <div class="">
-         <table class="tbl_Accion">
+         <table class="tbl_Comedia">
            
             <?php
             $ConsultaCD="SELECT * from contenido WHERE CATEGORIA IN (5)";
@@ -277,7 +277,7 @@ echo'
 
      <div class="">
          <div class="">
-         <table class="tbl_Accion">
+         <table class="tbl_Misterio">
            
             <?php
             $ConsultaMS="SELECT * from contenido WHERE CATEGORIA IN (12, 10)";
@@ -309,7 +309,7 @@ echo'
 
      <div class="">
          <div class="">
-         <table class="tbl_Accion">
+         <table class="tbl_Drama">
            
             <?php
             $ConsultaDR="SELECT * from contenido WHERE CATEGORIA IN (7)";
@@ -341,7 +341,7 @@ echo'
 
      <div class="">
          <div class="">
-         <table class="tbl_Accion">
+         <table class="tbl_Fantasia">
            
             <?php
             $ConsultaFS="SELECT * from contenido WHERE CATEGORIA IN (8)";
@@ -374,7 +374,7 @@ echo'
 
      <div class="">
          <div class="">
-         <table class="tbl_Accion">
+         <table class="tbl_Documental">
            
             <?php
             $ConsultaDT="SELECT * from contenido WHERE CATEGORIA IN (6)";

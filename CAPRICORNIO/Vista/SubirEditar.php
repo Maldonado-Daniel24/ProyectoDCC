@@ -44,9 +44,12 @@ echo'
             <h1 class="titulo1">Detalles</h1>
             <input type="text" placeholder="Titulo (Obligatorio)" class="titulo" name="titulo" required><br>
             <input type="text" placeholder="Descripción" class="descripcion" name="descripcion">
-            <h2>Portada</h2>
-            <h4 class="Text_Img">Elige una imagen para tu pelicula</h4>
+            <h2 class="portada">Portada</h2>
+            <h4 class="Text_Img">Elige una portada para tu pelicula</h4>
             <input class="imagen" placeholder="Coloca el link de la imagen" type="text" name="image" required>
+            <h2 class="fondo">Fondo</h2>
+            <h4 class="Text_Img">Elige una imagen de fondo para tu pelicula</h4>
+            <input class="imagen" placeholder="Coloca el link de la imagen" type="text" name="imagenbg" required>
             <h2 class="text_trailer">Trailer</h2>
             <h4 class="Text_Vid">Elige un video para tu pelicula</h4>
             <input class="video" placeholder="Coloca el link del video" type="text" name="media" required>
