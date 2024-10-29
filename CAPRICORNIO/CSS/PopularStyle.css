@@ -15,13 +15,26 @@ body{
 }
 
 .titulo{
-  color: rgb(255, 255, 255);
-    text-align: center;
-    margin-top: 0px;
-    margin-left: 422px;
-    font-size: 160px;
-    font-family: "Bebas Neue", sans-serif;
-    
+  color: white;
+  font-family: "Bebas Neue", sans-serif;
+  display: grid;
+  text-align: center;
+  font-size: 100px;
+  margin-left: 28%;
+}
+
+.tituloS{
+  color: white;
+  font-family: "Bebas Neue", sans-serif;
+  text-align: start;
+  font-size: 23px;
+  position: relative;
+  padding-left: 17px;
+  padding-top: 10px;
+  top: -6px;
+ 
+
+  
 }
 
 .litas-desplegables{
@@ -423,3 +436,7 @@ img[src="../IMG/flecha.png"]:hover {
   
 }
 
+.linearoja{
+  position: relative;
+  left: 20px;
+}
