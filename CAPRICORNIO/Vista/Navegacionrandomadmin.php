@@ -1,4 +1,23 @@
 <?php
+session_start();
+if(!isset($_SESSION['usuario'])){
+  echo'
+        <script>
+        alert("Por favor debes iniciar sesión");
+        window.location ="../index.php";
+        </script>';
+       
+        session_destroy();
+        
+        die();
+}
+if($_SESSION['TipoUsuario']== 0){
+  echo'
+        <script>
+        
+        window.location ="../Vista/navegacion.php";
+        </script>';      
+}
 echo'
 <!DOCTYPE html>
 <html>
@@ -16,10 +35,11 @@ echo'
             </label>
             <nav class="navbar">
              <ul>
-                <li><a href="../Vista/navegacion.php">Inicio</a></li>
-                <li><a href="../Vista/NavegacionNuevo.php">Nuevo</a></li>
-                <li><a href="../Vista/NavegacionPopular.php">Popular</a></li>
-                <li><a href="../Vista/Navegacionrandom.php">Random</a></li>
+                <li><a href="../Vista/navegacionadmin.php">Inicio</a></li>
+                <li><a href="../Vista/NavegacionNuevoAdmin.php">Nuevo</a></li>
+                <li><a href="../Vista/NavegacionPopularAdmin.php">Popular</a></li>
+                <li><a href="../Vista/Navegacionrandomadmin.php">Random</a></li>
+                <li><a href="../Vista/navegacionsubir.php">Subir</a></li>
              </ul>
             </nav>
              <a href="#" class="btn-1" id="btn-abrir-modal">Usuario</a>
@@ -35,13 +55,25 @@ echo'
         </div>
     </header>
     ';
-    include("../Controlador/bd.php");
+include("../Controlador/bd.php");
+
+
+$sql_codigos = "SELECT COD_CONTENIDO FROM contenido";
+$resultado_codigos = mysqli_query($Conexion, $sql_codigos);
+
+if ($resultado_codigos && mysqli_num_rows($resultado_codigos) > 0) {
+    
+    $codigos = [];
+    while ($row = mysqli_fetch_assoc($resultado_codigos)) {
+        $codigos[] = $row['COD_CONTENIDO'];
+    }
 
     
-    $id = $_GET['id'];
-    
-    
-    $sql = "SELECT * FROM contenido WHERE COD_CONTENIDO='" . $id . "'";
+    $codigo_aleatorio = $codigos[array_rand($codigos)];
+
+}
+
+$sql = "SELECT * FROM contenido WHERE COD_CONTENIDO='" . $codigo_aleatorio . "'";
     $resultado = mysqli_query($Conexion, $sql);
     
     
@@ -78,7 +110,7 @@ echo'
         }
     
       
-        $consultaP = "UPDATE contenido SET Popular = Popular + 1 WHERE COD_CONTENIDO='" . $id . "'";
+        $consultaP = "UPDATE contenido SET Popular = Popular + 1 WHERE COD_CONTENIDO='" . $codigo_aleatorio . "'";
         $resultadoP = mysqli_query($Conexion, $consultaP);
         
   
@@ -111,10 +143,11 @@ echo'
         <h3>Capricornio</h3>
 
         <ul>
-        <li><a href="../Vista/navegacion.php">Inicio</a></li>
-                <li><a href="../Vista/NavegacionNuevo.php">Nuevo</a></li>
-                <li><a href="../Vista/NavegacionPopular.php">Popular</a></li>
-                <li><a href="../Vista/Navegacionrandom.php">Random</a></li>
+        <li><a href="../Vista/navegacionadmin.php">Inicio</a></li>
+                <li><a href="../Vista/NavegacionNuevoAdmin.php">Nuevo</a></li>
+                <li><a href="../Vista/NavegacionPopularAdmin.php">Popular</a></li>
+                <li><a href="../Vista/Navegacionrandomadmin.php">Random</a></li>
+                <li><a href="../Vista/navegacionsubir.php">Subir</a></li>
         </ul>
         
     </footer>
@@ -125,3 +158,7 @@ echo'
 </body>
 </html>
 
+
+
+
+?>
