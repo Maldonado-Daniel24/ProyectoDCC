@@ -468,3 +468,9 @@ h2{
   margin-left: 0%;
   margin-top: 30%;
 }
+
+.modal-c{
+  position: relative;
+  right: 30px;
+  
+}
