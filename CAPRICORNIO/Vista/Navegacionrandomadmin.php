@@ -18,6 +18,20 @@ if($_SESSION['TipoUsuario']== 0){
         window.location ="../Vista/navegacion.php";
         </script>';      
 }
+
+include("../Controlador/bd.php");
+
+$id = $_GET['id'];
+    
+$sqlBg = "SELECT IMAGENBG FROM contenido WHERE COD_CONTENIDO='" . $id . "'";
+$resultadobg = mysqli_query($Conexion, $sqlBg);
+
+if ($resultadobg && mysqli_num_rows($resultadobg) > 0) {
+$mostrarbg = mysqli_fetch_assoc($resultadobg);
+$imagenbg = $mostrarbg['IMAGENBG'];
+} else {
+    $imagenbg = "../IMG/bg2.png";
+}
 echo'
 <!DOCTYPE html>
 <html>
@@ -26,7 +40,11 @@ echo'
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 <body>
-    <header class="header">
+';
+?>
+    <header class="header" style="background-image: url('<?php echo $imagenbg; ?>');">
+        <?php
+        echo'
          <div class ="menu container">
             <a href="../Vista/navegacion.php" class="logo">Capricornio</a>
             <input type="checkbox" id="menu" />
@@ -55,8 +73,6 @@ echo'
         </div>
     </header>
     ';
-include("../Controlador/bd.php");
-
 
 $sql_codigos = "SELECT COD_CONTENIDO FROM contenido";
 $resultado_codigos = mysqli_query($Conexion, $sql_codigos);

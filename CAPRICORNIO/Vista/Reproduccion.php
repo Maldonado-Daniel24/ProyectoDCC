@@ -11,6 +11,20 @@ if(!isset($_SESSION['usuario'])){
         
         die();
 }
+
+include("../Controlador/bd.php");
+
+$id = $_GET['id'];
+    
+$sqlBg = "SELECT IMAGENBG FROM contenido WHERE COD_CONTENIDO='" . $id . "'";
+$resultadobg = mysqli_query($Conexion, $sqlBg);
+
+if ($resultadobg && mysqli_num_rows($resultadobg) > 0) {
+$mostrarbg = mysqli_fetch_assoc($resultadobg);
+$imagenbg = $mostrarbg['IMAGENBG'];
+} else {
+    $imagenbg = "../IMG/bg2.png";
+}
 echo'
 <!DOCTYPE html>
 <html>
@@ -19,7 +33,11 @@ echo'
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 <body>
-    <header class="header">
+';
+?>
+    <header class="header" style="background-image: url('<?php echo $imagenbg; ?>');">
+        <?php
+        echo'
          <div class ="menu container">
             <a href="../Vista/navegacion.php" class="logo">Capricornio</a>
             <input type="checkbox" id="menu" />
@@ -47,11 +65,8 @@ echo'
         </div>
     </header>
     ';
-    include("../Controlador/bd.php");
-
     
     $id = $_GET['id'];
-    
     
     $sql = "SELECT * FROM contenido WHERE COD_CONTENIDO='" . $id . "'";
     $resultado = mysqli_query($Conexion, $sql);
@@ -105,9 +120,9 @@ echo'
     ?>
     
     <h1 class="genero"><?php echo $categoriaV;?></h1>
-    <h5 class="Titulo"style="text-transform: uppercase;"><?php echo $titulo;?></h5>
+    <h5 class="Titulo"style="text-transform: capitalize;"><?php echo $titulo;?></h5>
     <img src="<?php echo $imagen;?>" class="poster">
-    <span class="video_peli"><iframe width="640" height="460" controls src="<?php echo $video;?>" type="video/mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope picture-in-picture" 
+    <span class="video_peli"><iframe width="629" height="340" controls src="<?php echo $video;?>" type="video/mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope picture-in-picture" 
             allowfullscreen>
     </iframe></span>
     <hr class="linea-sinopsis">
