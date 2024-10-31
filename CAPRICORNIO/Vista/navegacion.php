@@ -31,7 +31,7 @@ echo'
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="../CSS/Style_.css">
+    <link rel="stylesheet" href="../CSS/NormalStyle.css">
 </head>
 <body>
     <header class="header">
@@ -44,7 +44,6 @@ echo'
             <nav class="navbar">
              <ul>
                 <li><a href="../Vista/navegacion.php">Inicio</a></li>
-                <li><a href="../Vista/NavegacionNuevo.php">Nuevo</a></li>
                 <li><a href="../Vista/NavegacionPopular.php">Popular</a></li>
                 <li><a href="../Vista/Navegacionrandom.php">Random</a></li>
              </ul>
@@ -104,7 +103,7 @@ echo'
      </div>
  </div>
 
-        <div class="load-more" id="load-more-1">Cargar más</div>
+        <div class="load-more" id="load-more-1">Mostrar más</div>
 
     </section>
 
@@ -120,7 +119,10 @@ echo'
                 <table class="tbl_Accion">
                   
                    <?php
-                   $ConsultaA="SELECT * from contenido WHERE CATEGORIA IN (1, 2)";
+                   $limit = 4;
+                   $offset = isset($_GET['offset']) ? (int)$_GET['offset'] : 0;
+                   $ConsultaA = "SELECT * FROM contenido WHERE CATEGORIA IN (1, 2) LIMIT $limit OFFSET $offset";
+                   
                    $resultadoA=mysqli_query($Conexion,$ConsultaA);
                    
                     while ($mostrarA = mysqli_fetch_assoc($resultadoA)) {
@@ -136,7 +138,7 @@ echo'
                 </div>
             </div>
         </div>
-        <div class="load-more" id="load-more-2">Cargar más</div>
+        <div class="load-more" id="load-more-2" data-offset="4" >Mostrar más</div>
 
     </section>
 
@@ -168,7 +170,7 @@ echo'
                 </div>
             </div>
         </div>
-        <div class="load-more" id="load-more-3">Cargar más</div>
+        <div class="load-more" id="load-more-3">Mostrar más</div>
 
     </section>
 
@@ -200,7 +202,7 @@ echo'
                 </div>
             </div>
         </div>
-        <div class="load-more" id="load-more-4">Cargar más</div>
+        <div class="load-more" id="load-more-4">Mostrar más</div>
 
     </section>
 
@@ -232,7 +234,7 @@ echo'
                 </div>
             </div>
         </div>
-        <div class="load-more" id="load-more-5">Cargar más</div>
+        <div class="load-more" id="load-more-5">Mostrar más</div>
 
     </section>
 
@@ -264,7 +266,7 @@ echo'
          </div>
      </div>
  </div>
- <div class="load-more" id="load-more-6">Cargar más</div>
+ <div class="load-more" id="load-more-6">Mostrar más</div>
 
 </section>
 
@@ -296,7 +298,7 @@ echo'
          </div>
      </div>
  </div>
- <div class="load-more" id="load-more-7">Cargar más</div>
+ <div class="load-more" id="load-more-7">Mostrar más</div>
 
 </section>
 
@@ -328,7 +330,7 @@ echo'
          </div>
      </div>
  </div>
- <div class="load-more" id="load-more-8">Cargar más</div>
+ <div class="load-more" id="load-more-8">Mostrar más</div>
 
 </section>
 
@@ -360,7 +362,7 @@ echo'
          </div>
      </div>
  </div>
- <div class="load-more" id="load-more-9">Cargar más</div>
+ <div class="load-more" id="load-more-9" data-offset="4" >Mostrar más</div>
 
 </section>
 
@@ -393,7 +395,7 @@ echo'
          </div>
      </div>
  </div>
- <div class="load-more" id="load-more-10">Cargar más</div>
+ <div class="load-more" id="load-more-10">Mostrar más</div>
 
 </section>
 
@@ -405,13 +407,13 @@ echo'
         <h3>Capricornio</h3>
         <ul>
            <li><a href="../Vista/navegacion.php">Inicio</li>
-           <li><a href="../Vista/NavegacionNuevo.php">Nuevo</li>
            <li><a href="../Vista/NavegacionPopular.php">Popular</li>
            <li><a href="../Vista/Navegacionrandom.php">Random</li>
         </ul>
         
     </footer>
     <script src="../JS/Script.js"></script>
+    <script src="../JS/ScriptFantasia.js"></script>
     <script src="../JS/Menu.js"></script>
     <script src="../JS/Modal.js"></script>
     <script src="../JS/Usuario.js"></script>

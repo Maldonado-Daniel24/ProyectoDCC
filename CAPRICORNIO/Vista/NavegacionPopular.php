@@ -25,7 +25,7 @@ echo'
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="../CSS/PopularStyle.css">
+    <link rel="stylesheet" href="../CSS/NormalPopularStyle.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 <body>
@@ -39,7 +39,6 @@ echo'
             <nav class="navbar">
               <ul>
                 <li><a href="../Vista/navegacion.php">Inicio</a></li>
-                <li><a href="../Vista/NavegacionNuevo.php">Nuevo</a></li>
                 <li><a href="../Vista/NavegacionPopular.php">Popular</a></li>
                 <li><a href="../Vista/Navegacionrandom.php">Random</a></li>
              </ul>
@@ -129,7 +128,6 @@ echo "<p>No se encontraron películas.</p>";
 
         <ul>
            <li><a href="../Vista/navegacion.php">Inicio</li>
-           <li><a href="../Vista/NavegacionNuevo.php">Nuevo</li>
            <li><a href="../Vista/NavegacionPopular.php">Popular</li>
            <li><a href="../Vista/Navegacionrandom.php">Random</li>
         </ul>

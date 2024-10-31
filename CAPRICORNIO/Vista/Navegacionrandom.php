@@ -48,7 +48,6 @@ echo'
             <nav class="navbar">
               <ul>
                 <li><a href="../Vista/navegacion.php">Inicio</a></li>
-                <li><a href="../Vista/NavegacionNuevo.php">Nuevo</a></li>
                 <li><a href="../Vista/NavegacionPopular.php">Popular</a></li>
                 <li><a href="../Vista/Navegacionrandom.php">Random</a></li>
              </ul>
@@ -153,7 +152,6 @@ $sql = "SELECT * FROM contenido WHERE COD_CONTENIDO='" . $codigo_aleatorio . "'"
 
         <ul>
         <li><a href="../Vista/navegacion.php">Inicio</a></li>
-                <li><a href="../Vista/NavegacionNuevo.php">Nuevo</a></li>
                 <li><a href="../Vista/NavegacionPopular.php">Popular</a></li>
                 <li><a href="../Vista/Navegacionrandom.php">Random</a></li>
         </ul>

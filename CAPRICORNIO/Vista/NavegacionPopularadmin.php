@@ -38,7 +38,6 @@ echo'
             <nav class="navbar">
              <ul>
                 <li><a href="../Vista/navegacionadmin.php">Inicio</a></li>
-                <li><a href="../Vista/NavegacionNuevoAdmin.php">Nuevo</a></li>
                 <li><a href="../Vista/NavegacionPopularAdmin.php">Popular</a></li>
                 <li><a href="../Vista/Navegacionrandomadmin.php">Random</a></li>
                 <li><a href="../Vista/navegacionsubir.php">Subir</a></li>
@@ -102,7 +101,7 @@ echo "<div style='padding: 10px; text-align: center;'>";
         
         
 if (!empty($imagen)) {?>
-<?php echo"<a href='Reproduccion.php?id=".$mostrar['COD_CONTENIDO']."'>"?><img src="<?php echo $mostrar['IMAGEN']; ?>" alt="Imagen" width= "200px" height="300px"></a>
+<?php echo"<a href='ReproduccionAdmin.php?id=".$mostrar['COD_CONTENIDO']."'>"?><img src="<?php echo $mostrar['IMAGEN']; ?>" alt="Imagen" width= "200px" height="300px"></a>
 <?php
 }    
 echo "</div>";
@@ -129,7 +128,6 @@ echo "<p>No se encontraron películas.</p>";
 
         <ul>
         <li><a href="../Vista/navegacionadmin.php">Inicio</a></li>
-                <li><a href="../Vista/NavegacionNuevoAdmin.php">Nuevo</a></li>
                 <li><a href="../Vista/NavegacionPopularAdmin.php">Popular</a></li>
                 <li><a href="../Vista/Navegacionrandomadmin.php">Random</a></li>
                 <li><a href="../Vista/navegacionsubir.php">Subir</a></li>

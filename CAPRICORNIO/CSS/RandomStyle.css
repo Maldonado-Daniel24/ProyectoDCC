@@ -221,6 +221,7 @@ hr{
 
 .footer ul {
   display: flex;
+  margin-right: 440px;
 }
 
 .footer h3 {
