@@ -116,8 +116,8 @@ body{
     background-color: rgb(27, 27, 27);
     text-align: center;
     position: fixed;
-    top: 135px;
-    right: 615px;
+    top: 220px;
+    right: 550px;
     padding: 40px;
     border-radius: 15px 15px 15px 15px;
     font-family: "Bebas Neue", sans-serif;
@@ -199,7 +199,7 @@ input#ContraseñaUsuario:focus {
   color: white;
   font-size: 60px;
   font-family: Arial, Helvetica, sans-serif;
-  top: 150px;
+  top: 210px;
   position: relative;
   
 } 
@@ -242,4 +242,4 @@ input#ContraseñaUsuario:focus {
 }
 
 .boton1 + .boton2 { 
-  margin-left: -450px;}
+  margin-left: -530px;}
