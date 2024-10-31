@@ -132,7 +132,7 @@ body{
 img[src="../IMG/close-icon.png"] {
   position: fixed;
   width: 15px;
-  margin-left: 100px;
+  margin-left: 112px;
   margin-top: 6px;
   z-index: 9999;
 }

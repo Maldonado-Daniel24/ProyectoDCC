@@ -20,7 +20,8 @@ body{
   display: grid;
   text-align: center;
   font-size: 100px;
-  margin-left: 27%;
+  margin-left: 32.5%;
+  margin-top: 40px;
 }
 
 .tituloS{
@@ -247,7 +248,7 @@ select:hover {
 img[src="../IMG/close-icon.png"] {
   position: fixed;
   width: 15px;
-  margin-left: 100px;
+  margin-left: 112px;
   margin-top: 6px;
   z-index: 9999;
 }
