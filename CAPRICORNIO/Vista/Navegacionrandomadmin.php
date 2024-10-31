@@ -21,17 +21,9 @@ if($_SESSION['TipoUsuario']== 0){
 
 include("../Controlador/bd.php");
 
-$id = $_GET['id'];
-    
-$sqlBg = "SELECT IMAGENBG FROM contenido WHERE COD_CONTENIDO='" . $id . "'";
-$resultadobg = mysqli_query($Conexion, $sqlBg);
 
-if ($resultadobg && mysqli_num_rows($resultadobg) > 0) {
-$mostrarbg = mysqli_fetch_assoc($resultadobg);
-$imagenbg = $mostrarbg['IMAGENBG'];
-} else {
-    $imagenbg = "../IMG/bg2.png";
-}
+    
+
 echo'
 <!DOCTYPE html>
 <html>
@@ -40,7 +32,32 @@ echo'
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 <body>
+
 ';
+$sql_codigos = "SELECT COD_CONTENIDO FROM contenido";
+$resultado_codigos = mysqli_query($Conexion, $sql_codigos);
+
+if ($resultado_codigos && mysqli_num_rows($resultado_codigos) > 0) {
+    
+    $codigos = [];
+    while ($row = mysqli_fetch_assoc($resultado_codigos)) {
+        $codigos[] = $row['COD_CONTENIDO'];
+    }
+
+    
+    $codigo_aleatorio = $codigos[array_rand($codigos)];
+
+}
+
+$sqlBg = "SELECT IMAGENBG FROM contenido WHERE COD_CONTENIDO='" . $codigo_aleatorio . "'";
+$resultadobg = mysqli_query($Conexion, $sqlBg);
+
+if ($resultadobg && mysqli_num_rows($resultadobg) > 0) {
+$mostrarbg = mysqli_fetch_assoc($resultadobg);
+$imagenbg = $mostrarbg['IMAGENBG'];
+} else {
+    $imagenbg = "../IMG/bg2.png";
+}
 ?>
     <header class="header" style="background-image: url('<?php echo $imagenbg; ?>');">
         <?php
@@ -74,20 +91,6 @@ echo'
     </header>
     ';
 
-$sql_codigos = "SELECT COD_CONTENIDO FROM contenido";
-$resultado_codigos = mysqli_query($Conexion, $sql_codigos);
-
-if ($resultado_codigos && mysqli_num_rows($resultado_codigos) > 0) {
-    
-    $codigos = [];
-    while ($row = mysqli_fetch_assoc($resultado_codigos)) {
-        $codigos[] = $row['COD_CONTENIDO'];
-    }
-
-    
-    $codigo_aleatorio = $codigos[array_rand($codigos)];
-
-}
 
 
 $sql = "SELECT * FROM contenido WHERE COD_CONTENIDO='" . $codigo_aleatorio . "'";
@@ -139,12 +142,14 @@ $sql = "SELECT * FROM contenido WHERE COD_CONTENIDO='" . $codigo_aleatorio . "'"
         echo "Contenido no encontrado";
     }
     
+
+
     ?>
     
     <h1 class="genero"><?php echo $categoriaV;?></h1>
     <h5 class="Titulo"style="text-transform: uppercase;"><?php echo $titulo;?></h5>
     <img src="<?php echo $imagen;?>" class="poster">
-    <span class="video_peli"><iframe width="640" height="460" controls src="<?php echo $video;?>" type="video/mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope picture-in-picture" 
+    <span class="video_peli"><iframe width="629" height="340" controls src="<?php echo $video;?>" type="video/mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope picture-in-picture" 
             allowfullscreen>
     </iframe></span>
     <hr class="linea-sinopsis">
