@@ -62,11 +62,11 @@ echo'
         <div class="header-content container">
           <div class="header-1">
             <img src="../IMG/venom.png" alt="">
-            <a href="#" class="btn-2">Ver ahora</a>
+            <a href="Reproduccion.php?id=6" class="btn-2">Ver ahora</a>
         </div>
         <div class="header-2">
             <h1>Las mejores <br> películas</h1>
-            <img src="../IMG/play.png" alt="">
+            <a href="ReproduccionAdmin.php?id=6"><img src="../IMG/play.png" alt=""></a>
           </div>
         </div>      
     </header>

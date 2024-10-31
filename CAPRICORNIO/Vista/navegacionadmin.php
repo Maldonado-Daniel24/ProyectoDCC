@@ -62,7 +62,7 @@ echo'
         </div>
         <div class="header-2">
             <h1>Las mejores <br> películas</h1>
-            <a href="ReproduccionAdmin.php?id=6"><img src="../IMG/play.png" alt=""></a>
+            <a href="ReproduccionAdmin.php?id=6"><img src="../IMG/play.png" alt="" class="venom-btn"></a>
           </div>
         </div>      
     </header>

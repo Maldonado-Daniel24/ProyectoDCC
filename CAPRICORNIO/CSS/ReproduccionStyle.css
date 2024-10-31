@@ -137,7 +137,7 @@ body{
 img[src="../IMG/close-icon.png"] {
   position: relative;
   width: 15px;
-  margin-left: 80px;
+  margin-left: 70px;
   margin-top: 6px;
   z-index: -9999;
 }

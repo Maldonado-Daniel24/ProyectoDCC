@@ -130,7 +130,7 @@ echo'
     <p class="titulo-sinopsis">SINOPSIS</p>
     <p class="sinopsis"><?php echo $descripcion;?></p>
     <p class="plataformas">PLATAFORMAS</p>
-    <img src="<?php echo $plataformaV;?>" class="netflix" width="55" height="60">
+    <img src="<?php echo $plataformaV;?>" class="netflix" width="95" height="95">
     </section>
 
     <footer class="footer container">

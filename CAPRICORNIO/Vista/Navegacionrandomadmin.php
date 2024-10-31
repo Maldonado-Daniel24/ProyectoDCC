@@ -28,7 +28,7 @@ echo'
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="../CSS/ReproduccionStyle.css">
+    <link rel="stylesheet" href="../CSS/ReproduccionAdminStyle.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 <body>
