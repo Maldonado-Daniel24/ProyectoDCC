@@ -82,7 +82,9 @@ echo'
          <table class="tbl_Catastrofes">
            
             <?php
-            $ConsultaC="SELECT * from contenido WHERE CATEGORIA IN (3)";
+            $limit = 4;
+            $offset = isset($_GET['offset']) ? (int)$_GET['offset'] : 0;
+            $ConsultaC = "SELECT * FROM contenido WHERE CATEGORIA IN (3) LIMIT $limit OFFSET $offset";
             $resultadoC=mysqli_query($Conexion,$ConsultaC);
             
              while ($mostrarC = mysqli_fetch_assoc($resultadoC)) {
@@ -99,7 +101,7 @@ echo'
      </div>
  </div>
 
-        <div class="load-more" id="load-more-1">Mostrar más</div>
+        <div class="load-more" id="load-more-1"  data-offset="4">Mostrar más</div>
 
     </section>
 
@@ -150,7 +152,9 @@ echo'
                 <table class="tbl_Anime">
                   
                    <?php
-                   $ConsultaANI="SELECT * from contenido WHERE CATEGORIA IN (11)";
+                   $limit = 4;
+                   $offset = isset($_GET['offset']) ? (int)$_GET['offset'] : 0;
+                   $ConsultaANI = "SELECT * FROM contenido WHERE CATEGORIA IN (11) LIMIT $limit OFFSET $offset";
                    $resultadoANI=mysqli_query($Conexion,$ConsultaANI);
                    
                     while ($mostrarANI = mysqli_fetch_assoc($resultadoANI)) {
@@ -182,7 +186,9 @@ echo'
                 <table class="tbl_Terror">
                   
                    <?php
-                   $ConsultaT="SELECT * from contenido WHERE CATEGORIA IN (9)";
+                   $limit = 4;
+                   $offset = isset($_GET['offset']) ? (int)$_GET['offset'] : 0;
+                   $ConsultaT = "SELECT * FROM contenido WHERE CATEGORIA IN (9) LIMIT $limit OFFSET $offset";
                    $resultadoT=mysqli_query($Conexion,$ConsultaT);
                    
                     while ($mostrarT = mysqli_fetch_assoc($resultadoT)) {
@@ -214,7 +220,9 @@ echo'
                 <table class="tbl_Ficcion">
                   
                    <?php
-                   $ConsultaCF="SELECT * from contenido WHERE CATEGORIA IN (4)";
+                   $limit = 4;
+                   $offset = isset($_GET['offset']) ? (int)$_GET['offset'] : 0;
+                   $ConsultaCF = "SELECT * FROM contenido WHERE CATEGORIA IN (4) LIMIT $limit OFFSET $offset";
                    $resultadoCF=mysqli_query($Conexion,$ConsultaCF);
                    
                     while ($mostrarCF = mysqli_fetch_assoc($resultadoCF)) {
@@ -342,7 +350,9 @@ echo'
          <table class="tbl_Fantasia">
            
             <?php
-            $ConsultaFS="SELECT * from contenido WHERE CATEGORIA IN (8)";
+            $limit = 4;
+            $offset = isset($_GET['offset']) ? (int)$_GET['offset'] : 0;
+            $ConsultaFS = "SELECT * FROM contenido WHERE CATEGORIA IN (8) LIMIT $limit OFFSET $offset";
             $resultadoFS=mysqli_query($Conexion,$ConsultaFS);
             
              while ($mostrarFS = mysqli_fetch_assoc($resultadoFS)) {
