@@ -71,7 +71,6 @@ $imagenbg = $mostrarbg['IMAGENBG'];
             <nav class="navbar">
              <ul>
                 <li><a href="../Vista/navegacionadmin.php">Inicio</a></li>
-                <li><a href="../Vista/NavegacionNuevoAdmin.php">Nuevo</a></li>
                 <li><a href="../Vista/NavegacionPopularAdmin.php">Popular</a></li>
                 <li><a href="../Vista/Navegacionrandomadmin.php">Random</a></li>
                 <li><a href="../Vista/navegacionsubir.php">Subir</a></li>
@@ -166,7 +165,6 @@ $sql = "SELECT * FROM contenido WHERE COD_CONTENIDO='" . $codigo_aleatorio . "'"
 
         <ul>
         <li><a href="../Vista/navegacion.php">Inicio</a></li>
-        <li><a href="../Vista/NavegacionNuevoAdmin.php">Nuevo</a></li>
                 <li><a href="../Vista/NavegacionPopularAdmin.php">Popular</a></li>
                 <li><a href="../Vista/Navegacionrandomadmin.php">Random</a></li>
                 <li><a href="../Vista/navegacionsubir.php">Subir</a></li>
