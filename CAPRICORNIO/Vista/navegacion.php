@@ -258,7 +258,9 @@ echo'
          <table class="tbl_Comedia">
            
             <?php
-            $ConsultaCD="SELECT * from contenido WHERE CATEGORIA IN (5)";
+            $limit = 4;
+            $offset = isset($_GET['offset']) ? (int)$_GET['offset'] : 0;
+            $ConsultaCD = "SELECT * FROM contenido WHERE CATEGORIA IN (5) LIMIT $limit OFFSET $offset";
             $resultadoCD=mysqli_query($Conexion,$ConsultaCD);
             
              while ($mostrarCD = mysqli_fetch_assoc($resultadoCD)) {
@@ -290,7 +292,9 @@ echo'
          <table class="tbl_Misterio">
            
             <?php
-            $ConsultaMS="SELECT * from contenido WHERE CATEGORIA IN (12, 10)";
+            $limit = 4;
+            $offset = isset($_GET['offset']) ? (int)$_GET['offset'] : 0;
+            $ConsultaMS = "SELECT * FROM contenido WHERE CATEGORIA IN (12, 10) LIMIT $limit OFFSET $offset";
             $resultadoMS=mysqli_query($Conexion,$ConsultaMS);
             
              while ($mostrarMS = mysqli_fetch_assoc($resultadoMS)) {
@@ -322,7 +326,9 @@ echo'
          <table class="tbl_Drama">
            
             <?php
-            $ConsultaDR="SELECT * from contenido WHERE CATEGORIA IN (7)";
+            $limit = 4;
+            $offset = isset($_GET['offset']) ? (int)$_GET['offset'] : 0;
+            $ConsultaDR = "SELECT * FROM contenido WHERE CATEGORIA IN (7) LIMIT $limit OFFSET $offset";
             $resultadoDR=mysqli_query($Conexion,$ConsultaDR);
             
              while ($mostrarDR = mysqli_fetch_assoc($resultadoDR)) {
@@ -389,7 +395,9 @@ echo'
          <table class="tbl_Documental">
            
             <?php
-            $ConsultaDT="SELECT * from contenido WHERE CATEGORIA IN (6)";
+            $limit = 4;
+            $offset = isset($_GET['offset']) ? (int)$_GET['offset'] : 0;
+            $ConsultaDT = "SELECT * FROM contenido WHERE CATEGORIA IN (6) LIMIT $limit OFFSET $offset";
             $resultadoDT=mysqli_query($Conexion,$ConsultaDT);
             
              while ($mostrarDT = mysqli_fetch_assoc($resultadoDT)) {
