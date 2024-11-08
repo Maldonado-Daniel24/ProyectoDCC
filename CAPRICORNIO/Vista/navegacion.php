@@ -43,8 +43,10 @@ echo'
             </label>
             <nav class="navbar">
              <ul>
+            
                 <li><a href="../Vista/navegacion.php">Inicio</a></li>
-                <li><a href="../Vista/NavegacionPopular.php">Popular</a></li>
+                ';?>
+                <li><a href="NavegacionPopular.php?id=0">Popular</a></li><?php echo'
                 <li><a href="../Vista/Navegacionrandom.php">Random</a></li>
              </ul>
             </nav> 

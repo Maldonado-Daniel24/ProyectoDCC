@@ -11,7 +11,17 @@ if(!isset($_SESSION['usuario'])){
         
         die();
 }
-
+if($_SESSION['TipoUsuario']== 2){
+    echo'
+          <script>
+          
+          window.location ="../Vista/navegacionadmin.php";
+          </script>';
+         
+      
+          
+}
+  
 include("../Controlador/bd.php");
 
 $id = $_GET['id'];

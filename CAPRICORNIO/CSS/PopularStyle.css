@@ -441,3 +441,80 @@ img[src="../IMG/flecha.png"]:hover {
   position: relative;
   left: 20px;
 }
+
+/* Estilos generales del body */
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-image: url('tu-imagen.jpg'); /* Fondo de imagen */
+  background-size: cover;
+  background-position: center;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+/* Estilos para el menú */
+nav {
+  position: relative; /* Necesario para manejar el z-index */
+}
+
+/* Estilos para la lista de menú */
+.un {
+  list-style-type: none;
+  margin: 0;
+  padding: 0 0 0 0; /* Mueve el menú un poco hacia abajo */
+  display: flex;
+  justify-content: space-around;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Enlaces del menú */
+.un a {
+  display: block;
+  padding: 10px 20px;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  text-decoration: none;
+  background-color: #f8f8f8;
+}
+
+.un a:hover {
+  background-color: #FF2F28;
+  color: white;
+}
+
+/* Menú desplegable */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  min-width: 160px;
+  z-index: 10; /* Asegura que el desplegable esté sobre otros elementos */
+}
+
+.dropdown-content a {
+  padding: 8px 12px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #575757;
+}
+
+/* Asegúrate de que otros enlaces fuera del menú no se vean afectados */
+a {
+  color: #333;
+  text-decoration: none;
+  padding: 10px;
+}
+
+a:hover {
+  color: #000;
+}

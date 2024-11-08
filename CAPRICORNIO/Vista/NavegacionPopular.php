@@ -20,7 +20,7 @@ if($_SESSION['TipoUsuario']== 2){
           
   }
 
-
+  include("../Controlador/bd.php");
 echo'
 <!DOCTYPE html>
 <html>
@@ -39,7 +39,8 @@ echo'
             <nav class="navbar">
               <ul>
                 <li><a href="../Vista/navegacion.php">Inicio</a></li>
-                <li><a href="../Vista/NavegacionPopular.php">Popular</a></li>
+                ';?>
+                <li><a href="NavegacionPopular.php?id=0">Popular</a></li><?php echo'
                 <li><a href="../Vista/Navegacionrandom.php">Random</a></li>
              </ul>
             </nav>
@@ -64,10 +65,37 @@ echo'
 ';
 ?>
 
+<nav>
+            <ul class="un">
+                <li class="dropdown">
+                    <a href="#">FILTRO DE PELICULAS/SERIES</a>
+                    <ul class="dropdown-content">
+                        <li><a href="NavegacionPopular.php?id=0">Popular</a></li>
+                        <li><a href="NavegacionPopular.php?id=1">Acción</a></li>
+                        <li><a href="NavegacionPopular.php?id=11">Anime</a></li>
+                        <li><a href="NavegacionPopular.php?id=2">Aventura</a></li>
+                        <li><a href="NavegacionPopular.php?id=3">Catástrofe</a></li>
+                        <li><a href="NavegacionPopular.php?id=4">Ciencia ficción</a></li>
+                        <li><a href="NavegacionPopular.php?id=5">Comedia</a></li>
+                        <li><a href="NavegacionPopular.php?id=6">Documenta</a></li>
+                        <li><a href="NavegacionPopular.php?id=7">Drama</a></li>
+                        <li><a href="NavegacionPopular.php?id=8">Fantasía</a></li>
+                        <li><a href="NavegacionPopular.php?id=12">Misterio</a></li>
+                        
+                        <li><a href="NavegacionPopular.php?id=9">Terror</a></li>
 
+                    </ul>
+                </li>
+                
+            </ul>
+    
+        </nav>
 <?php
-include("../Controlador/bd.php");
-$sql = "SELECT * FROM contenido ORDER BY Popular DESC";
+$id=$_GET["id"];
+if($id == 0){
+    $sql = "SELECT * FROM contenido ORDER BY Popular DESC";
+}else{$sql = "SELECT * FROM contenido WHERE CATEGORIA='" . $id . "'";}
+
 $resultado = mysqli_query($Conexion, $sql);
 $sql2 = "SELECT COUNT(*) AS total FROM contenido";
 $resultado2 = mysqli_query($Conexion, $sql2);
@@ -80,7 +108,7 @@ else {
     echo "<p>Error al contar las películas.</p>";
 }
 
- ?> <h1 class="tituloS"><?php echo "" . $totalPeliculas . " titulos ordenados por Popularidad";?></h1>
+ ?>
  <hr class="linearoja" style="border: none; border-top: 2px solid red; width: 30%;">
 <?php
 
