@@ -15,8 +15,8 @@ body{
   background-color: rgb(27, 27, 27);
   text-align: center;
   position: fixed;
-  top: 224.8px;
-  right: 615px;
+  top: 140px;
+  right: 485px;
   padding: 55px;
   border-radius: 15px 15px 15px 15px;
   font-family: "Bebas Neue", sans-serif;
@@ -57,7 +57,7 @@ body{
 .ClaveUsuarioI1{
   font-size: 25px;
   position: relative;
-  top: -20px;
+  top: -300px;
 }
 
 .ClaveUsuarioI2{
@@ -116,8 +116,8 @@ body{
     background-color: rgb(27, 27, 27);
     text-align: center;
     position: fixed;
-    top: 220px;
-    right: 550px;
+    top: 1  20px;
+    right: 450px;
     padding: 40px;
     border-radius: 15px 15px 15px 15px;
     font-family: "Bebas Neue", sans-serif;
@@ -158,20 +158,25 @@ label.NombreUsuario2 {
 label.ContraseñaUsuario2 {
     font-size: 25px;
     position: relative;
+    top: -10px;
+    
   
 }
 
 input#ContraseñaUsuario {
    
-    font-size: 20px;
-    position: relative;
-    border-radius: 10PX 10px 10px 10px;
-    padding: 3px;
-    border: 2px solid #353535;
-    outline: none;
-    background-color: rgb(0, 0, 0);
-    color: white;
+  font-size: 20px;
+  position: relative;
+  border-radius: 10PX 10px 10px 10px;
+  padding: 3px;
+  border: 2px solid #353535;
+  outline: none;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  top: -19px;
 }
+
+
 
 input#NombreUsuario {
     top: -20px;
@@ -239,7 +244,17 @@ input#ContraseñaUsuario:focus {
   justify-content: center;
   align-items: center;
   height: 55vh; 
+  margin-top: 80px;
 }
 
 .boton1 + .boton2 { 
-  margin-left: -530px;}
+  margin-left: -440px;}
+
+#ContraseñaUsuario2{
+  position: absolute;
+  top: 100px;
+}
+
+input#ContraseñaUsuario {
+  margin-top: 9px;
+}

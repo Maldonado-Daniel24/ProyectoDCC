@@ -29,7 +29,7 @@ body{
   background-repeat: no-repeat;
   background-size: cover;
   height: 50px;
-  min-height: 70vh;
+  min-height: 82vh;
   display: flex;
   align-items: center;
   transition: 1s;
@@ -161,14 +161,14 @@ h4{
 }
 
 #modal {
-  margin-left: 1292px;
-  margin-top: 65px;
-  background: #282828;
-  color: #fff;
-  border: 1px #282828 solid;
-  border-radius: 0.5em;
-  transition: background 0.3s;
-  width: 160px;
+  margin-left: 1060px;
+    margin-top: 65px;
+    background: #282828;
+    color: #fff;
+    border: 1px #282828 solid;
+    border-radius: 0.5em;
+    transition: background 0.3s;
+    width: 160px;
 }
 
 .linea-usuario {
@@ -253,16 +253,17 @@ h1 {
 }
 
 .plataformas {
-  display: block;
-  text-align: justify;
   font-family: "Roboto", "Arial", sans-serif;
-  color: #FF2F28;
-  font-size: 25px;
-  margin: 20px;
-  position: relative;
-  left: -680px;
-  top: -460px;
-  z-index: 9999;
+    font-size: 25px;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 50%;
+    position: relative;
+    left: -40%;
+    margin-top: -32.1%;
+    width: 40%;
+    color: #FF2F28;
 }
 
 video {
@@ -456,8 +457,8 @@ h2{
 
 .netflix {
   position: relative;
-  top: -400px;
-  left: -835px;
+  margin-top: -28%;
+  left: -74.5%;
 }
 
 .alineacion {

@@ -47,7 +47,8 @@ echo'
             <nav class="navbar">
              <ul>
                 <li><a href="../Vista/navegacionadmin.php">Inicio</a></li>
-                <li><a href="../Vista/NavegacionPopularAdmin.php">Popular</a></li>
+                ';?>
+                <li><a href="NavegacionPopularAdmin.php?id=0">Popular</a></li><?php echo'
                 <li><a href="../Vista/Navegacionrandomadmin.php">Random</a></li>
                 <li><a href="../Vista/navegacionsubir.php">Subir</a></li>
              </ul>

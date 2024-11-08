@@ -130,7 +130,7 @@ echo "<div style='padding: 10px; text-align: center;'>";
         
         
 if (!empty($imagen)) {?>
-<?php echo"<a href='Reproduccion.php?id=".$mostrar['COD_CONTENIDO']."'>"?><img src="<?php echo $mostrar['IMAGEN']; ?>" alt="Imagen" width= "200px" height="300px"></a>
+<?php echo"<a href='ReproduccionAdmin.php?id=".$mostrar['COD_CONTENIDO']."'>"?><img src="<?php echo $mostrar['IMAGEN']; ?>" alt="Imagen" width= "200px" height="300px"></a>
 <?php
 }    
 echo "</div>";

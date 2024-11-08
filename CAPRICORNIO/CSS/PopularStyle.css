@@ -248,8 +248,8 @@ select:hover {
 img[src="../IMG/close-icon.png"] {
   position: fixed;
   width: 15px;
-  margin-left: 112px;
-  margin-top: 6px;
+  margin-left: 102px;
+  margin-top: -5px;
   z-index: 9999;
 }
 
@@ -267,14 +267,14 @@ margin-top: 30px;
 }
 
 #modal {
-  margin-left: 1280px;
-  margin-top: 65px;
-  background: #282828;
-  color: #fff;
-  border: 1px #282828 solid;
-  border-radius: 0.5em;
-  transition: background 0.3s;
-  width: 160px;
+  margin-left: 1165px;
+    margin-top: 65px;
+    background: #282828;
+    color: #fff;
+    border: 1px #282828 solid;
+    border-radius: 0.5em;
+    transition: background 0.3s;
+    width: 160px;
 }
 
 .linea-usuario {
@@ -290,13 +290,15 @@ margin-top: 30px;
 
 img[src="../IMG/LogOut.png"] {
   position: relative;
-  width: 20px;
+  width: 15px;
   z-index: -9999;
+  height: 20px;
 }
 
 .cerrar-sesion {
-  font-size: 20px;
+  font-size: 15px;
   margin-left: 5px;
+  margin-top: 0px;
   color: #fff;
   font-family: "Roboto","Arial",sans-serif;
 }
@@ -304,7 +306,6 @@ img[src="../IMG/LogOut.png"] {
 .cerrar-sesion.active{
   color: #FF2F28;
 }
-
 
 .content img {
   width: 100%;
@@ -515,13 +516,6 @@ nav {
   background-color: #575757;
 }
 
-/* Asegúrate de que otros enlaces fuera del menú no se vean afectados */
-a {
-  color: #333;
-  text-decoration: none;
-  padding: 10px;
-}
 
-a:hover {
-  color: #000;
-}
+
+

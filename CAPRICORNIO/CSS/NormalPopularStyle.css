@@ -267,14 +267,14 @@ margin-top: 30px;
 }
 
 #modal {
-  margin-left: 1280px;
-  margin-top: 65px;
-  background: #282828;
-  color: #fff;
-  border: 1px #282828 solid;
-  border-radius: 0.5em;
-  transition: background 0.3s;
-  width: 160px;
+  margin-left: 1165px;
+    margin-top: 65px;
+    background: #282828;
+    color: #fff;
+    border: 1px #282828 solid;
+    border-radius: 0.5em;
+    transition: background 0.3s;
+    width: 160px;
 }
 
 .linea-usuario {
