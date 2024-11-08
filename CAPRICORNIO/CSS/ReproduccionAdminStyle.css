@@ -465,3 +465,10 @@ h2{
   margin-top: 460px;
   margin-left: -45px;
 }
+
+.buscar {
+  margin-left: 610px;
+  margin-top: -12px;
+  width: 2.5%;
+  position: fixed;
+}

@@ -441,3 +441,10 @@ img[src="../IMG/flecha.png"]:hover {
   position: relative;
   left: 20px;
 }
+
+.buscar {
+  margin-left: 510px;
+  margin-top: -12px;
+  width: 2.5%;
+  position: fixed;
+}

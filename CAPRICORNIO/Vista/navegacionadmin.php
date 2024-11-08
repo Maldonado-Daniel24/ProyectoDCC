@@ -30,7 +30,7 @@ echo'
 <body>
     <header class="header">
          <div class ="menu container">
-            <a href="../Vista/navegacionadmin.php" class="logo">Capricornio</a>
+            <a href="../Vista/navegacionadmin.php" class="logo" id="logo">Capricornio</a>
             <input type="checkbox" id="menu" />
             <label for="menu">
              <img src="../IMG/menu.png" class="menu-icono" alt="menu"> 
@@ -43,11 +43,12 @@ echo'
                 <li><a href="../Vista/navegacionsubir.php">Subir</a></li>
              </ul>
             </nav> 
+            <a href="../Vista/Buscador.php" class="buscar" id="buscar"><img src="../IMG/buscar.png" class="buscar"></a>
             <a href="#" class="btn-1" id="btn-abrir-modal">Usuario</a>
             <dialog id="modal">
              <section class="usuario-1">
              
-             <img src="../IMG/IMG-USUARIO.png" class="usuario">'; echo $_SESSION['usuario'] ;echo'<a href="" class="modal-c" "id="btn-cerrar-modal"><img src="../IMG/close-icon.png"></a>
+             <img src="../IMG/IMG-USUARIO.png" class="usuario">'; echo $_SESSION['usuario'] ;echo'<a href="" class="modal-c" "id="btn-cerrar-modal"><img src="../IMG/close-icon.png" class="close"></a>
              </section>
              <hr class="linea-usuario">
              <section class="cierre-usuario">

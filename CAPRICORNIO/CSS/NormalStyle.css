@@ -508,3 +508,9 @@ td {
   text-align: center; /* Centra el contenido de las celdas */
 }
 
+.buscar {
+  margin-left: 510px;
+  margin-top: -12px;
+  width: 2.5%;
+  position: fixed;
+}

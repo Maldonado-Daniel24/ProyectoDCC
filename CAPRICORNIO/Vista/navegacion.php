@@ -48,10 +48,11 @@ echo'
                 <li><a href="../Vista/Navegacionrandom.php">Random</a></li>
              </ul>
             </nav> 
+            <a href="../Vista/BuscadorNormal.php" class="buscar" id="buscar"><img src="../IMG/buscar.png" class="buscar"></a>
             <a href="#" class="btn-1" id="btn-abrir-modal">Usuario</a>
             <dialog id="modal">
              <section class="usuario-1">
-             <img src="../IMG/IMG-USUARIO.png" class="usuario">'; echo $_SESSION['usuario'] ;echo'<a href="" class="modal-c" "id="btn-cerrar-modal"><img src="../IMG/close-icon.png" ></a>
+             <img src="../IMG/IMG-USUARIO.png" class="usuario">'; echo $_SESSION['usuario'] ;echo'<a href="" class="modal-c" "id="btn-cerrar-modal"><img src="../IMG/close-icon.png" class="close"></a>
              </section>
              <hr class="linea-usuario">
              <section class="cierre-usuario">

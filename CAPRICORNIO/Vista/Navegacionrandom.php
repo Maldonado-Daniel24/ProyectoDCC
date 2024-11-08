@@ -65,6 +65,7 @@ echo'
                 <li><a href="../Vista/Navegacionrandom.php">Random</a></li>
              </ul>
             </nav>
+             <a href="../Vista/BuscadorNormal.php" class="buscar" id="buscar"><img src="../IMG/buscar.png" class="buscar"></a>
              <a href="#" class="btn-1" id="btn-abrir-modal">Usuario</a>
              <dialog id="modal">
              <section class="usuario-1">

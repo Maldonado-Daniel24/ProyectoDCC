@@ -76,6 +76,7 @@ $imagenbg = $mostrarbg['IMAGENBG'];
                 <li><a href="../Vista/navegacionsubir.php">Subir</a></li>
              </ul>
             </nav>
+             <a href="../Vista/Buscador.php" class="buscar" id="buscar"><img src="../IMG/buscar.png" class="buscar"></a>
              <a href="#" class="btn-1" id="btn-abrir-modal">Usuario</a>
              <dialog id="modal">
              <section class="usuario-1">
