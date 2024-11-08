@@ -4,7 +4,9 @@ include("../Controlador/bd.php");
 
 $NombreUsuario = $_POST['NombreUsuario'];
 $ContraseñaUsuario = $_POST['ContraseñaUsuario'];
+$Confirmar = $_POST['ConfiContraseñaUsuario'];
 
+if($ContraseñaUsuario == $Confirmar){
 $Consulta = "INSERT INTO usuario(NombreUsuario, ClaveUsuario) VALUES ('$NombreUsuario', '$ContraseñaUsuario')";
 
 $Verificar = mysqli_query($Conexion, "SELECT * FROM usuario WHERE NombreUsuario='$NombreUsuario' ");
@@ -34,5 +36,16 @@ if($Ejecutar){
    </script>';
    }
    mysqli_close($Conexion);
+}else{
 
+   echo'
+        <script>
+        alert("Las contraseñas no coinciden");
+        window.location ="../Vista/RegistroSesion.php";
+        </script>';
+       
+        session_destroy();
+        
+        die();
+}
 ?>
