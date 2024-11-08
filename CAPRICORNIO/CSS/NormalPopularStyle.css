@@ -247,9 +247,9 @@ select:hover {
 
 img[src="../IMG/close-icon.png"] {
   position: fixed;
-  width: 15px;
-  margin-left: 100px;
-  margin-top: 6px;
+  width: 18px;
+  margin-left: 90px;
+  margin-top: -6px;
   z-index: 9999;
 }
 
@@ -290,13 +290,15 @@ margin-top: 30px;
 
 img[src="../IMG/LogOut.png"] {
   position: relative;
-  width: 20px;
+  width: 15px;
   z-index: -9999;
+  height: 20px;
 }
 
 .cerrar-sesion {
-  font-size: 20px;
+  font-size: 15px;
   margin-left: 5px;
+  margin-top: -10px;
   color: #fff;
   font-family: "Roboto","Arial",sans-serif;
 }
@@ -514,13 +516,8 @@ a {
   padding: 10px;
 }
 
-a:hover {
-  color: #000;
-}
-
-
 .buscar {
-  margin-left: 510px;
+  margin-left: 505px;
   margin-top: -12px;
   width: 2.5%;
   position: fixed;
