@@ -2,7 +2,7 @@
 
 $Usuario="root";
 $Password="";
-$db="proyectodccfinal2";
+$db="proyectodccfn";
 $Server="127.0.0.1";
 
 $Conexion= mysqli_connect($Server, $Usuario, $Password, $db);

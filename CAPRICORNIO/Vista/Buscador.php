@@ -82,14 +82,18 @@ echo'
 
     ?>
     <tr class= cuadro0>
-    <td class="Cuadro1">
-          <iframe width="440" height="260" controls src="<?php echo $mostrar['VIDEO'] ?>" type="video/mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope picture-in-picture" 
-            allowfullscreen>
-    </iframe>
-    </td>
-    <td class="Cuadro2"><span class="Nombre1"><?php echo $mostrar['NOMBRE']?></span> <br><span class="Nombre2"><?php echo $mostrar['SINOPSIS']?></span> <br><span class="VerB"><?php echo "<a href='ReproduccionAdmin.php?id=".$mostrar['COD_CONTENIDO']."'>Visualizar</a>";?></span>  
-  
-                       
+      <td class="Cuadro1">
+        <iframe width="440" height="260" controls src="<?php echo $mostrar['VIDEO'] ?>" type="video/mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope picture-in-picture" 
+              allowfullscreen>
+        </iframe>
+      </td>
+      <td class="Cuadro2">
+        <span class="Nombre1"><?php echo $mostrar['NOMBRE']?></span> 
+        <br>
+        <span class="Nombre2"><?php echo $mostrar['SINOPSIS']?></span> 
+        <br>
+        <span class="VerB"><?php echo "<a href='ReproduccionAdmin.php?id=".$mostrar['COD_CONTENIDO']."'>Visualizar</a>";?></span>  
+      </td>             
     </tr>
    
     
