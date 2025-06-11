@@ -83,7 +83,7 @@ echo'
                         <li class="fantasial"><a href="NavegacionPopularAdmin.php?id=8">Fantasía</a></li>
                         <li class="misteriol"><a href="NavegacionPopularAdmin.php?id=12">Misterio</a></li>
                         
-                        <li class="terrorl"><a href="NavegacionPopular.php?id=9">Terror</a></li>
+                        <li class="terrorl"><a href="NavegacionPopularAdmin.php?id=9">Terror</a></li>
 
                     </ul>
                 </li>
