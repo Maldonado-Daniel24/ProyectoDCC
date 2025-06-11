@@ -480,40 +480,44 @@ nav {
 .un a {
   display: block;
   padding: 10px 20px;
-  color: rgb(0, 0, 0);
+  color: white;
   text-align: center;
   text-decoration: none;
-  background-color: #f8f8f8;
+ 
 }
 
-.un a:hover {
-  background-color: #FF2F28;
-  color: white;
+.filtro{
+   background-color: #FF2F28;
 }
 
 /* Menú desplegable */
 .dropdown {
   position: relative;
+  background-color: white;
 }
 
 .dropdown-content {
   display: none;
-  position: absolute;
-  background-color: #333;
+  position: relative;
+  background-color: white;
   min-width: 160px;
   z-index: 10; /* Asegura que el desplegable esté sobre otros elementos */
 }
 
 .dropdown-content a {
   padding: 8px 12px;
+  color: #030303;
+  position: relative;
+  left: 70px;
 }
 
 .dropdown:hover .dropdown-content {
-  display: block;
+  display: flex;
 }
 
 .dropdown-content a:hover {
   background-color: #575757;
+  color:white;
 }
 
 

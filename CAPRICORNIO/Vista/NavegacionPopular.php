@@ -69,16 +69,16 @@ echo'
 <nav>
             <ul class="un">
                 <li class="dropdown">
-                    <a href="#">FILTRO DE PELICULAS/SERIES</a>
+                    <a href="#" class="filtro">FILTRO DE PELICULAS/SERIES</a>
                     <ul class="dropdown-content">
-                        <li><a href="NavegacionPopular.php?id=0">Popular</a></li>
+                        <li ><a href="NavegacionPopular.php?id=0">Popular</a></li>
                         <li><a href="NavegacionPopular.php?id=1">Acción</a></li>
                         <li><a href="NavegacionPopular.php?id=11">Anime</a></li>
                         <li><a href="NavegacionPopular.php?id=2">Aventura</a></li>
                         <li><a href="NavegacionPopular.php?id=3">Catástrofe</a></li>
                         <li><a href="NavegacionPopular.php?id=4">Ciencia ficción</a></li>
                         <li><a href="NavegacionPopular.php?id=5">Comedia</a></li>
-                        <li><a href="NavegacionPopular.php?id=6">Documenta</a></li>
+                        <li><a href="NavegacionPopular.php?id=6">Documental</a></li>
                         <li><a href="NavegacionPopular.php?id=7">Drama</a></li>
                         <li><a href="NavegacionPopular.php?id=8">Fantasía</a></li>
                         <li><a href="NavegacionPopular.php?id=12">Misterio</a></li>

@@ -69,21 +69,21 @@ echo'
 <nav>
             <ul class="un">
                 <li class="dropdown">
-                    <a href="#">FILTRO DE PELICULAS/SERIES</a>
+                    <a href="#" class="filtro">FILTRO DE PELICULAS/SERIES</a>
                     <ul class="dropdown-content">
-                        <li><a href="NavegacionPopularAdmin.php?id=0">Popular</a></li>
-                        <li><a href="NavegacionPopularAdmin.php?id=1">Acción</a></li>
-                        <li><a href="NavegacionPopularAdmin.php?id=11">Anime</a></li>
-                        <li><a href="NavegacionPopularAdmin.php?id=2">Aventura</a></li>
-                        <li><a href="NavegacionPopularAdmin.php?id=3">Catástrofe</a></li>
-                        <li><a href="NavegacionPopularAdmin.php?id=4">Ciencia ficción</a></li>
-                        <li><a href="NavegacionPopularAdmin.php?id=5">Comedia</a></li>
-                        <li><a href="NavegacionPopularAdmin.php?id=6">Documenta</a></li>
-                        <li><a href="NavegacionPopularAdmin.php?id=7">Drama</a></li>
-                        <li><a href="NavegacionPopularAdmin.php?id=8">Fantasía</a></li>
-                        <li><a href="NavegacionPopularAdmin.php?id=12">Misterio</a></li>
+                        <li class="popularl"><a href="NavegacionPopularAdmin.php?id=0">Popular</a></li>
+                        <li class="accionl"><a href="NavegacionPopularAdmin.php?id=1">Acción</a></li>
+                        <li class="animel"><a href="NavegacionPopularAdmin.php?id=11">Anime</a></li>
+                        <li class="aventural"><a href="NavegacionPopularAdmin.php?id=2">Aventura</a></li>
+                        <li class="catastrofel"><a href="NavegacionPopularAdmin.php?id=3">Catástrofe</a></li>
+                        <li class="ciencial"><a href="NavegacionPopularAdmin.php?id=4">Ciencia ficción</a></li>
+                        <li class="comedial"><a href="NavegacionPopularAdmin.php?id=5">Comedia</a></li>
+                        <li class="documentall"><a href="NavegacionPopularAdmin.php?id=6">Documental</a></li>
+                        <li class="dramal"><a href="NavegacionPopularAdmin.php?id=7">Drama</a></li>
+                        <li class="fantasial"><a href="NavegacionPopularAdmin.php?id=8">Fantasía</a></li>
+                        <li class="misteriol"><a href="NavegacionPopularAdmin.php?id=12">Misterio</a></li>
                         
-                        <li><a href="NavegacionPopular.php?id=9">Terror</a></li>
+                        <li class="terrorl"><a href="NavegacionPopular.php?id=9">Terror</a></li>
 
                     </ul>
                 </li>
